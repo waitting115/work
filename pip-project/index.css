@@ -1,0 +1,884 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: calc(100vw / 80);
+    font-family: SimSun;
+    white-space: nowrap;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+body {
+    min-height: 2000px;
+}
+input[type='button'] {
+    outline: none;
+}
+.vertical {
+    width: 0.1rem;
+    height: 2rem;
+    margin: 0 auto;
+    background-color: orange;
+}
+
+/* .wrapper {
+    width: 100%;
+    height: 100%;
+    min-width: 1010px;
+} */
+/* .pageTop {
+    width: 100%;
+    height: 9rem;
+} */
+.header {
+    /* width: 100%;
+    height: 1.5rem; */
+    background-color: #F7F8F9;
+}
+.headerLeft {
+    /* width: 50%;
+    height: 100%; */
+    display: inline;
+    float: left;
+    /* line-height: 1.5rem; */
+
+}
+.headerLeft .collectionBox {
+    margin-left: 40%;
+    margin-top: 3.5rem;
+
+}
+.headerLeft .collectionBox .img {
+    width: auto;
+    height: 1.2rem;
+    margin-right: 0.2rem;
+}
+@media (min-width: 992px) {
+    .headerLeft .collectionBox {
+        margin-top: 0.5rem;
+    }
+}
+.headerRight {
+    display: inline-block;
+}
+.headerRight > div > div{
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.5rem;
+}
+.zero {
+    /* display: inline-block;
+    padding: 0.3rem;
+    margin-left: 0.5rem; */
+    padding: 0.3rem;
+    background: orange;
+}
+/* .headerRight .zero a{
+    height: auto;
+    padding: 0.2rem;
+    text-align: center;
+    background-color: orange;
+} */
+.logoImg {
+        height: 8rem;
+    }
+/* @media (min-width: 768px) {
+    .logoImg {
+        width: 100%;
+        height: 100%;
+    }
+} */
+.topBar {
+    height: 16rem;
+    margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+    .topBar {
+        height: 8rem;
+    }
+}
+.topBarRight {
+    height: 8rem;
+    /* width: 70%; */
+    /* display: table;
+    height: 100%; */
+    /* float: left;
+     */
+}
+.topBarRight .searchBox {
+    height: 8rem;
+    /* height: 8rem; */
+    /* width: 50%;
+    height: 100%; */
+    /* display: inline;
+    float: left; */
+}
+.searchTapHeader {
+    height: 6rem;
+    /* width: 100%;
+    height:70%; */
+}
+.searchTapHeader {
+    /* width: 100%;
+    height: 60%; */
+    /* float: left; */
+    /* position: relative;
+    top: 20%; */
+}
+.borderBox {
+    height: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid #ccc;
+    display: table;
+}
+.searchPanelFileds ,.searchTapBtn1 ,.searchTapBtn2{
+    /* margin-top: 1rem;
+    margin-bottom: 1rem; */
+    height: 4rem;
+}
+.searchIcon {
+    height: 3rem;
+    margin-left: -15px;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    background-color: #fff;
+}
+#a {
+    /* padding-left: 0;
+    padding-right: 0; */
+    /* padding: 0;
+    margin-top: -0.1rem; */
+    /* margin: 0; */
+}
+.searchIcon img {
+    width: 80%;
+    height: 80%;
+    min-width: 27.16px;
+    min-height: 22.24px;
+    display: inline-block;
+}
+@media (min-width: 768px) {
+    .searchIcon img {
+        margin-left: -15px;
+    }
+}
+@media (min-width: 992px) {
+    .searchIcon img {
+        margin-left: 0;
+    }
+}
+.inputDiv {
+    height: 3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.searchComboboxInput {
+    height: 3rem;
+    border: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+    font-size: 1.2rem;
+    outline: none;
+}
+.searchTapBtn1 ,.searchTapBtn2{
+    height: 4rem;
+    width: 100%;
+}
+.btn1 {
+    height: 4rem;
+}
+.searchTapBtn1 input ,.searchTapBtn2 input{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    font-size: 1.3rem;
+}
+.searchTapBtn2 input {
+    background-color: orange;
+}
+.menuSearchTap {
+    height: 2rem;
+}
+.menuSearchTap .title {
+    float: left;
+    display: inline;
+}
+.menuSearchTapContent { 
+    float: left;
+    display: inline;  
+}
+.menuSearchTapContent ul {
+    list-style: none;
+    float: left;
+}
+.menuSearchTapContent ul li{
+    margin: 0 0.3rem;
+    display: inline-block;
+}
+.menuSearchTapContent ul li a {
+    color: orange;
+}
+
+.serviceHotlineBox {
+    height: 8rem;
+    /* width: 50%;
+    height: 100%; */
+    /* display: inline;
+    float: left; */
+}
+.serviceHotline {
+    height: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    /* width: 50%;
+    height: 50%; */
+    /* position: relative;
+    top: 30%;
+    left: 40%; */
+}
+.serviceHotline div {
+    text-align: center;
+}
+.serviceHotline .telephone {
+    color: orange;
+}
+.navBar {
+    /* width: 100%;
+    height: 2.5rem; */
+    background-color: orange;
+}
+.navBarUl {
+    /* width: 100%;
+    height: 100%; */
+    list-style: none;
+    float: left;
+}
+.navBarUlLi {
+    /* width: 16.6%;
+    height: 100%; */
+    line-height: 2.5rem;
+    display: inline-block;
+    text-align: center;
+}
+.navBarUlLi:hover {
+    background-color: #fff;
+    transition: 1s;
+}
+.navBarUlLi:hover >a {
+    color: orange;
+    display: inline-block;
+    /* width: 100%;
+    height: 100%; */
+}
+.navBarUlLi a{
+    color: #fff;
+    text-decoration: none;
+}
+.pageContent {
+    /* width: 100%; */
+}
+.slide {
+    /* width: 100%; */
+    height: 20.5rem;
+    overflow: hidden;
+}
+.slideContent {
+    width: 100%;
+    height: 100%;
+}
+.slideContentImg {
+    width: 100%;
+    height: 100%;
+}
+.noticeBar {
+    /* width: 100%; */
+    height: 2rem;
+}
+.noticeBar .noticeBarBox {
+    display: inline;
+    float: right;
+    font-size: 0.7rem;
+    margin-right: 7rem;
+    color: orange;
+    margin-top: 0.2rem;
+}
+.noticeBar .noticeBarBox span {
+    margin: 0 1rem;
+}
+.noticeBar .noticeBarBox span a {
+    font-size: 0.7rem;
+    color: orange;
+}
+.tablebox {
+}
+.domainNameReserVation {
+}
+.domainNameTitle {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.domainNameTitleDiv {
+    display: inline-block;
+    position: relative;
+    left: 48%;
+}
+.domainNameContent {
+    font-size: 0.6rem;
+}
+.recommended {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.recomTitleText {
+    min-width: 4rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    display: inline-block;
+}
+.bookToday {
+    display: inline-block;
+    border-bottom: 1px solid #ccc;
+}
+.bookTodaytext {
+    color: #8c8c8c;
+    display: inline-block;
+}
+.more {
+    display: inline;
+    float: right;
+}
+.more a {
+    color: orange;
+    font-size: 0.6rem;
+}
+.recomContent {
+    /* width: 100%;
+    height: 90%; */
+    float: left;
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.recomItemPrice {
+    display: inline;
+    float: left;
+    width: 46%;
+    height: 20%;
+    background-color: #fff;
+    box-shadow: 0 0 0 5px #888;
+}
+.recomItem {
+    width: 46%;
+    height: 3rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    /* height: 2.5rem; */
+    min-width: 12rem;
+    min-height: 30px;
+    /* margin: 0 2%; */
+    display: inline;
+    float: left;
+    margin: 1.3% 2%;
+    background-color: #fff;
+    box-shadow: 0 0 5px #888;
+}
+
+
+.itemContent {
+    /* margin-top: 0.5rem;
+    margin-bottom: 0.5rem; */
+    height: 100%;
+    margin: 0;
+    /* width: 100%;
+    height: 100%; */
+    /* height: 2.5rem; */
+    
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    min-width: 12rem;
+    min-height: 30px;
+    /* display: inline; */
+    font-size: 0.8rem;
+}
+.itemContent > div {
+    display: inline-block;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    margin: 0;
+    text-align: center;
+    /* margin-top: 0.5rem; */
+    /* margin-bottom: 0.5rem; */
+    /* padding-left: 0; */
+    /* padding-right: 0; */
+    padding: 0;
+
+    /* margin-left: 0.7rem; */
+}
+@media (min-width: 992px) {
+    .vertical {
+        height: 1.4rem;
+    }
+}
+.itemBtn {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    /* width: 13%;
+    height: 70%; */
+    /* margin: 1.1rem 0; */
+    /* margin-left: -15px;
+    margin-right: -15px; */
+    /* padding-top: -0.5rem; */
+    min-width: 20px;
+    min-height: 20px;
+}
+.itemContent2 {
+    width: 100%;
+    height: 100%;
+    /* display: inline; */
+    font-size: 0.7rem;
+}
+.itemContent2 > div {
+    height: 2.5rem;
+    display: inline-block;
+    margin-left: 15%;
+}
+.leftDomain {
+    /* position: relative;
+    top: -0.3rem;
+    font-size: 1rem; */
+}
+
+/* .lastday { */
+    /* width:36.8%; */
+    /* margin: 0 2%; */
+    /* height: 100%; */
+    /* display: inline-block; */
+    /* white-space: nowrap; */
+    /* margin-top: 1rem; */
+    /* margin-bottom: 1rem; */
+/* } */
+.recomContentRight {
+    /* width: 100%;
+    height: 90%; */
+    /* float: left; */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.recomItemRight {
+    width: 80%;
+    height: 10%;
+    margin: 1.5% 10%;
+    float: left;
+    display: inline;
+    min-width: 12rem;
+    min-height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px 1px #888;
+}
+/* @media screen and (max-width: 1140px) {
+    html {
+        font-size: calc(100vw / 60);
+    }
+    .domainNameTitle {
+        height: 4%;
+    }
+    .domainNameContent {
+        height: 96%;
+    }
+    .recomTitle {
+        height: 6%;
+    }
+    .recomContent {
+        height: 94%;
+    } */
+    /* .headerRight > div {
+        margin: 0 1rem;
+    }
+    .recomItem {
+        width: 100%;
+        height: 17%;
+    }
+    .recomContent {
+        height: 28%;
+    }
+    .domainNameReserVation {
+        height: 70rem;
+    }
+    .itemContent > div ,.itemContent > input {
+        margin-left: 10%;
+    }
+    .recomItemRight {
+        width: 100%;
+        height: 8%;
+    }
+    .recomItemRight .itemContent > div {
+        margin-left: 6%;
+    }
+    .recomContent2 {
+        height: 100%;
+    }
+} */
+/* @media screen and (max-width: 1024px) {
+    html {
+        font-size: calc(100vw / 30);
+    }
+    .domainNameTitle {
+        height: 0.5%;
+    }
+    .domainNameContent {
+        height: 99.5%;
+    } */
+    /* .recommended {
+        width: 90%;
+        height: 90%;
+    }
+    .recomContent {
+        height: 20%;
+    }
+    .headerRight > div {
+        margin: 0 0.5rem;
+    }
+    .lastday {
+        width: 100%;
+        height: 50%;
+    }
+    .domainNameReserVation {
+        height: 200rem;
+    }
+    .domainNameContent {
+        white-space: pre-wrap;
+    }
+    .rightToolBar {
+        display: none;
+    }
+    .headerLeft {
+        width: 20%;
+    } */
+    /* .headerRight {
+        width: 80%;
+    }
+    .searchBox {
+        width: 80%;
+    }
+    .serviceHotlineBox {
+        width: 20%;
+    }
+    .serviceHotlineBox ,.topBarLeft{
+        display: none;
+    }
+    .searchBox {
+        width: 100%;
+    }
+    .topBarRight {
+        width: 140%;    
+    }
+    .centerBox {
+        width: 100%;
+    }
+    .inputDiv {
+        top: -0.18rem;
+    }
+} */
+
+.fixedPrice {
+    /* width: 100%; */
+    /* height: 40rem; */
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.recomItemPrice {
+    width: 46%;
+    height: 20%;
+    margin: 1% 2%;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px 1px #888;
+}
+.recomItemRightPrice {
+    width: 80%;
+    height: 13%;
+    margin: 0 10%;
+    margin: 2% 10%;
+    float: left;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px 1px #888;
+}
+.itemContentPrice {
+    width: 100%;
+    height: 100%;
+    font-size: 0.7rem;
+    display: inline-block;
+}
+.itemTop {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.itemTopLeft ,.itemTopRight{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.leftDomainName ,.introduction{
+    margin-bottom: 0.3rem;
+}
+.leftDomainName {
+    font-size: 0.8rem;
+}
+.leftPriceText {
+    font-size: 0.5rem;
+    color: #8c8c8c;
+}
+.leftPrice ,.rightPriceNum{
+    font-size: 0.8rem;
+    color: orange;
+    text-align: center;
+}
+.introduction {
+    font-size: 0.5rem;
+}
+.rightTimeText {
+    font-size: 0.5rem;
+}
+.rightTime {
+    font-size: 0.8rem;
+}
+.itemBottom {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.rightPrice {
+    position: relative;
+    top: 0.4rem;
+}
+.rightPriceText {
+    margin-bottom: 0.5rem;
+    color: #8c8c8c;
+}
+
+.recomContentTable {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    text-align: center;
+    border-collapse: collapse;
+}
+.recomContentTable tr {
+    height: 4rem;
+}
+.tableHead {
+    background-color: #F7F8F9;
+}
+.tableRow {
+    background-color: white ;
+}
+.tdBtn {
+    padding: 0.2rem;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+.auction {
+    background-color: #bbb;
+}
+.domainNameReserActivity {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.activityTop {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    /* border-bottom: 1px solid orange; */
+}
+.activityTitle {
+    font-size: 1.2rem;
+    display: inline-block;
+}
+.actText {
+    margin-left: 0.4rem;
+    font-size: 0.7rem;
+    padding-top: 0.3rem;
+}
+.activityBottom {
+    /* width: 100%;
+    height: 80%; */
+    /* background-color: #F7F8F9; */
+}
+.activityItem {
+    /* width: 25%;
+    height: 100%; */
+    /* display: inline; */
+    /* float: left; */
+    height: 6rem;
+    background-color: #F7F8F9;
+    border-top: 1px solid orange;
+
+}
+.activityItem:hover {
+    background-color: orange;
+    color: white;
+}
+#itemIcon {
+    height: 6rem;
+    padding: 0;
+}
+#itemIcon:after {
+    content: '';
+    width: 0;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.itemIconImg {
+    height: 2.7rem;
+    vertical-align: middle;
+    /* position: relative;
+    top: calc(50% - 1.35rem); */
+}
+.itemText {
+    height: 6rem;
+}
+.centerToolBox {
+    height: 6rem;
+    display: table;
+}
+.centerTool {
+    height: 6rem;
+    display: table-cell;
+    vertical-align: middle;
+}
+.itemTextTop {
+    /* position: relative;
+    top: 1rem; */
+    /* text-align: center; */
+}
+.itemTextBottom {
+    /* position: relative;
+    top: 1rem; */
+    font-size: 0.6rem;
+    /* text-align: center; */
+}
+.pageBottom {
+    /* width: 100%;
+    height: 5rem; */
+    /* height: 3rem; */
+}
+.bottomBar {
+    /* height: 3rem; */
+    /* width: 100%;
+    height: 85%; */
+    background-color: #F7F8F9;
+}
+.bottomBarItem {
+    /* width: 20%;
+    height: 100%; */
+    /* height: 3rem; */
+    /* padding-top: 0.5rem; */
+    /* padding-bottom: 0.5rem; */
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline;
+    float: left;
+}
+.btmBarItemIcon {
+    height: 4rem;
+}
+.btmBarItemIcon:after {
+    content: '';
+    width: 0;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.btmBarItemIconImg {
+    width: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.btmBarItemText {
+    height: 4rem;
+}
+.btmBarItemText:after {
+    content: '';
+    width: 0;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.btmBarItemTextSpan{
+    /* display: inline-block; */
+    vertical-align: middle;
+}
+
+.footer {
+    font-size: 0.5rem;
+    color: #8c8c8c;
+    background-color: #ccc;
+    text-align: center;
+}
+
+.rightToolBar {
+    width: 8rem;
+    height: 18rem;
+    position: fixed;
+    float: left;
+    right: 0;
+    top: calc(50% - 12.5rem);
+}
+.toolLeft {
+    width: 60%;
+    height: 100%;
+    display: inline;
+    float:left;
+}
+.QRCode {
+    width: 90%;
+    height: auto;
+    margin: 5%;
+    background-color: #f5f6f7;
+    border-radius: 0.6rem;
+}
+.QRCodeImg {
+    width: 100%;
+    height: auto;
+
+}
+.toolRight {
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+}
+.toolRightItem {
+    width: 80%;
+    height: 12%;
+    margin: 35% 0 35% 20%;
+    border-radius: 0.5rem 0 0 0.5rem;
+    background-color: orange;
+}
+.toolRightItemImg {
+    width: 100%;
+    height: 100%;
+}

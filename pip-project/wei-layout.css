@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+.wrapper {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* 移动端优先适配 */
+/* 平板 */
+@media (min-width: 768px) {
+    .wrapper {
+        width: 750px;
+    }
+}
+/* PC */
+@media (min-width: 992px) {
+    .wrapper {
+        width: 970px;
+    }
+}
+/* 大屏PC */
+@media (min-width: 1200px) {
+    .wrapper {
+        width: 1170px;
+    }
+}
+
+.row {
+    /* 中和了wrapper的两个内边距，使得row与wrapper一样宽，移动端两边不留空隙 */
+    margin-right: -15px;
+    margin-left: -15px;
+}
+/* 使之子元素为浮动元素也可以撑起宽高 */
+/* （类似 <table>）此元素会作为块级表格来显示，表格前后带有换行符。 */
+.row:before,
+.row:after {
+    display: table;
+    content: " ";
+}
+/* 清除浮动 */
+.row:after {
+    clear: both;
+}
+.col-yd-1, .col-pb-1, .col-pc-1, .col-bpc-1, .col-yd-2, .col-pb-2, .col-pc-2, .col-bpc-2, .col-yd-3, .col-pb-3, .col-pc-3, .col-bpc-3, .col-yd-4, .col-pb-4, .col-pc-4, .col-bpc-4, .col-yd-5, .col-pb-5, .col-pc-5, .col-bpc-5, .col-yd-6, .col-pb-6, .col-pc-6, .col-bpc-6, .col-yd-7, .col-pb-7, .col-pc-7, .col-bpc-7, .col-yd-8, .col-pb-8, .col-pc-8, .col-bpc-8, .col-yd-9, .col-pb-9, .col-pc-9, .col-bpc-9, .col-yd-10, .col-pb-10, .col-pc-10, .col-bpc-10, .col-yd-11, .col-pb-11, .col-pc-11, .col-bpc-11, .col-yd-12, .col-pb-12, .col-pc-12, .col-bpc-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+/* 移动端优先 */
+.col-yd-1, .col-yd-2, .col-yd-3, .col-yd-4, .col-yd-5, .col-yd-6, .col-yd-7, .col-yd-8, .col-yd-9, .col-yd-10, .col-yd-11, .col-yd-12 {
+    float: left;
+}
+.col-yd-12 {
+  width: 100%;
+}
+.col-yd-11 {
+  width: 91.66666667%;
+}
+.col-yd-10 {
+  width: 83.33333333%;
+}
+.col-yd-9 {
+  width: 75%;
+}
+.col-yd-8 {
+  width: 66.66666667%;
+}
+.col-yd-7 {
+  width: 58.33333333%;
+}
+.col-yd-6 {
+  width: 50%;
+}
+.col-yd-5 {
+  width: 41.66666667%;
+}
+.col-yd-4 {
+  width: 33.33333333%;
+}
+.col-yd-3 {
+  width: 25%;
+}
+.col-yd-2 {
+  width: 16.66666667%;
+}
+.col-yd-1 {
+  width: 8.33333333%;
+}
+@media (min-width: 768px) {
+    .col-pb-1, .col-pb-2, .col-pb-3, .col-pb-4, .col-pb-5, .col-pb-6, .col-pb-7, .col-pb-8, .col-pb-9, .col-pb-10, .col-pb-11, .col-pb-12 {
+    float: left;
+  }
+  .col-pb-12 {
+    width: 100%;
+  }
+  .col-pb-11 {
+    width: 91.66666667%;
+  }
+  .col-pb-10 {
+    width: 83.33333333%;
+  }
+  .col-pb-9 {
+    width: 75%;
+  }
+  .col-pb-8 {
+    width: 66.66666667%;
+  }
+  .col-pb-7 {
+    width: 58.33333333%;
+  }
+  .col-pb-6 {
+    width: 50%;
+  }
+  .col-pb-5 {
+    width: 41.66666667%;
+  }
+  .col-pb-4 {
+    width: 33.33333333%;
+  }
+  .col-pb-3 {
+    width: 25%;
+  }
+  .col-pb-2 {
+    width: 16.66666667%;
+  }
+  .col-pb-1 {
+    width: 8.33333333%;
+  }
+}
+@media (min-width: 992px) {
+    .col-pc-1, .col-pc-2, .col-pc-3, .col-pc-4, .col-pc-5, .col-pc-6, .col-pc-7, .col-pc-8, .col-pc-9, .col-pc-10, .col-pc-11, .col-pc-12 {
+    float: left;
+  }
+  .col-pc-12 {
+    width: 100%;
+  }
+  .col-pc-11 {
+    width: 91.66666667%;
+  }
+  .col-pc-10 {
+    width: 83.33333333%;
+  }
+  .col-pc-9 {
+    width: 75%;
+  }
+  .col-pc-8 {
+    width: 66.66666667%;
+  }
+  .col-pc-7 {
+    width: 58.33333333%;
+  }
+  .col-pc-6 {
+    width: 50%;
+  }
+  .col-pc-5 {
+    width: 41.66666667%;
+  }
+  .col-pc-4 {
+    width: 33.33333333%;
+  }
+  .col-pc-3 {
+    width: 25%;
+  }
+  .col-pc-2 {
+    width: 16.66666667%;
+  }
+  .col-pc-1 {
+    width: 8.33333333%;
+  }
+}
+@media (min-width: 1200px) {
+    .col-bpc-1, .col-bpc-2, .col-bpc-3, .col-bpc-4, .col-bpc-5, .col-bpc-6, .col-bpc-7, .col-bpc-8, .col-bpc-9, .col-bpc-10, .col-bpc-11, .col-bpc-12 {
+    float: left;
+  }
+  .col-bpc-12 {
+    width: 100%;
+  }
+  .col-bpc-11 {
+    width: 91.66666667%;
+  }
+  .col-bpc-10 {
+    width: 83.33333333%;
+  }
+  .col-bpc-9 {
+    width: 75%;
+  }
+  .col-bpc-8 {
+    width: 66.66666667%;
+  }
+  .col-bpc-7 {
+    width: 58.33333333%;
+  }
+  .col-bpc-6 {
+    width: 50%;
+  }
+  .col-bpc-5 {
+    width: 41.66666667%;
+  }
+  .col-bpc-4 {
+    width: 33.33333333%;
+  }
+  .col-bpc-3 {
+    width: 25%;
+  }
+  .col-bpc-2 {
+    width: 16.66666667%;
+  }
+  .col-bpc-1 {
+    width: 8.33333333%;
+  }
+}
