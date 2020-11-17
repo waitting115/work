@@ -21,54 +21,27 @@ body {
 }
 .wrapper {
   width: 100%;
-  height: 100%;
 }
-.box {
+.container {
   width: 100%;
-}
-.module {
-  width: 100%;
-}
-@media (min-width: 1200px) {
-  .module {
-    width: 80%;
-    margin-right: auto;
-    margin-bottom: auto;
-  }
-}
-.lr-padding {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* .wrapper {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-} */
-.no-lr-padding {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* Layout */
 /* 移动端优先适配 */
-/* 平板 */
-@media (min-width: 768px) {
-    .wrapper {
+/* @media (min-width: 768px) {
+    .module {
         width: 750px;
     }
 }
-/* PC */
 @media (min-width: 992px) {
-    .wrapper {
+    .module {
         width: 970px;
     }
-}
-/* 大屏PC */
+} */
 @media (min-width: 1200px) {
-    .wrapper {
+    .container {
         width: 1170px;
     }
 }
@@ -265,4 +238,17 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+/* 添加左右内边距 */
+.lr-padding {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* 去除左右内边距 */
+.no-lr-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.top-bar {
+  min-height: 20px;
 }
