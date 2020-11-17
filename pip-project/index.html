@@ -6,9 +6,14 @@
     <title>拍爱拍</title>
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./wei-layout.css">
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
+    <script src="./swiper/swiper-bundle.min.js" defer></script>
+    <script src="./index.js" defer></script>
+
 </head>
 <body>
-    <div class="wrapper">
+    <div id="wrapper" class="wrapper">
         <div class="pageTop row">
             <header class="header row">
                 <div class="headerLeft col-yd-6 ">
@@ -37,7 +42,7 @@
                 <div class=" col-yd-12 col-pb-4">
                     <div class=" row">
                         <div class="col-yd-3"></div>
-                        <img class="logoImg col-yd-6 col-pb-12" src="./img/logo.jpg" alt="">
+                        <img class="logoImg col-yd-6 col-pb-12" src="./img/logo(1).png" alt="">
                         <div class="col-yd-3"></div>
                     </div>
                 </div>
@@ -46,11 +51,11 @@
                         <div class="searchBox col-yd-9">
                             <div class="searchTapHeader col-yd-12">
                                 <div class="borderBox">
-                                    <div class="searchPanelFileds col-yd-8">
-                                        <div id="a" class="searchIcon col-yd-3">
+                                    <div class="searchPanelFileds col-yd-8 no-lr-padding">
+                                        <div id="a" class="searchIcon no-lr-padding col-yd-2">
                                             <img  src="./img/search.png">
                                         </div>
-                                        <div class="inputDiv col-yd-9">
+                                        <div class="inputDiv no-lr-padding col-yd-10">
                                             <input type="text" class="searchComboboxInput" placeholder="请输入您要查询的域名">
                                         </div>
                                     </div>
@@ -70,10 +75,10 @@
                                 <div class="title">搜索:</div>
                                 <div class="menuSearchTapContent">
                                     <ul>
-                                        <li><a>双拼</a></li>
-                                        <li><a>四声母</a></li>
-                                        <li><a>四数字</a></li>
-                                        <li><a>五数字</a></li>
+                                        <li><a href="">双拼</a></li>
+                                        <li><a href="">四声母</a></li>
+                                        <li><a href="">四数字</a></li>
+                                        <li><a href="">五数字</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -90,908 +95,2237 @@
 
             <div class="navBar row">
                 <ul class="navBarUl col-yd-12">
-                    <li class="navBarUlLi col-yd-2"><a href="">首页</a></li>
-                    <li class="navBarUlLi col-yd-2"><a href="">域名预定</a></li>
-                    <li class="navBarUlLi col-yd-2"><a href="">一口价</a></li>
-                    <li class="navBarUlLi col-yd-2"><a href="">域名竞价</a></li>
-                    <li class="navBarUlLi col-yd-2"><a href="">域名经纪</a></li>
-                    <li class="navBarUlLi col-yd-2"><a href="">域名管理</a></li>
+                    <li class="navBarUlLi active col-yd-2 home"><a href="./index.html">首页</a></li>
+                    <li class="navBarUlLi col-yd-2 register"><a href="">域名注册</a></li>
+                    <div class="details register-details animate__animated animate__fadeIn">
+                        <div class="col-yd-2">
+                            <div class="details-title col-yd-12"><a href="">国际域名</a></div>
+                            <ul class="col-yd-12">
+                                <li class="col-yd-12"><a href="">.com</a></li>
+                                <li class="col-yd-12"><a href="">.com</a></li>
+                                <li class="col-yd-12"><a href="">.com</a></li>
+                                <li class="col-yd-12"><a href="">.com</a></li>
+                                <li class="col-yd-12"><a href="">.com</a></li>
+                                <li class="col-yd-12"><a href="">.com</a></li>
+                                <li class="col-yd-12"><a href="">.com</a></li>
+                                <li class="col-yd-12"><a href="">.com</a></li>
+                                <li class="col-yd-12"><a href="">.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-yd-2">
+                            <div class="details-title col-yd-12"><a href="">国内域名</a></div>
+                            <ul class="col-yd-12">
+                                <li class="col-pc-6 col-yd-12">
+                                    <a href="">.cn</a>
+                                    <span class="icon icon-new"></span>
+                                </li>
+                                <li class="col-pc-6 col-yd-12">
+                                    <a href="">中国</a>
+                                </li>
+                                <li class="col-pc-6 col-yd-12">
+                                    <a href="">.com.cn</a>
+                                    <span class="icon icon-lock"></span>
+                                </li>
+                                <li class="col-pc-6 col-yd-12"><a href="">公司</a></li>
+                                <li class="col-pc-6 col-yd-12">
+                                    <a href="">.net.cn</a>
+                                    <span class="icon icon-hot"></span>
+                                </li>
+                                <li class="col-pc-6 col-yd-12"><a href="">网络</a></li>
+                                <li class="col-pc-6 col-yd-12">
+                                    <a href="">.org.cn</a>
+                                </li>
+                                <li class="col-pc-6 col-yd-12"><a href="">信息</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-yd-2">
+                            <div class="details-title col-yd-12"><a href="">新顶级域名</a></div>
+                            <ul class="col-id-12">
+                                <li class="col-yd-6"><a href="">.com</a></li>
+                                <li class="col-yd-6"><a href="">.com</a></li>
+                                <li class="col-yd-6"><a href="">.com</a></li>
+                                <li class="col-yd-6"><a href="">.com</a></li>
+                                <li class="col-yd-6"><a href="">.com</a></li>
+                                <li class="col-yd-6"><a href="">.com</a></li>
+                                <li class="col-yd-6"><a href="">.com</a></li>
+                                <li class="col-yd-6"><a href="">.com</a></li>
+                                <li class="col-yd-6"><a href="">.com</a></li>
+                                <li class="col-yd-6"><a href="">.com</a></li>
+                                <li class="col-yd-6"><a href="">.com</a></li>
+                                <li class="col-yd-6"><a href="">.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-yd-2">
+                            <div class="details-title col-yd-12"><a href="">域名服务</a></div>
+                            <ul class="col-id-12">
+                                <li class="col-pc-6 col-yd-12"><a href="">批量注册</a></li>
+                                <li class="col-pc-6 col-yd-12"><a href="">批量注册</a></li>
+                                <li class="col-pc-6 col-yd-12"><a href="">批量注册</a></li>
+                                <li class="col-pc-6 col-yd-12"><a href="">批量注册</a></li>
+                                <li class="col-pc-6 col-yd-12"><a href="">批量注册</a></li>
+                                <li class="col-pc-6 col-yd-12"><a href="">批量注册</a></li>
+                                <li class="col-pc-6 col-yd-12"><a href="">批量注册</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-yd-2">
+                            <div class="details-title col-yd-12"><a href="">域名注册常见问题</a></div>
+                            <ul class="col-yd-12">
+                                <li class="col-yd-12"><a href="">如何选择合适的域名</a></li>
+                                <li class="col-yd-12"><a href="">如何选择合适的域名</a></li>
+                                <li class="col-yd-12"><a href="">如何选择合适的域名</a></li>
+                                <li class="col-yd-12"><a href="">如何选择合适的域名</a></li>
+                                <li class="col-yd-12"><a href="">如何选择合适的域名</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-yd-2">
+                            <div class="details-title col-yd-12">
+                                <img class="details-advertising" src="./img/top_menu_1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <li class="navBarUlLi col-yd-2 bidding">
+                        <a href="">预定竞价</a>
+                    </li>
+                    <div class="bidding-details details animate__animated animate__fadeIn">
+                        <div class="col-yd-2"></div>
+                        <div class="col-yd-2">
+                            <div class="details-title col-yd-12"><a href="">过期释放预定</a></div>
+                            <ul class="col-yd-12">
+                                <!-- <li class="col-yd-12"><a href=""></a></li> -->
+                                <li class="col-yd-12"><a href="">爱名释放预定</a></li>
+                                <li class="col-yd-12"><a href="">国内域名预定</a></li>
+                                <li class="col-yd-12"><a href="">国际域名预定</a></li>
+                                <li class="col-yd-12"><a href="">长期/批量预定</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-yd-2">
+                            <div class="details-title col-yd-12"><a href="">域名竞价拍卖</a></div>
+                            <ul class="col-yd-12">
+                                <li class="col-yd-12"><a href="">域名竞价列表</a></li>
+                                <li class="col-yd-12"><a href="">我参与的竞价</a></li>
+                                <li class="col-yd-12"><a href="">域名竞价列表</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-yd-4">
+                            <div class="details-title col-yd-12"><a href="">域名预定指南</a></div>
+                            <ul class="col-yd-12">
+                                <li class="col-yd-6"><a href="">域名预定指南</a></li>
+                                <li class="col-yd-6"><a href="">域名预定指南</a></li>
+                                <li class="col-yd-6"><a href="">域名预定指南</a></li>
+                                <li class="col-yd-6"><a href="">域名预定指南</a></li>
+                                <li class="col-yd-6"><a href="">域名预定指南</a></li>
+                                <li class="col-yd-6"><a href="">域名预定指南</a></li>
+                                <li class="col-yd-6"><a href="">域名预定指南</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-yd-2">
+                            <div class="details-title col-yd-12">
+                                <img class="details-advertising" src="./img/top_menu_2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <li class="navBarUlLi col-yd-2 deal">
+                        <a href="">域名买卖</a>
+                    </li>
+                    <div class="deal-details details animate__animated animate__fadeIn">
+                        <div class="col-yd-2">
+                            <div class="details-title col-yd-12"><a href="">域名拍卖</a></div>
+                            <ul class="col-yd-12">
+                                <li class="col-yd-12"><a href="">推荐拍卖</a></li>
+                                <li class="col-yd-12"><a href="">专题拍卖</a></li>
+                                <li class="col-yd-12"><a href="">打包拍卖</a></li>
+                                <li class="col-yd-12"><a href="">一元拍</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-yd-2">
+                            <div class="details-title col-yd-12"><a href="">平台一口价</a></div>
+                            <ul class="col-yd-12">
+                                <li class="col-yd-12"><a href="">推荐一口价</a></li>
+                                <li class="col-yd-12"><a href="">打包一口价</a></li>
+                                <li class="col-yd-12"><a href="">打包一口价</a></li>
+                                <li class="col-yd-12"><a href="">打包一口价</a></li>
+                                <li class="col-yd-12"><a href="">打包一口价</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-yd-1">
+                            <div class="details-title col-yd-12"><a href="">批量交易</a></div>
+                            <ul class="col-yd-12">
+                                <li class="col-yd-12"><a href="">打包买入</a></li>
+                                <li class="col-yd-12"><a href="">打包买入</a></li>
+                                <li class="col-yd-12"><a href="">打包买入</a></li> 
+                                <li class="col-yd-12"><a href="">打包买入</a></li>
+                                <li class="col-yd-12"><a href="">打包买入</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-yd-2">
+                            <div class="details-title col-yd-12"><a href="">经纪.中介</a></div>
+                            <ul class="col-yd-12">
+                                <li class="col-yd-12"><a href="">委托人购买</a></li>
+                                <li class="col-yd-12"><a href="">委托人购买</a></li>
+                                <li class="col-yd-12"><a href="">委托人购买</a></li> 
+                                <li class="col-yd-12"><a href="">委托人购买</a></li>
+                                <li class="col-yd-12"><a href="">委托人购买</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-yd-1">
+                            <div class="details-title col-yd-12"><a href="">微闪拍</a></div>
+                            <ul class="col-yd-12">
+                                <li class="col-yd-12"><a href="">视频拍卖</a></li>
+                                <li class="col-yd-12"><a href="">视频拍卖</a></li>
+                                <li class="col-yd-12"><a href="">视频拍卖</a></li> 
+                                <li class="col-yd-12"><a href="">视频拍卖</a></li>
+                                <li class="col-yd-12"><a href="">视频拍卖</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-yd-2">
+                            <div class="details-title col-yd-12"><a href="">域名交易中心常见问题</a></div>
+                            <ul class="col-yd-12">
+                                <li class="col-yd-12"><a href="">什么是买方出价交易</a></li>
+                                <li class="col-yd-12"><a href="">什么是买方出价交易</a></li>
+                                <li class="col-yd-12"><a href="">什么是买方出价交易</a></li> 
+                                <li class="col-yd-12"><a href="">什么是买方出价交易</a></li>
+                                <li class="col-yd-12"><a href="">什么是买方出价交易</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-yd-2">
+                            <div class="details-title col-yd-12">
+                                <img class="details-advertising" src="./img/top_menu_3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <li class="navBarUlLi col-yd-2 trademark">
+                        <a href="">商标 · 知产</a>
+                    </li>
+                    <div style="z-index: 2;" class="trademark-details details animate__animated animate__fadeIn">
+                        <div class="col-yd-1">
+                            <div class="details-title col-yd-12"><a href="">商标注册</a></div>
+                            <ul class="col-yd-12">
+                                <li class="col-yd-12"><a href="">普通注册</a></li>
+                                <li class="col-yd-12"><a href="">普通注册</a></li>
+                                <li class="col-yd-12"><a href="">普通注册</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-yd-2">
+                            <div class="details-title col-yd-12"><a href="">商标查询</a></div>
+                            <ul class="col-yd-12">
+                                <li class="col-yd-12"><a href="">综合查询</a></li>
+                                <li class="col-yd-12"><a href="">综合查询</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-yd-2">
+                            <div class="details-title col-yd-12"><a href="">商标服务</a></div>
+                            <ul class="col-yd-12">
+                                <li class="col-pc-6 col-yd-12"><a href="">国际商标</a></li>
+                                <li class="col-pc-6 col-yd-12"><a href="">商标驳回复审</a></li>
+                                <li class="col-pc-6 col-yd-12"><a href="">国际商标</a></li>
+                                <li class="col-pc-6 col-yd-12"><a href="">商标驳回复审</a></li>
+                                <li class="col-pc-6 col-yd-12"><a href="">国际商标</a></li>
+                                <li class="col-pc-6 col-yd-12"><a href="">商标驳回复审</a></li>
+                                <li class="col-pc-6 col-yd-12"><a href="">国际商标</a></li>
+                                <li class="col-pc-6 col-yd-12"><a href="">商标驳回复审</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-yd-2">
+                            <div class="details-title col-yd-12"><a href="">专利申请</a></div>
+                            <ul class="col-yd-12">
+                                <li class="col-yd-12"><a href="">实用新型专利</a></li>
+                                <li class="col-yd-12"><a href="">实用新型专利</a></li>
+                                <li class="col-yd-12"><a href="">实用新型专利</a></li>
+                                <li class="col-yd-12"><a href="">实用新型专利</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-yd-2">
+                            <div class="details-title col-yd-12"><a href="">版权登记</a></div>
+                            <ul class="col-yd-12">
+                                <li class="col-yd-12"><a href="">美术著作权</a></li>
+                                <li class="col-yd-12"><a href="">美术著作权</a></li>
+                                <li class="col-yd-12"><a href="">美术著作权</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-yd-1">
+                            <div class="details-title col-yd-12"><a href="">商标交易</a></div>
+                            <ul class="col-yd-12">
+                                <li class="col-yd-12"><a href="">商标超市</a></li>
+                                <li class="col-yd-12"><a href="">商标超市</a></li>
+                                <li class="col-yd-12"><a href="">商标超市</a></li>
+                                <li class="col-yd-12"><a href="">商标超市</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-yd-2">
+                            <div class="details-title col-yd-12">
+                                <img class="details-advertising" src="./img/top_menu_4.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <li class="navBarUlLi col-yd-2 cloud-computing">
+                        <a href="">云计算</a>
+                    </li>
+                    <div class="cloud-computing-details details animate__animated animate__fadeIn">
+                        <div class="col-yd-4"></div>
+                        <div class="col-yd-2">
+                            <div class="details-title col-yd-12"><a href="">云服务器</a></div>
+                            <ul class="col-yd-12">
+                                <li class="col-yd-12"><a href="">推荐配置-<a href="">入门型</a></a></li>
+                                <li class="col-yd-12"><a href="">推荐配置-<a href="">入门型</a></a></li>
+                                <li class="col-yd-12"><a href="">推荐配置-<a href="">入门型</a></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-yd-2">
+                            <div class="details-title col-yd-12"><a href="">主机管理</a></div>
+                            <ul class="col-yd-12">
+                                <li class="col-yd-12"><a href="">我的云虚拟主机</a></li>
+                                <li class="col-yd-12"><a href="">我的云虚拟主机</a></li>
+                                <li class="col-yd-12"><a href="">我的云虚拟主机</a></li>
+                                <li class="col-yd-12"><a href="">我的云虚拟主机</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-yd-2">
+                            <div class="details-title col-yd-12"><a href="">云虚拟机常见问题</a></div>
+                            <ul class="col-yd-12">
+                                <li class="col-yd-12"><a href="">如何绑定域名</a></li>
+                                <li class="col-yd-12"><a href="">如何绑定域名</a></li>
+                                <li class="col-yd-12"><a href="">如何绑定域名</a></li>
+                                <li class="col-yd-12"><a href="">如何绑定域名</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-yd-2">
+                            <div class="details-title col-yd-12">
+                                <img class="details-advertising" src="./img/top_menu_6.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </ul>
+                
             </div>
         </div>
 
         <div class="pageContent row">
             <div class="slide row">
-                <div class="slideContent">
-                    <img class="slideContentImg" src="https://upimg.22.cn/show//ad/20201023/0-20201023120358547.jpg" alt="">
-                </div>
-            </div>
-            <div class="noticeBar row">
-                <div class="noticeBarBox">
-                    <span class="text">[公告]6月域名优惠,低至9元/月...</span>
-                    <span><a href="">更多>></a></span>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="domainNameReserVation row">
-                    <div class="domainNameTitle ">
-                        <div class="domainNameTitleDiv">域名预定</div>
-                    </div>
-                    <div class="domainNameContent col-yd-12">
-                        <div class="recommended col-pc-8 col-yd-12">
-                            <div class="recomTitle col-yd-12">
-                                <div class="recomTitleText col-yd-2">推荐预定</div>
-                                <div class="bookToday col-yd-10">
-                                    <div class="bookTodaytext">BOOK TODAY</div>
-                                    <div class="more">
-                                        <a href="">更多></a>
-                                    </div>
-                                </div>
+                <!-- <div class="slideContent"> -->
+                    <div class="swiper-container swiper1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                            <img class="slideContentImg" src="./img/1.jpg" alt="">
+                                
                             </div>
-                            <div class="recomContent">
-                                <div class="recomItem">
-                                    <div class="itemContent col-yd-12">
-                                        <div class="col-yd-3">
-                                            <div class="domainNameText">0.264.com</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-3">
-                                            <div class="time ">剩余12小时</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-4">
-                                            <input class="itemBtn "  type="button" value="预定">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItem">
-                                    <div class="itemContent col-yd-12">
-                                        <div class="col-yd-3">
-                                            <div class="domainNameText">0.264.com</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-3">
-                                            <div class="time ">剩余12小时</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-4">
-                                            <input class="itemBtn "  type="button" value="预定">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItem">
-                                    <div class="itemContent col-yd-12">
-                                        <div class="col-yd-3">
-                                            <div class="domainNameText">0.264.com</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-3">
-                                            <div class="time ">剩余12小时</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-4">
-                                            <input class="itemBtn "  type="button" value="预定">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItem">
-                                    <div class="itemContent col-yd-12">
-                                        <div class="col-yd-3">
-                                            <div class="domainNameText">0.264.com</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-3">
-                                            <div class="time ">剩余12小时</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-4">
-                                            <input class="itemBtn "  type="button" value="预定">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItem">
-                                    <div class="itemContent col-yd-12">
-                                        <div class="col-yd-3">
-                                            <div class="domainNameText">0.264.com</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-3">
-                                            <div class="time ">剩余12小时</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-4">
-                                            <input class="itemBtn "  type="button" value="预定">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItem">
-                                    <div class="itemContent col-yd-12">
-                                        <div class="col-yd-3">
-                                            <div class="domainNameText">0.264.com</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-3">
-                                            <div class="time ">剩余12小时</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-4">
-                                            <input class="itemBtn "  type="button" value="预定">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItem">
-                                    <div class="itemContent col-yd-12">
-                                        <div class="col-yd-3">
-                                            <div class="domainNameText">0.264.com</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-3">
-                                            <div class="time ">剩余12小时</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-4">
-                                            <input class="itemBtn "  type="button" value="预定">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItem">
-                                    <div class="itemContent col-yd-12">
-                                        <div class="col-yd-3">
-                                            <div class="domainNameText">0.264.com</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-3">
-                                            <div class="time ">剩余12小时</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-4">
-                                            <input class="itemBtn "  type="button" value="预定">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItem">
-                                    <div class="itemContent col-yd-12">
-                                        <div class="col-yd-3">
-                                            <div class="domainNameText">0.264.com</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-3">
-                                            <div class="time ">剩余12小时</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-4">
-                                            <input class="itemBtn "  type="button" value="预定">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItem">
-                                    <div class="itemContent col-yd-12">
-                                        <div class="col-yd-3">
-                                            <div class="domainNameText">0.264.com</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-3">
-                                            <div class="time ">剩余12小时</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-4">
-                                            <input class="itemBtn "  type="button" value="预定">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItem">
-                                    <div class="itemContent col-yd-12">
-                                        <div class="col-yd-3">
-                                            <div class="domainNameText">0.264.com</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-3">
-                                            <div class="time ">剩余12小时</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-4">
-                                            <input class="itemBtn "  type="button" value="预定">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItem">
-                                    <div class="itemContent col-yd-12">
-                                        <div class="col-yd-3">
-                                            <div class="domainNameText">0.264.com</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-3">
-                                            <div class="time ">剩余12小时</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-4">
-                                            <input class="itemBtn "  type="button" value="预定">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItem">
-                                    <div class="itemContent col-yd-12">
-                                        <div class="col-yd-3">
-                                            <div class="domainNameText">0.264.com</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-3">
-                                            <div class="time ">剩余12小时</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-4">
-                                            <input class="itemBtn "  type="button" value="预定">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItem">
-                                    <div class="itemContent col-yd-12">
-                                        <div class="col-yd-3">
-                                            <div class="domainNameText">0.264.com</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-3">
-                                            <div class="time ">剩余12小时</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-4">
-                                            <input class="itemBtn "  type="button" value="预定">
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="swiper-slide">
+                            <img class="slideContentImg" src="./img/1.jpg" alt="">
+                                
+                            </div>
+                            <div class="swiper-slide">
+                            <img class="slideContentImg" src="./img/1.jpg" alt="">
+                                
                             </div>
                         </div>
-
-                        <div class="recommended col-pc-4 col-yd-12">
-                            <div class="recomTitle col-yd-12">
-                                <div class="recomTitleText col-pc-4 col-yd-2">昨天预定</div>
-                                <div class="bookToday col-pc-8 col-yd-10">
-                                    <div class="bookTodaytext">BOOK YESTERDAY</div>
-                                    <div class="more">
-                                        <a href="">更多></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="recomContentRight">
-                                <div class="recomItemRight">
-                                    <div class="itemContent col-yd-12">
-                                        <div class="col-yd-3">
-                                            <div class="domainNameText">0.264.com</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-3">
-                                            <div class="time ">剩余12小时</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-4">
-                                            <input class="itemBtn "  type="button" value="预定">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItemRight">
-                                    <div class="itemContent col-yd-12">
-                                        <div class="col-yd-3">
-                                            <div class="domainNameText">0.264.com</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-3">
-                                            <div class="time ">剩余12小时</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-4">
-                                            <input class="itemBtn "  type="button" value="预定">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItemRight">
-                                    <div class="itemContent col-yd-12">
-                                        <div class="col-yd-3">
-                                            <div class="domainNameText">0.264.com</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-3">
-                                            <div class="time ">剩余12小时</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-4">
-                                            <input class="itemBtn "  type="button" value="预定">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItemRight">
-                                    <div class="itemContent col-yd-12">
-                                        <div class="col-yd-3">
-                                            <div class="domainNameText">0.264.com</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-3">
-                                            <div class="time ">剩余12小时</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-4">
-                                            <input class="itemBtn "  type="button" value="预定">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItemRight">
-                                    <div class="itemContent col-yd-12">
-                                        <div class="col-yd-3">
-                                            <div class="domainNameText">0.264.com</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-3">
-                                            <div class="time ">剩余12小时</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-4">
-                                            <input class="itemBtn "  type="button" value="预定">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItemRight">
-                                    <div class="itemContent col-yd-12">
-                                        <div class="col-yd-3">
-                                            <div class="domainNameText">0.264.com</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-3">
-                                            <div class="time ">剩余12小时</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-4">
-                                            <input class="itemBtn "  type="button" value="预定">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItemRight">
-                                    <div class="itemContent col-yd-12">
-                                        <div class="col-yd-3">
-                                            <div class="domainNameText">0.264.com</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-3">
-                                            <div class="time ">剩余12小时</div>
-                                        </div>
-                                        <div class="col-yd-1">
-                                            <div class="vertical"></div>
-                                        </div>
-                                        <div class="col-yd-4">
-                                            <input class="itemBtn "  type="button" value="预定">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="fixedPrice row">
-                    <div class="domainNameTitle">
-                        <div class="domainNameTitle">
-                            <div class="domainNameTitleDiv">一口价</div>
-                        </div>   
-                    </div>
-                    <div class="domainNameContent col-yd-12">
-                        <div class="recommended col-pc-8 col-yd-12">
-                            <div class="recomTitle col-yd-12">
-                                <div class="recomTitleText col-yd-2"> 最 吸 睛</div>
-                                <div class="bookToday col-yd-10">
-                                    <div class="bookTodaytext">THE MOST EYE_CATCHING</div>
-                                    <div class="more">
-                                        <a href="">更多></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="recomContent">
-                                <div class="recomItemPrice">
-                                    <div class="itemContentPrice">
-                                        <div class="itemTop">
-                                            <div class="itemTopLeft">
-                                                <div class="leftDomainName">0264.com</div>
-                                                <div class="leftPriceText">域名价格</div>
-                                                <div class="leftPrice">222$</div>
-                                            </div>
-                                            <div class="vertical"></div>
-                                            <div class="itemTopRight">
-                                                <div class="introduction">域名简介域名简介</div>
-                                                <div class="rightTimeText">剩余时间</div>
-                                                <div class="rightTime">1天12小时</div>
-                                            </div>
-                                        </div>
-                                        <div class="itemBottom">
-                                            <input type="button" value="购买" class="itemBtn">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItemPrice">
-                                    <div class="itemContentPrice">
-                                        <div class="itemTop">
-                                            <div class="itemTopLeft">
-                                                <div class="leftDomainName">0264.com</div>
-                                                <div class="leftPriceText">域名价格</div>
-                                                <div class="leftPrice">222$</div>
-                                            </div>
-                                            <div class="vertical"></div>
-                                            <div class="itemTopRight">
-                                                <div class="introduction">域名简介域名简介</div>
-                                                <div class="rightTimeText">剩余时间</div>
-                                                <div class="rightTime">1天12小时</div>
-                                            </div>
-                                        </div>
-                                        <div class="itemBottom">
-                                            <input type="button" value="购买" class="itemBtn">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItemPrice">
-                                    <div class="itemContentPrice">
-                                        <div class="itemTop">
-                                            <div class="itemTopLeft">
-                                                <div class="leftDomainName">0264.com</div>
-                                                <div class="leftPriceText">域名价格</div>
-                                                <div class="leftPrice">222$</div>
-                                            </div>
-                                            <div class="vertical"></div>
-                                            <div class="itemTopRight">
-                                                <div class="introduction">域名简介域名简介</div>
-                                                <div class="rightTimeText">剩余时间</div>
-                                                <div class="rightTime">1天12小时</div>
-                                            </div>
-                                        </div>
-                                        <div class="itemBottom">
-                                            <input type="button" value="购买" class="itemBtn">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItemPrice">
-                                    <div class="itemContentPrice">
-                                        <div class="itemTop">
-                                            <div class="itemTopLeft">
-                                                <div class="leftDomainName">0264.com</div>
-                                                <div class="leftPriceText">域名价格</div>
-                                                <div class="leftPrice">222$</div>
-                                            </div>
-                                            <div class="vertical"></div>
-                                            <div class="itemTopRight">
-                                                <div class="introduction">域名简介域名简介</div>
-                                                <div class="rightTimeText">剩余时间</div>
-                                                <div class="rightTime">1天12小时</div>
-                                            </div>
-                                        </div>
-                                        <div class="itemBottom">
-                                            <input type="button" value="购买" class="itemBtn">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItemPrice">
-                                    <div class="itemContentPrice">
-                                        <div class="itemTop">
-                                            <div class="itemTopLeft">
-                                                <div class="leftDomainName">0264.com</div>
-                                                <div class="leftPriceText">域名价格</div>
-                                                <div class="leftPrice">222$</div>
-                                            </div>
-                                            <div class="vertical"></div>
-                                            <div class="itemTopRight">
-                                                <div class="introduction">域名简介域名简介</div>
-                                                <div class="rightTimeText">剩余时间</div>
-                                                <div class="rightTime">1天12小时</div>
-                                            </div>
-                                        </div>
-                                        <div class="itemBottom">
-                                            <input type="button" value="购买" class="itemBtn">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItemPrice">
-                                    <div class="itemContentPrice">
-                                        <div class="itemTop">
-                                            <div class="itemTopLeft">
-                                                <div class="leftDomainName">0264.com</div>
-                                                <div class="leftPriceText">域名价格</div>
-                                                <div class="leftPrice">222$</div>
-                                            </div>
-                                            <div class="vertical"></div>
-                                            <div class="itemTopRight">
-                                                <div class="introduction">域名简介域名简介</div>
-                                                <div class="rightTimeText">剩余时间</div>
-                                                <div class="rightTime">1天12小时</div>
-                                            </div>
-                                        </div>
-                                        <div class="itemBottom">
-                                            <input type="button" value="购买" class="itemBtn">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItemPrice">
-                                    <div class="itemContentPrice">
-                                        <div class="itemTop">
-                                            <div class="itemTopLeft">
-                                                <div class="leftDomainName">0264.com</div>
-                                                <div class="leftPriceText">域名价格</div>
-                                                <div class="leftPrice">222$</div>
-                                            </div>
-                                            <div class="vertical"></div>
-                                            <div class="itemTopRight">
-                                                <div class="introduction">域名简介域名简介</div>
-                                                <div class="rightTimeText">剩余时间</div>
-                                                <div class="rightTime">1天12小时</div>
-                                            </div>
-                                        </div>
-                                        <div class="itemBottom">
-                                            <input type="button" value="购买" class="itemBtn">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItemPrice">
-                                    <div class="itemContentPrice">
-                                        <div class="itemTop">
-                                            <div class="itemTopLeft">
-                                                <div class="leftDomainName">0264.com</div>
-                                                <div class="leftPriceText">域名价格</div>
-                                                <div class="leftPrice">222$</div>
-                                            </div>
-                                            <div class="vertical"></div>
-                                            <div class="itemTopRight">
-                                                <div class="introduction">域名简介域名简介</div>
-                                                <div class="rightTimeText">剩余时间</div>
-                                                <div class="rightTime">1天12小时</div>
-                                            </div>
-                                        </div>
-                                        <div class="itemBottom">
-                                            <input type="button" value="购买" class="itemBtn">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
+                        <!-- 分页器 -->
+                        <div class="swiper-pagination swp1"></div>
                         
-                        <div class="recommended col-pc-4 col-yd-12">
-                            <div class="recomTitle col-yd-12">
-                                <div class="recomTitleText col-pc-4 col-yd-2">最新成交</div>
-                                <div class="bookToday col-pc-8 col-yd-10">
-                                    <div class="bookTodaytext">LATEST DEAl</div>
-                                    <div class="more">
-                                        <a href="">更多></a>
-                                    </div>
-                                </div>
+                        <!-- 导航按钮 -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        
+                        <!-- 滚动条 -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <!-- <div class="sarch-domain-name">
+                        <div class="col-yd-2 no-lr-padding sarch-domain-name-left">
+                            <div class="col-yd-12 no-lr-padding search-left-text">
+                                <span>超过</span>
+                                <span>10.000.000</span>
                             </div>
-                            <div class="recomContentRight">
-                                <div class="recomItemRightPrice">
-                                    <div class="itemContent2">
-                                        <div class="leftDomain">0264.com</div>
-                                        <div class="vertical"></div>
-                                        <div class="rightPrice">
-                                            <div class="rightPriceText">成交价格</div>
-                                            <div class="rightPriceNum">222$</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItemRightPrice">
-                                    <div class="itemContent2">
-                                        <div class="leftDomain">0264.com</div>
-                                        <div class="vertical"></div>
-                                        <div class="rightPrice">
-                                            <div class="rightPriceText">成交价格</div>
-                                            <div class="rightPriceNum">222$</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItemRightPrice">
-                                    <div class="itemContent2">
-                                        <div class="leftDomain">0264.com</div>
-                                        <div class="vertical"></div>
-                                        <div class="rightPrice">
-                                            <div class="rightPriceText">成交价格</div>
-                                            <div class="rightPriceNum">222$</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItemRightPrice">
-                                    <div class="itemContent2">
-                                        <div class="leftDomain">0264.com</div>
-                                        <div class="vertical"></div>
-                                        <div class="rightPrice">
-                                            <div class="rightPriceText">成交价格</div>
-                                            <div class="rightPriceNum">222$</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItemRightPrice">
-                                    <div class="itemContent2">
-                                        <div class="leftDomain">0264.com</div>
-                                        <div class="vertical"></div>
-                                        <div class="rightPrice">
-                                            <div class="rightPriceText">成交价格</div>
-                                            <div class="rightPriceNum">222$</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="recomItemRightPrice">
-                                    <div class="itemContent2">
-                                        <div class="leftDomain">0264.com</div>
-                                        <div class="vertical"></div>
-                                        <div class="rightPrice">
-                                            <div class="rightPriceText">成交价格</div>
-                                            <div class="rightPriceNum">222$</div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="col-yd-12 no-lr-padding">
+                                <span>域名在爱名网注册</span>
                             </div>
+                        </div>
+                        <div class="col-yd-8">
+
+                        </div>
+                        <div class="col-yd-2"></div>
+                    </div> -->
+                <!-- </div> -->
+            </div>
+            <div class="row">
+                <div class="biddingBox">
+                    <div class="title-box col-yd-12">
+                        <span class="title-text col-yd-6">域名预定/竞价, 让好"米"不再错过</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-pc-4 col-yd-12">
+                        <div class="col-yd-12 reservation-title">热门预定推荐</div>
+                        <div class="col-yd-12 reservation-content no-lr-padding">
+                            <ul>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-5 no-lr-padding">域名</div>
+                                    <div class="col-yd-5 no-lr-padding">删除时间</div> 
+                                    <div class="col-yd-2 no-lr-padding">
+                                        操作
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-5 no-lr-padding"><a href="">13688.com</a></div>
+                                    <div class="col-yd-5 no-lr-padding">2020-11-17</div> 
+                                    <div class="col-yd-2 no-lr-padding no-lr-padding">
+                                        <input type="button" value="预定">
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-5 no-lr-padding"><a href="">13688.com</a></div>
+                                    <div class="col-yd-5 no-lr-padding">2020-11-17</div> 
+                                    <div class="col-yd-2 no-lr-padding">
+                                        <input type="button" value="预定">
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-5 no-lr-padding"><a href="">13688.com</a></div>
+                                    <div class="col-yd-5 no-lr-padding">2020-11-17</div> 
+                                    <div class="col-yd-2 no-lr-padding">
+                                        <input type="button" value="预定">
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-5 no-lr-padding"><a href="">13688.com</a></div>
+                                    <div class="col-yd-5 no-lr-padding">2020-11-17</div> 
+                                    <div class="col-yd-2 no-lr-padding">
+                                        <input type="button" value="预定">
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-5 no-lr-padding"><a href="">13688.com</a></div>
+                                    <div class="col-yd-5 no-lr-padding">2020-11-17</div> 
+                                    <div class="col-yd-2 no-lr-padding">
+                                        <input type="button" value="预定">
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-5 no-lr-padding"><a href="">13688.com</a></div>
+                                    <div class="col-yd-5 no-lr-padding">2020-11-17</div> 
+                                    <div class="col-yd-2 no-lr-padding">
+                                        <input type="button" value="预定">
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-5 no-lr-padding"><a href="">13688.com</a></div>
+                                    <div class="col-yd-5 no-lr-padding">2020-11-17</div> 
+                                    <div class="col-yd-2 no-lr-padding">
+                                        <input type="button" value="预定">
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-5 no-lr-padding"><a href="">13688.com</a></div>
+                                    <div class="col-yd-5 no-lr-padding">2020-11-17</div> 
+                                    <div class="col-yd-2 no-lr-padding">
+                                        <input type="button" value="预定">
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-5 no-lr-padding"><a href="">13688.com</a></div>
+                                    <div class="col-yd-5 no-lr-padding">2020-11-17</div> 
+                                    <div class="col-yd-2 no-lr-padding">
+                                        <input type="button" value="预定">
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-5 no-lr-padding"><a href="">13688.com</a></div>
+                                    <div class="col-yd-5 no-lr-padding">2020-11-17</div> 
+                                    <div class="col-yd-2 no-lr-padding">
+                                        <input type="button" value="预定">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-yd-12 reservation-bottom">
+                            <input type="button" value="查看更多">
+                        </div>
+                    </div>
+                    <div class="col-pc-4 col-yd-12">
+                        <div class="col-yd-12 reservation-title">热门竞价推荐</div>
+                        <div class="col-yd-12 reservation-content no-lr-padding">
+                            <ul>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-3 no-lr-padding">域名</div>
+                                    <div class="col-yd-3 no-lr-padding">剩余时间</div>
+                                    <div class="col-yd-3 no-lr-padding">价格</div>
+                                    <div class="col-yd-3 no-lr-padding">
+                                        操作
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-3 no-lr-padding"><a href="">xbfy.com</a></div>
+                                    <div class="col-yd-3 no-lr-padding">6时38分</div>
+                                    <div class="col-yd-3 no-lr-padding">$110</div>
+                                    <div class="col-yd-3 no-lr-padding">
+                                        <input type="button" value="竞价">
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-3 no-lr-padding"><a href="">xbfy.com</a></div>
+                                    <div class="col-yd-3 no-lr-padding">6时38分</div>
+                                    <div class="col-yd-3 no-lr-padding">$110</div>
+                                    <div class="col-yd-3 no-lr-padding">
+                                        <input type="button" value="竞价">
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-3 no-lr-padding"><a href="">xbfy.com</a></div>
+                                    <div class="col-yd-3 no-lr-padding">6时38分</div>
+                                    <div class="col-yd-3 no-lr-padding">$110</div>
+                                    <div class="col-yd-3 no-lr-padding">
+                                        <input type="button" value="竞价">
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-3 no-lr-padding"><a href="">xbfy.com</a></div>
+                                    <div class="col-yd-3 no-lr-padding">6时38分</div>
+                                    <div class="col-yd-3 no-lr-padding">$110</div>
+                                    <div class="col-yd-3 no-lr-padding">
+                                        <input type="button" value="竞价">
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-3 no-lr-padding"><a href="">xbfy.com</a></div>
+                                    <div class="col-yd-3 no-lr-padding">6时38分</div>
+                                    <div class="col-yd-3 no-lr-padding">$110</div>
+                                    <div class="col-yd-3 no-lr-padding">
+                                        <input type="button" value="竞价">
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-3 no-lr-padding"><a href="">xbfy.com</a></div>
+                                    <div class="col-yd-3 no-lr-padding">6时38分</div>
+                                    <div class="col-yd-3 no-lr-padding">$110</div>
+                                    <div class="col-yd-3 no-lr-padding">
+                                        <input type="button" value="竞价">
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-3 no-lr-padding"><a href="">xbfy.com</a></div>
+                                    <div class="col-yd-3 no-lr-padding">6时38分</div>
+                                    <div class="col-yd-3 no-lr-padding">$110</div>
+                                    <div class="col-yd-3 no-lr-padding">
+                                        <input type="button" value="竞价">
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-3 no-lr-padding"><a href="">xbfy.com</a></div>
+                                    <div class="col-yd-3 no-lr-padding">6时38分</div>
+                                    <div class="col-yd-3 no-lr-padding">$110</div>
+                                    <div class="col-yd-3 no-lr-padding">
+                                        <input type="button" value="竞价">
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-3 no-lr-padding"><a href="">xbfy.com</a></div>
+                                    <div class="col-yd-3 no-lr-padding">6时38分</div>
+                                    <div class="col-yd-3 no-lr-padding">$110</div>
+                                    <div class="col-yd-3 no-lr-padding">
+                                        <input type="button" value="竞价">
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-3 no-lr-padding"><a href="">xbfy.com</a></div>
+                                    <div class="col-yd-3 no-lr-padding">6时38分</div>
+                                    <div class="col-yd-3 no-lr-padding">$110</div>
+                                    <div class="col-yd-3 no-lr-padding">
+                                        <input type="button" value="竞价">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-yd-12 reservation-bottom">
+                            <input type="button" value="查看更多">
+                        </div>
+                    </div>
+                    <div class="col-pc-4 col-yd-12">
+                        <div class="col-yd-12 reservation-title">即将结束的竞价</div>
+                        <div class="col-yd-12 reservation-content no-lr-padding">
+                            <ul>
+                                <li class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-3  no-lr-padding">域名</div>
+                                    <div class="col-yd-3  no-lr-padding">剩余时间</div>
+                                    <div class="col-yd-3  no-lr-padding">价格</div>
+                                    <div class="col-yd-3  no-lr-padding">
+                                        操作
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-3  no-lr-padding"><a href="">xbfy.com</a></div>
+                                    <div class="col-yd-3  no-lr-padding">6时38分</div>
+                                    <div class="col-yd-3  no-lr-padding">$110</div>
+                                    <div class="col-yd-3  no-lr-padding">
+                                        <input type="button" value="竞价">
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-3  no-lr-padding"><a href="">xbfy.com</a></div>
+                                    <div class="col-yd-3  no-lr-padding">6时38分</div>
+                                    <div class="col-yd-3  no-lr-padding">$110</div>
+                                    <div class="col-yd-3  no-lr-padding">
+                                        <input type="button" value="竞价">
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-3  no-lr-padding"><a href="">xbfy.com</a></div>
+                                    <div class="col-yd-3  no-lr-padding">6时38分</div>
+                                    <div class="col-yd-3  no-lr-padding">$110</div>
+                                    <div class="col-yd-3  no-lr-padding">
+                                        <input type="button" value="竞价">
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-3  no-lr-padding"><a href="">xbfy.com</a></div>
+                                    <div class="col-yd-3  no-lr-padding">6时38分</div>
+                                    <div class="col-yd-3  no-lr-padding">$110</div>
+                                    <div class="col-yd-3  no-lr-padding">
+                                        <input type="button" value="竞价">
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-3  no-lr-padding"><a href="">xbfy.com</a></div>
+                                    <div class="col-yd-3  no-lr-padding">6时38分</div>
+                                    <div class="col-yd-3  no-lr-padding">$110</div>
+                                    <div class="col-yd-3  no-lr-padding">
+                                        <input type="button" value="竞价">
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-3  no-lr-padding"><a href="">xbfy.com</a></div>
+                                    <div class="col-yd-3  no-lr-padding">6时38分</div>
+                                    <div class="col-yd-3  no-lr-padding">$110</div>
+                                    <div class="col-yd-3  no-lr-padding">
+                                        <input type="button" value="竞价">
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-3  no-lr-padding"><a href="">xbfy.com</a></div>
+                                    <div class="col-yd-3  no-lr-padding">6时38分</div>
+                                    <div class="col-yd-3  no-lr-padding">$110</div>
+                                    <div class="col-yd-3  no-lr-padding">
+                                        <input type="button" value="竞价">
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-3  no-lr-padding"><a href="">xbfy.com</a></div>
+                                    <div class="col-yd-3  no-lr-padding">6时38分</div>
+                                    <div class="col-yd-3  no-lr-padding">$110</div>
+                                    <div class="col-yd-3  no-lr-padding">
+                                        <input type="button" value="竞价">
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-3  no-lr-padding"><a href="">xbfy.com</a></div>
+                                    <div class="col-yd-3  no-lr-padding">6时38分</div>
+                                    <div class="col-yd-3  no-lr-padding">$110</div>
+                                    <div class="col-yd-3  no-lr-padding">
+                                        <input type="button" value="竞价">
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-3  no-lr-padding"><a href="">xbfy.com</a></div>
+                                    <div class="col-yd-3  no-lr-padding">6时38分</div>
+                                    <div class="col-yd-3  no-lr-padding">$110</div>
+                                    <div class="col-yd-3  no-lr-padding">
+                                        <input type="button" value="竞价">
+                                    </div>
+                                
+                            </ul>
+                        </div>
+                        <div class="col-yd-12 reservation-bottom">
+                            <input type="button" value="查看更多">
                         </div>
                     </div>
                 </div>
-                <div class="fixedPrice row">
-                    <div class="domainNameTitle">
-                        <div class="domainNameTitle">
-                            <div class="domainNameTitleDiv">拍卖</div>
+            </div>
+            <div class="row auction">
+                <div class="auction-box">
+                    <div class="title-box col-yd-12">
+                        <span class="title-text col-yd-6">域名交易/拍卖，让我们在此“域”见</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-pc-4 col-yd-12">
+                        <div class="col-yd-12 reservation-title">平价好名推荐</div>
+                        <div class="col-yd-12 reservation-content no-lr-padding">
+                            <ul>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-5  no-lr-padding">域名</div>
+                                    <div class="col-yd-5 no-lr-padding">域名简介</div> 
+                                    <div class="col-yd-2 no-lr-padding">
+                                        价格
+                                    </div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-5  no-lr-padding"><a href="">zhuangsou.com</a></div>
+                                    <div class="col-yd-5  no-lr-padding">装搜网【找装修就到装搜网】装饰行业 精品域名，双十一特惠。</div> 
+                                    <div class="col-yd-2 no-lr-padding no-lr-padding">
+                                        ￥6,818
+                                    </div>
+                                </li>
+                                 <li class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-5  no-lr-padding"><a href="">zhuangsou.com</a></div>
+                                    <div class="col-yd-5  no-lr-padding">装搜网【找装修就到装搜网】装饰行业 精品域名，双十一特惠。</div> 
+                                    <div class="col-yd-2 no-lr-padding no-lr-padding">
+                                        ￥6,818
+                                    </div>
+                                </li>
+                                 <li class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-5  no-lr-padding"><a href="">zhuangsou.com</a></div>
+                                    <div class="col-yd-5  no-lr-padding">装搜网【找装修就到装搜网】装饰行业 精品域名，双十一特惠。</div> 
+                                    <div class="col-yd-2 no-lr-padding no-lr-padding">
+                                        ￥6,818
+                                    </div>
+                                </li>
+                                 <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-5  no-lr-padding"><a href="">zhuangsou.com</a></div>
+                                    <div class="col-yd-5  no-lr-padding">装搜网【找装修就到装搜网】装饰行业 精品域名，双十一特惠。</div> 
+                                    <div class="col-yd-2 no-lr-padding no-lr-padding">
+                                        ￥6,818
+                                    </div>
+                                </li>
+                                 <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-5  no-lr-padding"><a href="">zhuangsou.com</a></div>
+                                    <div class="col-yd-5  no-lr-padding">装搜网【找装修就到装搜网】装饰行业 精品域名，双十一特惠。</div> 
+                                    <div class="col-yd-2 no-lr-padding no-lr-padding">
+                                        ￥6,818
+                                    </div>
+                                </li>
+                                 <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-5  no-lr-padding"><a href="">zhuangsou.com</a></div>
+                                    <div class="col-yd-5  no-lr-padding">装搜网【找装修就到装搜网】装饰行业 精品域名，双十一特惠。</div> 
+                                    <div class="col-yd-2 no-lr-padding no-lr-padding">
+                                        ￥6,818
+                                    </div>
+                                </li>
+                                 <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-5  no-lr-padding"><a href="">zhuangsou.com</a></div>
+                                    <div class="col-yd-5  no-lr-padding">装搜网【找装修就到装搜网】装饰行业 精品域名，双十一特惠。</div> 
+                                    <div class="col-yd-2 no-lr-padding no-lr-padding">
+                                        ￥6,818
+                                    </div>
+                                </li>
+                                 <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-5  no-lr-padding"><a href="">zhuangsou.com</a></div>
+                                    <div class="col-yd-5  no-lr-padding">装搜网【找装修就到装搜网】装饰行业 精品域名，双十一特惠。</div> 
+                                    <div class="col-yd-2 no-lr-padding no-lr-padding">
+                                        ￥6,818
+                                    </div>
+                                </li>
+                                 <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-5  no-lr-padding"><a href="">zhuangsou.com</a></div>
+                                    <div class="col-yd-5  no-lr-padding">装搜网【找装修就到装搜网】装饰行业 精品域名，双十一特惠。</div> 
+                                    <div class="col-yd-2 no-lr-padding no-lr-padding">
+                                        ￥6,818
+                                    </div>
+                                </li>
+                                 <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-5  no-lr-padding"><a href="">zhuangsou.com</a></div>
+                                    <div class="col-yd-5  no-lr-padding">装搜网【找装修就到装搜网】装饰行业 精品域名，双十一特惠。</div> 
+                                    <div class="col-yd-2 no-lr-padding no-lr-padding">
+                                        ￥6,818
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-yd-12 reservation-bottom">
+                            <input type="button" value="查看更多">
                         </div>
                     </div>
-                    <div class="domainNameContent col-yd-12">
-                        <div class="recommended col-pc-8 col-yd-12">
-                            <div class="recommended col-yd-12">
-                                <div class="recomTitle col-yd-12">
-                                    <div class="recomTitleText col-yd-2">正在拍卖</div>
-                                    <div class="bookToday col-yd-10">
-                                        <div class="bookTodaytext">IT'S BEING AUCTIONED</div>
-                                        <div class="more">
-                                            <a href="">更多></a>
+                    <div class="col-pc-4 col-yd-12">
+                        <div class="col-yd-12 reservation-title">精品拍卖推荐</div>
+                        <div class="col-yd-12 reservation-content no-lr-padding">
+                            <ul>
+                                <li class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-4 no-lr-padding">域名</div>
+                                    <div class="col-yd-4 no-lr-padding">剩余时间</div>
+                                    <div class="col-yd-4 no-lr-padding">价格</div>
+                                </li>
+                                <li class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-4  no-lr-padding"><a href="">wxh.com</a></div>
+                                    <div class="col-yd-4  no-lr-padding">10天</div>
+                                    <div class="col-yd-4  no-lr-padding">￥1,050</div>
+                                </li>
+                                <li class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-4  no-lr-padding"><a href="">wxh.com</a></div>
+                                    <div class="col-yd-4  no-lr-padding">10天</div>
+                                    <div class="col-yd-4  no-lr-padding">￥1,050</div>
+                                </li>
+                                <li class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-4  no-lr-padding"><a href="">wxh.com</a></div>
+                                    <div class="col-yd-4  no-lr-padding">10天</div>
+                                    <div class="col-yd-4  no-lr-padding">￥1,050</div>
+                                </li>
+                                <li class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-4  no-lr-padding"><a href="">wxh.com</a></div>
+                                    <div class="col-yd-4  no-lr-padding">10天</div>
+                                    <div class="col-yd-4  no-lr-padding">￥1,050</div>
+                                </li>
+                                <li class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-4  no-lr-padding"><a href="">wxh.com</a></div>
+                                    <div class="col-yd-4  no-lr-padding">10天</div>
+                                    <div class="col-yd-4  no-lr-padding">￥1,050</div>
+                                </li>
+                                <li class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-4  no-lr-padding"><a href="">wxh.com</a></div>
+                                    <div class="col-yd-4  no-lr-padding">10天</div>
+                                    <div class="col-yd-4  no-lr-padding">￥1,050</div>
+                                </li>
+                                <li class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-4  no-lr-padding"><a href="">wxh.com</a></div>
+                                    <div class="col-yd-4  no-lr-padding">10天</div>
+                                    <div class="col-yd-4  no-lr-padding">￥1,050</div>
+                                </li>
+                                <li class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-4  no-lr-padding"><a href="">wxh.com</a></div>
+                                    <div class="col-yd-4  no-lr-padding">10天</div>
+                                    <div class="col-yd-4  no-lr-padding">￥1,050</div>
+                                </li>
+                                <li class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-4  no-lr-padding"><a href="">wxh.com</a></div>
+                                    <div class="col-yd-4  no-lr-padding">10天</div>
+                                    <div class="col-yd-4  no-lr-padding">￥1,050</div>
+                                </li>
+                                <li class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-4  no-lr-padding"><a href="">wxh.com</a></div>
+                                    <div class="col-yd-4  no-lr-padding">10天</div>
+                                    <div class="col-yd-4  no-lr-padding">￥1,050</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-yd-12 reservation-bottom">
+                            <input type="button" value="查看更多">
+                        </div>
+                    </div>
+                    <div class="col-pc-4 col-yd-12">
+                        <div class="col-yd-12 reservation-title">即将结束的拍卖</div>
+                        <div class="col-yd-12 reservation-content no-lr-padding">
+                            <ul>
+                                <li class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-4 no-lr-padding">域名</div>
+                                    <div class="col-yd-4 no-lr-padding">剩余时间</div>
+                                    <div class="col-yd-4 no-lr-padding">价格</div>    
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-4 no-lr-padding"><a href="">5739.cn</a></div>
+                                    <div class="col-yd-4 no-lr-padding">2天6时</div>
+                                    <div class="col-yd-4 no-lr-padding">￥190</div>
+                                </li>
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-4 no-lr-padding"><a href="">5739.cn</a></div>
+                                    <div class="col-yd-4 no-lr-padding">2天6时</div>
+                                    <div class="col-yd-4 no-lr-padding">￥190</div>
+                                </li>   
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-4 no-lr-padding"><a href="">5739.cn</a></div>
+                                    <div class="col-yd-4 no-lr-padding">2天6时</div>
+                                    <div class="col-yd-4 no-lr-padding">￥190</div>
+                                </li>   
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-4 no-lr-padding"><a href="">5739.cn</a></div>
+                                    <div class="col-yd-4 no-lr-padding">2天6时</div>
+                                    <div class="col-yd-4 no-lr-padding">￥190</div>
+                                </li>   
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-4 no-lr-padding"><a href="">5739.cn</a></div>
+                                    <div class="col-yd-4 no-lr-padding">2天6时</div>
+                                    <div class="col-yd-4 no-lr-padding">￥190</div>
+                                </li>   
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-4 no-lr-padding"><a href="">5739.cn</a></div>
+                                    <div class="col-yd-4 no-lr-padding">2天6时</div>
+                                    <div class="col-yd-4 no-lr-padding">￥190</div>
+                                </li>   
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-4 no-lr-padding"><a href="">5739.cn</a></div>
+                                    <div class="col-yd-4 no-lr-padding">2天6时</div>
+                                    <div class="col-yd-4 no-lr-padding">￥190</div>
+                                </li>   
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-4 no-lr-padding"><a href="">5739.cn</a></div>
+                                    <div class="col-yd-4 no-lr-padding">2天6时</div>
+                                    <div class="col-yd-4 no-lr-padding">￥190</div>
+                                </li>   
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-4 no-lr-padding"><a href="">5739.cn</a></div>
+                                    <div class="col-yd-4 no-lr-padding">2天6时</div>
+                                    <div class="col-yd-4 no-lr-padding">￥190</div>
+                                </li>   
+                                <li class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-4 no-lr-padding"><a href="">5739.cn</a></div>
+                                    <div class="col-yd-4 no-lr-padding">2天6时</div>
+                                    <div class="col-yd-4 no-lr-padding">￥190</div>
+                                </li>   
+                            </ul>
+                        </div>
+                        <div class="col-yd-12 reservation-bottom">
+                            <input type="button" value="查看更多">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="auction-box">
+                    <div class="title-box col-yd-12">
+                        <span class="title-text col-yd-6">最新优惠活动</span>
+                    </div>
+                    <div class="swiper-container swiper2">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <div class="col-yd-12 no-lr-padding swiper-item">
+                                  <img src="./img/s1.jpg" alt="">
+                                  <div class="col-yd-12 no-lr-padding">
+                                      <span><a href="">.shop域名双11促销,首年9元</a></span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="col-yd-12 no-lr-padding swiper-item">
+                                <img src="./img/s2.jpg" alt="">
+                                <div class="col-yd-12 no-lr-padding">
+                                    <span><a href="">.shop域名双11促销,首年9元</a></span>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                              <div class="col-yd-12 no-lr-padding swiper-item">
+                                  <img src="./img/s3.jpg" alt="">
+                                  <div class="col-yd-12 no-lr-padding">
+                                      <span><a href="">.shop域名双11促销,首年9元</a></span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                              <div class="col-yd-12 no-lr-padding swiper-item">
+                                  <img src="./img/s4.jpg" alt="">
+                                  <div class="col-yd-12 no-lr-padding">
+                                      <span><a href="">.shop域名双11促销,首年9元</a></span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                              <div class="col-yd-12 no-lr-padding swiper-item">
+                                  <img src="./img/s5.jpg" alt="">
+                                  <div class="col-yd-12 no-lr-padding">
+                                      <span><a href="">.shop域名双11促销,首年9元</a></span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                              <div class="col-yd-12 no-lr-padding swiper-item">
+                                  <img src="./img/s6.jpg" alt="">
+                                  <div class="col-yd-12 no-lr-padding">
+                                      <span><a href="">.shop域名双11促销,首年9元</a></span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                              <div class="col-yd-12 no-lr-padding swiper-item">
+                                  <img src="./img/s7.jpg" alt="">
+                                  <div class="col-yd-12 no-lr-padding">
+                                      <span><a href="">.shop域名双11促销,首年9元</a></span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                              <div class="col-yd-12 no-lr-padding swiper-item">
+                                  <img src="./img/s8.jpg" alt="">
+                                  <div class="col-yd-12 no-lr-padding">
+                                      <span><a href="">.shop域名双11促销,首年9元</a></span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                              <div class="col-yd-12 no-lr-padding swiper-item">
+                                  <img src="./img/s9.jpg" alt="">
+                                  <div class="col-yd-12 no-lr-padding">
+                                      <span><a href="">.shop域名双11促销,首年9元</a></span>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="">
+                    <div class="title-box col-yd-12">
+                        <span class="title-text col-yd-6">商标宝，品牌成就梦想</span>
+                    </div>
+                    <div class="row">
+                        <div class="baby-box col-pc-4 col-yd-12">
+                            <div class="baby-top">
+                                <h2>商标注册</h2>
+                                <span>各种类型注册服务 满足用户多方需求</span>
+                            </div>
+                            <div class="baby-content no-lr-padding col-yd-12">
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <span class="bm-reg"></span>
+                                        <h2><a href="">保姆注册</a></h2>
+                                        <span class="urgent">
+                                            <p>
+                                                <span>加急</span>
+                                            </p>
+                                        </span>
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span class="baby-content-text">一对一顾问，负责注册风险分析，申报材料整理与填报等流程代办</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>499</span>
+                                            <span>元/件</span>
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <span class="bm-reg"></span>
+                                        <h2><a href="">保姆注册</a></h2>
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span class="baby-content-text">一对一顾问，负责注册风险分析，申报材料整理与填报等流程代办</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>499</span>
+                                            <span>元/件</span>
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <span class="bm-reg"></span>
+                                        <h2><a href="">保姆注册</a></h2>
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span  class="baby-content-text">一对一顾问，负责注册风险分析，申报材料整理与填报等流程代办</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>499</span>
+                                            <span>元/件</span>
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="recomContent col-yd-12">
-                                <table class="recomContentTable col-yd-12">
-                                    <tr class="tableHead">
-                                        <th>域名</th>
-                                        <th>简介</th>
-                                        <th>当前价格</th>
-                                        <th>剩余时间</th>
-                                        <th>操作</th>
-                                    </tr>
-                                    <tr  class="tableRow">
-                                        <td>0264.com</td>
-                                        <td>域名简介域名简介</td>
-                                        <td>122$</td>
-                                        <td>一天4小时22分</td>
-                                        <td>
-                                            <input type="button" value="参与拍卖" class=" tdBtn">
-                                        </td>
-                                    </tr>
-                                    <tr class="tableRow">
-                                        <td>0264.com</td>
-                                        <td>域名简介域名简介</td>
-                                        <td>122$</td>
-                                        <td>一天4小时22分</td>
-                                        <td>
-                                            <input type="button" value="参与拍卖" class="tdBtn">
-                                        </td>
-                                    </tr>
-                                    <tr class="tableRow">
-                                        <td>0264.com</td>
-                                        <td>域名简介域名简介</td>
-                                        <td>122$</td>
-                                        <td>一天4小时22分</td>
-                                        <td>
-                                            <input type="button" value="参与拍卖" class="tdBtn">
-                                        </td>
-                                    </tr>
-                                    <tr class="tableRow">
-                                        <td>0264.com</td>
-                                        <td>域名简介域名简介</td>
-                                        <td>122$</td>
-                                        <td>一天4小时22分</td>
-                                        <td>
-                                            <input type="button" value="参与拍卖" class="tdBtn">
-                                        </td>
-                                    </tr>
-                                    <tr class="tableRow">
-                                        <td>0264.com</td>
-                                        <td>域名简介域名简介</td>
-                                        <td>122$</td>
-                                        <td>一天4小时22分</td>
-                                        <td>
-                                            <input type="button" value="参与拍卖" class="tdBtn">
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
                         </div>
-                        <div class="recommended col-pc-4 col-yd-12">
-                            <div class="recommended col-yd-12">
-                                <div class="recomTitleText col-yd-2 col-pb-4">拍卖成功</div>
-                                <div class="bookToday col-yd-10 col-pb-8">
-                                    <div class="bookTodaytext">AUCTION SUCCEEDED</div>
-                                    <div class="more">
-                                        <a href="">更多></a>
+                        <div class="baby-box col-pc-4 col-yd-12">
+                            <div class="baby-top">
+                                <h2>商标注册</h2>
+                                <span>各种类型注册服务 满足用户多方需求</span>
+                            </div>
+                            <div class="baby-content no-lr-padding col-yd-12">
+                                <div class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <span class="bm-reg"></span>
+                                        <h2><a href="">保姆注册</a></h2>
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span  class="baby-content-text">一对一顾问，负责注册风险分析，申报材料整理与填报等流程代办</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>499</span>
+                                            <span>元/件</span>
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <span class="bm-reg"></span>
+                                        <h2><a href="">保姆注册</a></h2>
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span  class="baby-content-text">一对一顾问，负责注册风险分析，申报材料整理与填报等流程代办</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>499</span>
+                                            <span>元/件</span>
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <span class="bm-reg"></span>
+                                        <h2><a href="">保姆注册</a></h2>
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span  class="baby-content-text">一对一顾问，负责注册风险分析，申报材料整理与填报等流程代办</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>499</span>
+                                            <span>元/件</span>
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="recomContentRight col-yd-12">
-                                <table class="recomContentTable">
-                                    <tr class="tableHead">
-                                        <th>域名</th>
-                                        <th>成交价格</th>
-                                    </tr>
-                                    <tr class="tableRow">
-                                        <td>0264.com</td>
-                                        <td>122$</td>
-                                    </tr>
-                                    <tr class="tableRow">
-                                        <td>0264.com</td>
-                                        <td>122$</td>
-                                    </tr>
-                                    <tr class="tableRow">
-                                        <td>0264.com</td>
-                                        <td>122$</td>
-                                    </tr>
-                                    <tr class="tableRow">
-                                        <td>0264.com</td>
-                                        <td>122$</td>
-                                    </tr>
-                                    <tr class="tableRow">
-                                        <td>0264.com</td>
-                                        <td>122$</td>
-                                    </tr>
-                                    <tr class="tableRow">
-                                        <td>0264.com</td>
-                                        <td>122$</td>
-                                    </tr>
-                                </table>
+                        </div>
+                        <div class="baby-box col-pc-4 col-yd-12">
+                            <div class="baby-top">
+                                <h2>商标注册</h2>
+                                <span>各种类型注册服务 满足用户多方需求</span>
+                            </div>
+                            <div class="baby-content no-lr-padding col-yd-12">
+                                <div class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <span class="bm-reg"></span>
+                                        <h2><a href="">保姆注册</a></h2>
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span  class="baby-content-text">一对一顾问，负责注册风险分析，申报材料整理与填报等流程代办</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>499</span>
+                                            <span>元/件</span>
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <span class="bm-reg"></span>
+                                        <h2><a href="">保姆注册</a></h2>
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span  class="baby-content-text">一对一顾问，负责注册风险分析，申报材料整理与填报等流程代办</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>499</span>
+                                            <span>元/件</span>
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <span class="bm-reg"></span>
+                                        <h2><a href="">保姆注册</a></h2>
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span  class="baby-content-text">一对一顾问，负责注册风险分析，申报材料整理与填报等流程代办</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>499</span>
+                                            <span>元/件</span>
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="domainNameReserActivity row">
-                <div class="activityTop col-yd-12">
-                    <div class="activityTitle">域名活动</div>
-                    <div class="bookTodaytext actText">了解更多精彩活动</div>
-                    <div class="more">
-                        <a href="">更多></a>
-                    </div>
-                </div>
-                <div class="activityBottom col-yd-12">
-                    <div class="activityItem col-yd-12 col-pb-6 col-pc-3">
-                        <div id="itemIcon" class="col-yd-2">
-                            <img class="itemIconImg" src="./img/collection.png" alt="">
+            <div class="row">
+                <div class="auction-box">
+                    <div class="title-box col-yd-12">
+                        <div class="col-yd-6">
+                            <span class="title-text col-yd-12">企业家市场，为企业创造价值</span>
+                            <span class="col-yd-12">（由杭州乐通达网络有限公司提供产品与服务）</span>
                         </div>
-                        <div class="itemText col-yd-10">
-                            <div class="centerToolBox">
-                                <div class="centerTool">
-                                    <div class="itemTextTop col-yd-12">全名惠普 低至三折</div>
-                                    <div class="itemTextBottom col-yd-12">部分域名注册5年免2年费用</div>
+                    </div>
+                    <div class="row">
+                        <div class="baby-box col-pc-4 col-yd-12">
+                            <div class="baby-top">
+                                <h2>网站搭建服务</h2>
+                                <span>多端平台搭建 构筑企业私域</span>
+                            </div>
+                            <div class="baby-content no-lr-padding col-yd-12">
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <!-- <span class="bm-reg"></span> -->
+                                        <h2><a href="">企业、个人网站建设服务</a></h2>
+                                        <!-- <span class="urgent">
+                                            <p>
+                                                <span>加急</span>
+                                            </p>
+                                        </span> -->
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span class="baby-content-text">基于LTD营销SaaS的建站服务（不含商城）</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>598</span>
+                                            <span>元/套</span>
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <!-- <span class="bm-reg"></span> -->
+                                        <h2><a href="">企业、个人网站建设服务</a></h2>
+                                        <!-- <span class="urgent">
+                                            <p>
+                                                <span>加急</span>
+                                            </p>
+                                        </span> -->
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span  class="baby-content-text">基于LTD营销SaaS的建站服务（不含商城）</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>598</span>
+                                            <span>元/套</span>
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <!-- <span class="bm-reg"></span> -->
+                                        <h2><a href="">企业、个人网站建设服务</a></h2>
+                                        <!-- <span class="urgent">
+                                            <p>
+                                                <span>加急</span>
+                                            </p>
+                                        </span> -->
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span  class="baby-content-text">基于LTD营销SaaS的建站服务（不含商城）</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>598</span>
+                                            <span>元/套</span>
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="baby-box col-pc-4 col-yd-12">
+                            <div class="baby-top">
+                                <h2>营销SaaS服务</h2>
+                                <span>会营销 能分享 用手机管理的网站</span>
+                            </div>
+                            <div class="baby-content no-lr-padding col-yd-12">
+                                <div class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <!-- <span class="bm-reg"></span> -->
+                                        <h2><a href="">社交体验版</a></h2>
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span  class="baby-content-text">体验乐通达营销SaaS，实现在线营销获客，适用于小微企业、初创团队实现在线营销获客</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>免费体验</span>
+                                            <!-- <span>元/件</span> -->
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <!-- <span class="bm-reg"></span> -->
+                                        <h2><a href="">社交体验版</a></h2>
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span  class="baby-content-text">体验乐通达营销SaaS，实现在线营销获客，适用于小微企业、初创团队实现在线营销获客</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>免费体验</span>
+                                            <!-- <span>元/件</span> -->
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <!-- <span class="bm-reg"></span> -->
+                                        <h2><a href="">社交体验版</a></h2>
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span  class="baby-content-text">体验乐通达营销SaaS，实现在线营销获客，适用于小微企业、初创团队实现在线营销获客</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>免费体验</span>
+                                            <!-- <span>元/件</span> -->
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="baby-box col-pc-4 col-yd-12">
+                            <div class="baby-top">
+                                <h2>内容生产</h2>
+                                <span>原创作品 内容为王</span>
+                            </div>
+                            <div class="baby-content no-lr-padding col-yd-12">
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <!-- <span class="bm-reg"></span> -->
+                                        <h2><a href="">原创软文撰写标准版</a></h2>
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span class="baby-content-text">原创图文内容撰写编辑，每篇不少于800字</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>222</span>
+                                            <span>元/篇</span>
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <!-- <span class="bm-reg"></span> -->
+                                        <h2><a href="">原创软文撰写标准版</a></h2>
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span class="baby-content-text">原创图文内容撰写编辑，每篇不少于800字</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>222</span>
+                                            <span>元/篇</span>
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <!-- <span class="bm-reg"></span> -->
+                                        <h2><a href="">原创软文撰写标准版</a></h2>
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span class="baby-content-text">原创图文内容撰写编辑，每篇不少于800字</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>222</span>
+                                            <span>元/篇</span>
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="activityItem col-yd-12 col-pb-6 col-pc-3">
-                        <div id="itemIcon" class="col-yd-2">
-                            <img class="itemIconImg"  src="./img/collection.png" alt="">
-                        </div>
-                        <div class="itemText col-yd-10">
-                            <div class="centerToolBox">
-                                <div class="centerTool">
-                                <div class="itemTextTop col-yd-12">全名惠普 低至三折</div>
-                                <div class="itemTextBottom col-yd-12">部分域名注册5年免2年费用</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="auction-box">
+                    <div class="title-box col-yd-12">
+                        <span class="title-text col-yd-6">云计算，用心服务</span>
+                    </div>
+                    <div class="row">
+                        <div class="baby-box col-pc-4 col-yd-12">
+                            <div class="baby-top">
+                                <h2>网站搭建服务</h2>
+                                <span>多端平台搭建 构筑企业私域</span>
                             </div>
+                            <div class="baby-content no-lr-padding col-yd-12">
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <!-- <span class="bm-reg"></span> -->
+                                        <h2><a href="">企业、个人网站建设服务</a></h2>
+                                        <!-- <span class="urgent">
+                                            <p>
+                                                <span>加急</span>
+                                            </p>
+                                        </span> -->
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span class="baby-content-text">基于LTD营销SaaS的建站服务（不含商城）</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>598</span>
+                                            <span>元/套</span>
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <!-- <span class="bm-reg"></span> -->
+                                        <h2><a href="">企业、个人网站建设服务</a></h2>
+                                        <!-- <span class="urgent">
+                                            <p>
+                                                <span>加急</span>
+                                            </p>
+                                        </span> -->
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span  class="baby-content-text">基于LTD营销SaaS的建站服务（不含商城）</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>598</span>
+                                            <span>元/套</span>
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <!-- <span class="bm-reg"></span> -->
+                                        <h2><a href="">企业、个人网站建设服务</a></h2>
+                                        <!-- <span class="urgent">
+                                            <p>
+                                                <span>加急</span>
+                                            </p>
+                                        </span> -->
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span class="baby-content-text">基于LTD营销SaaS的建站服务（不含商城）</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>598</span>
+                                            <span>元/套</span>
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="baby-box col-pc-4 col-yd-12">
+                            <div class="baby-top">
+                                <h2>营销SaaS服务</h2>
+                                <span>会营销 能分享 用手机管理的网站</span>
+                            </div>
+                            <div class="baby-content no-lr-padding col-yd-12">
+                                <div class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <!-- <span class="bm-reg"></span> -->
+                                        <h2><a href="">社交体验版</a></h2>
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span class="baby-content-text">体验乐通达营销SaaS，实现在线营销获客，适用于小微企业、初创团队实现在线营销获客</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>免费体验</span>
+                                            <!-- <span>元/件</span> -->
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <!-- <span class="bm-reg"></span> -->
+                                        <h2><a href="">社交体验版</a></h2>
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span class="baby-content-text">体验乐通达营销SaaS，实现在线营销获客，适用于小微企业、初创团队实现在线营销获客</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>免费体验</span>
+                                            <!-- <span>元/件</span> -->
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12  no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <!-- <span class="bm-reg"></span> -->
+                                        <h2><a href="">社交体验版</a></h2>
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span class="baby-content-text">体验乐通达营销SaaS，实现在线营销获客，适用于小微企业、初创团队实现在线营销获客</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>免费体验</span>
+                                            <!-- <span>元/件</span> -->
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="baby-box col-pc-4 col-yd-12">
+                            <div class="baby-top">
+                                <h2>云服务器</h2>
+                                <span>拥有行业领先的硬件计算能力</span>
+                            </div>
+                            <div class="baby-content no-lr-padding col-yd-12">
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <!-- <span class="bm-reg"></span> -->
+                                        <h2><a href="">入门型</a></h2>
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span class="baby-content-text">1核 Intel Haswell CPU，2G内存，2M带宽，BGP智能多线机房,20G分布式集群云存储硬盘，<span>5G免费网络防御</span></span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>191</span>
+                                            <span>元/月</span>
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <!-- <span class="bm-reg"></span> -->
+                                        <h2><a href="">入门型</a></h2>
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span class="baby-content-text">1核 Intel Haswell CPU，2G内存，2M带宽，BGP智能多线机房,20G分布式集群云存储硬盘，<span>5G免费网络防御</span></span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>191</span>
+                                            <span>元/月</span>
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <!-- <span class="bm-reg"></span> -->
+                                        <h2><a href="">入门型</a></h2>
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span class="baby-content-text">1核 Intel Haswell CPU，2G内存，2M带宽，BGP智能多线机房,20G分布式集群云存储硬盘，<span>5G免费网络防御</span></span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>191</span>
+                                            <span>元/月</span>
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="activityItem col-yd-12 col-pb-6 col-pc-3">
-                        <div id="itemIcon" class="col-yd-2">
-                            <img class="itemIconImg" src="./img/collection.png" alt="">
-                        </div>
-                        <div class="itemText col-yd-10">
-                            <div class="centerToolBox">
-                                <div class="centerTool">
-                                <div class="itemTextTop col-yd-12">全名惠普 低至三折</div>
-                                <div class="itemTextBottom col-yd-12">部分域名注册5年免2年费用</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="auction-box">
+                    <div class="title-box col-yd-12">
+                        <span class="title-text col-yd-6">SSL证书，安全传输我守护</span>
+                    </div>
+                    <div class="row">
+                        <div class="baby-box col-pc-4 col-yd-12">
+                            <div class="baby-top">
+                                <h2>SSL热销产品</h2>
+                                <span>支持小程序 多种规格任您选</span>
                             </div>
+                            <div class="baby-content no-lr-padding col-yd-12">
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <span class="ymx-title"></span>
+                                        <h2><a href="">域名型 单域名 DV</a></h2>
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span class="baby-content-text">支持小程序/苹果ATS<br>适用举例：www.22.cn、22.cn</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>200</span>
+                                            <span>元/年</span>
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <span class="ymx-title"></span>
+                                        <h2><a href="">域名型 单域名 DV</a></h2>
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span class="baby-content-text">支持小程序/苹果ATS<br>适用举例：www.22.cn、22.cn</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>200</span>
+                                            <span>元/年</span>
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <span class="ymx-title"></span>
+                                        <h2><a href="">域名型 单域名 DV</a></h2>
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span class="baby-content-text">支持小程序/苹果ATS<br>适用举例：www.22.cn、22.cn</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>200</span>
+                                            <span>元/年</span>
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="baby-box col-pc-4 col-yd-12">
+                            <div class="baby-top">
+                                <h2>SSL热销产品</h2>
+                                <span>支持小程序 多种规格任您选</span>
+                            </div>
+                            <div class="baby-content no-lr-padding col-yd-12">
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <span class="ymx-title"></span>
+                                        <h2><a href="">域名型 单域名 DV</a></h2>
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span class="baby-content-text">支持小程序/苹果ATS<br>适用举例：www.22.cn、22.cn</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>200</span>
+                                            <span>元/年</span>
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <span class="ymx-title"></span>
+                                        <h2><a href="">域名型 单域名 DV</a></h2>
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span class="baby-content-text">支持小程序/苹果ATS<br>适用举例：www.22.cn、22.cn</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>200</span>
+                                            <span>元/年</span>
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <span class="ymx-title"></span>
+                                        <h2><a href="">域名型 单域名 DV</a></h2>
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span class="baby-content-text">支持小程序/苹果ATS<br>适用举例：www.22.cn、22.cn</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>200</span>
+                                            <span>元/年</span>
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="baby-box col-pc-4 col-yd-12">
+                            <div class="baby-top">
+                                <h2>SSL热销产品</h2>
+                                <span>支持小程序 多种规格任您选</span>
+                            </div>
+                            <div class="baby-content no-lr-padding col-yd-12">
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <span class="ymx-title"></span>
+                                        <h2><a href="">域名型 单域名 DV</a></h2>
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span class="baby-content-text">支持小程序/苹果ATS<br>适用举例：www.22.cn、22.cn</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>200</span>
+                                            <span>元/年</span>
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <span class="ymx-title"></span>
+                                        <h2><a href="">域名型 单域名 DV</a></h2>
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span class="baby-content-text">支持小程序/苹果ATS<br>适用举例：www.22.cn、22.cn</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>200</span>
+                                            <span>元/年</span>
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-12 no-lr-padding">
+                                        <span class="ymx-title"></span>
+                                        <h2><a href="">域名型 单域名 DV</a></h2>
+                                    </div>
+                                    <div class="col-yd-12">
+                                        <span class="baby-content-text">支持小程序/苹果ATS<br>适用举例：www.22.cn、22.cn</span>
+                                    </div>
+                                    <div class="col-yd-12 baby-content-bottom">
+                                        <div class="money">
+                                            <span>200</span>
+                                            <span>元/年</span>
+                                        </div>
+                                        <div>
+                                            <input type="button" value="立即办理">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="activityItem col-yd-12 col-pb-6 col-pc-3">
-                        <div id="itemIcon" class="col-yd-2">
-                            <img class="itemIconImg" src="./img/collection.png" alt="">
-                        </div>
-                        <div class="itemText col-yd-10">
-                            <div class="centerToolBox">
-                                <div class="centerTool">
-                                <div class="itemTextTop col-yd-12">全名惠普 低至三折</div>
-                                <div class="itemTextBottom col-yd-12">部分域名注册5年免2年费用</div>
+                </div>
+            </div>
+            <div class="row bg-img-box">
+                <div class="auction-box">
+                    <div class="title-box col-yd-12">
+                        <span class="title-text col-yd-6">资讯热点</span>
+                    </div>
+                    <div class="row animation-hot">
+                        <div class="col-pc-4 col-yd-12">
+                            <div class="col-yd-12 information-top ">
+                                <div class="col-yd-4 no-lr-padding">
+                                    <span>域名资讯</span>
+                                </div>
+                                <div class="col-yd-4 no-lr-padding">
+                                    <span><a href="">我要爆料</a></span>
+                                </div>
+                                <div class="col-yd-4 no-lr-padding">
+                                    <span><a href="">更多>></a></span>
+                                </div>
                             </div>
+                            <div class="col-yd-12 information-content">
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-2 no-lr-padding information-content-time">
+                                        <span>[10-10]</span>
+                                    </div>
+                                    <div class="col-10 no-lr-padding information-content-msg">
+                                        <p class="overflow-point"><a href="">杭州软著申请，杭州软件著作版权登记</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-2 no-lr-padding information-content-time">
+                                        <span>[10-10]</span>
+                                    </div>
+                                    <div class="col-10 no-lr-padding information-content-msg">
+                                        <p class="overflow-point"><a href="">杭州软著申请，杭州软件著作版权登记</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-2 no-lr-padding information-content-time">
+                                        <span>[10-10]</span>
+                                    </div>
+                                    <div class="col-10 no-lr-padding information-content-msg">
+                                        <p class="overflow-point"><a href="">杭州软著申请，杭州软件著作版权登记</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-2 no-lr-padding information-content-time">
+                                        <span>[10-10]</span>
+                                    </div>
+                                    <div class="col-10 no-lr-padding information-content-msg">
+                                        <p class="overflow-point"><a href="">杭州软著申请，杭州软件著作版权登记</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-2 no-lr-padding information-content-time">
+                                        <span>[10-10]</span>
+                                    </div>
+                                    <div class="col-10 no-lr-padding information-content-msg">
+                                        <p class="overflow-point"><a href="">杭州软著申请，杭州软件著作版权登记</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-2 no-lr-padding information-content-time">
+                                        <span>[10-10]</span>
+                                    </div>
+                                    <div class="col-10 no-lr-padding information-content-msg">
+                                        <p class="overflow-point"><a href="">杭州软著申请，杭州软件著作版权登记</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-pc-4 col-yd-12">
+                            <div class="col-yd-12 information-top ">
+                                <div class="col-yd-4 no-lr-padding">
+                                    <span>域名资讯</span>
+                                </div>
+                                <div class="col-yd-4 no-lr-padding"></div>
+                                <div class="col-yd-4 no-lr-padding">
+                                    <span>更多>></span>
+                                </div>
+                            </div>
+                            <div class="col-yd-12 information-content">
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-2 no-lr-padding information-content-time">
+                                        <span>[10-10]</span>
+                                    </div>
+                                    <div class="col-10 no-lr-padding information-content-msg">
+                                        <p class="overflow-point"><a href="">杭州软著申请，杭州软件著作版权登记</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-2 no-lr-padding information-content-time">
+                                        <span>[10-10]</span>
+                                    </div>
+                                    <div class="col-10 no-lr-padding information-content-msg">
+                                        <p class="overflow-point"><a href="">杭州软著申请，杭州软件著作版权登记</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-2 no-lr-padding information-content-time">
+                                        <span>[10-10]</span>
+                                    </div>
+                                    <div class="col-10 no-lr-padding information-content-msg">
+                                        <p class="overflow-point"><a href="">杭州软著申请，杭州软件著作版权登记</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-2 no-lr-padding information-content-time">
+                                        <span>[10-10]</span>
+                                    </div>
+                                    <div class="col-10 no-lr-padding information-content-msg">
+                                        <p class="overflow-point"><a href="">杭州软著申请，杭州软件著作版权登记</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-2 no-lr-padding information-content-time">
+                                        <span>[10-10]</span>
+                                    </div>
+                                    <div class="col-10 no-lr-padding information-content-msg">
+                                        <p class="overflow-point"><a href="">杭州软著申请，杭州软件著作版权登记</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-2 no-lr-padding information-content-time">
+                                        <span>[10-10]</span>
+                                    </div>
+                                    <div class="col-10 no-lr-padding information-content-msg">
+                                        <p class="overflow-point"><a href="">杭州软著申请，杭州软件著作版权登记</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-pc-4 col-yd-12">
+                            <div class="col-yd-12 information-top ">
+                                <div class="col-yd-4 no-lr-padding">
+                                    <span>域名资讯</span>
+                                </div>
+                                <div class="col-yd-4 no-lr-padding"></div>
+                                <div class="col-yd-4 no-lr-padding">
+                                    <span>更多>></span>
+                                </div>
+                            </div>
+                            <div class="col-yd-12 information-content">
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-2 no-lr-padding information-content-time">
+                                        <span>[10-10]</span>
+                                    </div>
+                                    <div class="col-10 no-lr-padding information-content-msg">
+                                        <p class="overflow-point"><a href="">杭州软著申请，杭州软件著作版权登记</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-2 no-lr-padding information-content-time">
+                                        <span>[10-10]</span>
+                                    </div>
+                                    <div class="col-10 no-lr-padding information-content-msg">
+                                        <p class="overflow-point"><a href="">杭州软著申请，杭州软件著作版权登记</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-2 no-lr-padding information-content-time">
+                                        <span>[10-10]</span>
+                                    </div>
+                                    <div class="col-10 no-lr-padding information-content-msg">
+                                        <p class="overflow-point"><a href="">杭州软著申请，杭州软件著作版权登记</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-2 no-lr-padding information-content-time">
+                                        <span>[10-10]</span>
+                                    </div>
+                                    <div class="col-10 no-lr-padding information-content-msg">
+                                        <p class="overflow-point"><a href="">杭州软著申请，杭州软件著作版权登记</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-2 no-lr-padding information-content-time">
+                                        <span>[10-10]</span>
+                                    </div>
+                                    <div class="col-10 no-lr-padding information-content-msg">
+                                        <p class="overflow-point"><a href="">杭州软著申请，杭州软件著作版权登记</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-yd-12 no-lr-padding">
+                                    <div class="col-yd-2 no-lr-padding information-content-time">
+                                        <span>[10-10]</span>
+                                    </div>
+                                    <div class="col-10 no-lr-padding information-content-msg">
+                                        <p class="overflow-point"><a href="">杭州软著申请，杭州软件著作版权登记</a></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="row sponsors">
+                <div class="col-yd-12 no-lr-padding sponsors-top">
+                    <span>他们都在使用爱名网</span>
+                    <span class="more"><a href="">更多>></a></span>
+                </div>
+                <div class="col-yd-12 sponsors-content">
+                    <div class="swiper-container swiper3">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="col-yd-12 no-lr-padding sponsors-swiper-item">
+                                    <img src="./img/kh_xh.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="col-yd-12 no-lr-padding sponsors-swiper-item">
+                                    <img src="./img/kh_xh.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="col-yd-12 no-lr-padding sponsors-swiper-item">
+                                    <img src="./img/kh_xh.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="col-yd-12 no-lr-padding sponsors-swiper-item">
+                                    <img src="./img/kh_xh.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="col-yd-12 no-lr-padding sponsors-swiper-item">
+                                    <img src="./img/kh_xh.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="col-yd-12 no-lr-padding sponsors-swiper-item">
+                                    <img src="./img/kh_xh.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="col-yd-12 no-lr-padding sponsors-swiper-item">
+                                    <img src="./img/kh_xh.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="col-yd-12 no-lr-padding sponsors-swiper-item">
+                                    <img src="./img/kh_xh.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="col-yd-12 no-lr-padding sponsors-swiper-item">
+                                    <img src="./img/kh_xh.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="col-yd-12 no-lr-padding sponsors-swiper-item">
+                                    <img src="./img/kh_xh.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="col-yd-12 no-lr-padding sponsors-swiper-item">
+                                    <img src="./img/kh_xh.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="col-yd-12 no-lr-padding sponsors-swiper-item">
+                                    <img src="./img/kh_xh.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row introduce">
+                <div class="">
+                    <div class="img-box">
+                        <div class="img-box2">
+                            <img src="./img/icon_promise_1.png" alt="">
+                            <img src="./img/icon_promise_1_hover.png" alt="">
+                        </div>
+                    </div>
+                    <div class="introduce-text">
+                        <h2>超过1000万个域名在这里注册</h2>
+                        <span>五星级注册商资质、保护个人隐私</span>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="img-box">
+                        <div class="img-box2">
+                            <img src="./img/icon_promise_1.png" alt="">
+                            <img src="./img/icon_promise_1_hover.png" alt="">
+                        </div>
+                    </div>
+                    <div class="introduce-text">
+                        <h2>超过1000万个域名在这里注册</h2>
+                        <span>五星级注册商资质、保护个人隐私</span> 
+                    </div>
+                </div>
+                <div class="">
+                    <div class="img-box">
+                        <div class="img-box2">
+                            <img src="./img/icon_promise_1.png" alt="">
+                            <img src="./img/icon_promise_1_hover.png" alt="">
+                        </div>
+                    </div>
+                    <div class="introduce-text">
+                        <h2>超过1000万个域名在这里注册</h2>
+                        <span>五星级注册商资质、保护个人隐私</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row about-us">
+                <div class="col-yd-1"></div>
+                <div class="col-yd-2">
+                    <div class="col-yd-12  about-us-title">
+                        <div class="about-us-title-icon col-yd-4">
+                            <span class="icon icon-about"></span>
+                        </div>
+                        <div class="about-us-title-text col-yd-8">
+                            <a href="">关于我们</a>
+                        </div>
+                    </div>
+                    <div class="col-yd-12"><a href="">22创服</a></div>
+                    <div class="col-yd-12"><a href="">关于爱名</a></div>
+                    <div class="col-yd-12"><a href="">关于爱名</a></div>
+                    <div class="col-yd-12"><a href="">关于爱名</a></div>
+                    <div class="col-yd-12"><a href="">关于爱名</a></div>
+                    <div class="col-yd-12"><a href="">关于爱名</a></div>
+                </div>
+                <div class="col-yd-2">
+                    <div class="col-yd-12 about-us-title">
+                        <div class="about-us-title-icon col-yd-4">
+                            <span class="icon icon-about"></span>
+                        </div>
+                        <div class="about-us-title-text col-yd-8">
+                            <a href="">关于我们</a>
+                        </div>
+                    </div>
+                    <div class="col-yd-12"><a href="">22创服</a></div>
+                    <div class="col-yd-12"><a href="">关于爱名</a></div>
+                    <div class="col-yd-12"><a href="">关于爱名</a></div>
+                    <div class="col-yd-12"><a href="">关于爱名</a></div>
+                    <div class="col-yd-12"><a href="">关于爱名</a></div>
+                    <div class="col-yd-12"><a href="">关于爱名</a></div>
+                </div>
+                <div class="col-yd-2">
+                    <div class="col-yd-12 about-us-title">
+                        <div class="about-us-title-icon col-yd-4">
+                            <span class="icon icon-about"></span>
+                        </div>
+                        <div class="about-us-title-text col-yd-8">
+                            <a href="">关于我们</a>
+                        </div>
+                    </div>
+                    <div class="col-yd-12"><a href="">22创服</a></div>
+                    <div class="col-yd-12"><a href="">关于爱名</a></div>
+                    <div class="col-yd-12"><a href="">关于爱名</a></div>
+                    <div class="col-yd-12"><a href="">关于爱名</a></div>
+                    <div class="col-yd-12"><a href="">关于爱名</a></div>
+                    <div class="col-yd-12"><a href="">关于爱名</a></div>
+                </div>
+                <div class="col-yd-2">
+                    <div class="col-yd-12 about-us-title">
+                        <div class="about-us-title-icon col-yd-4">
+                            <span class="icon icon-about"></span>
+                        </div>
+                        <div class="about-us-title-text col-yd-8">
+                            <a href="">关于我们</a>
+                        </div>
+                    </div>
+                    <div class="col-yd-12"><a href="">22创服</a></div>
+                    <div class="col-yd-12"><a href="">关于爱名</a></div>
+                    <div class="col-yd-12"><a href="">关于爱名</a></div>
+                    <div class="col-yd-12"><a href="">关于爱名</a></div>
+                    <div class="col-yd-12"><a href="">关于爱名</a></div>
+                    <div class="col-yd-12"><a href="">关于爱名</a></div>
+                </div>
+                <div class="col-yd-2">
+                    <div class="col-yd-12 about-us-title">
+                        <div class="about-us-title-icon col-yd-4">
+                            <span class="icon icon-about"></span>
+                        </div>
+                        <div class="about-us-title-text col-yd-8">
+                            <a href="">关于我们</a>
+                        </div>
+                    </div>
+                    <div class="col-yd-12"><a href="">22创服</a></div>
+                    <div class="col-yd-12"><a href="">关于爱名</a></div>
+                    <div class="col-yd-12"><a href="">关于爱名</a></div>
+                    <div class="col-yd-12"><a href="">关于爱名</a></div>
+                    <div class="col-yd-12"><a href="">关于爱名</a></div>
+                    <div class="col-yd-12"><a href="">关于爱名</a></div>
+                </div>
+                <div class="col-yd-1"></div>
+            </div>  
+        </div>
+
+        <div class="page-footer row">
+            <div class="col-yd-12">
+                <div class="col-yd-12">
+                    <span>Copyright  ©  2008-2020  浙江贰贰网络有限公司  (22net, Inc.) 版权所有</span>
+                </div>
+                <div class="col-yd-12">
+                    <span>地址：浙江省杭州市西湖区紫霞街176号杭州互联网创新创业园2号楼11楼(310030) 客服电话：400-660-2522 座机1：0571-87756820 座机2：0571-88276008 传真：0571-88276022</span>
+                </div>
+                <div class="col-yd-12">《中华人民共和国增值电信业务经营许可证》  ISP证编号：浙B2-20100455  <img src="./img/ghs.png" alt=""> <a href="">浙公网安备 33010002000118号</a>营业执照</div>
+                <div class="col-yd-12">
+                    国家域名注册服务投诉中心投诉受理电话:010-58813000  邮件supervise@cnnic.cn  传真：010-58812666
+                </div>
+            </div>
+            <div class="col-yd-12">
+                <img src="./img/footerimg.jpg" ismap="ismap" usemap="#map" alt="">
+                <map name="map">
+                    <area coords="0,0,132,52" href="" alt="">
+                    <area coords="147,0,279,52" href="" alt="">
+                    <area coords="294,0,426,52" href="" alt="">
+                    <area coords="441,0,535,52" href="" alt="">
+                    <area coords="547,0,638,52" href="" alt="">
+                    <area coords="653,0,744,52" href="" alt="">
+                    <area coords="759,0,891,52" href="" alt="">
+                </map>
+            </div>
+            <div class="col-yd-12">
+                <div class="col-yd-2">
+                    <span>我们为用户提供:</span>
+                </div>
+                <div class="col-yd-10">
+                    <a href="">域名注册</a>
+                    <a href="">域名转入</a>
+                    <a href="">域名预定</a>
+                    <a href="">域名竞价</a>
+                    <a href="">域名拍卖</a>
+                    <a href="">域名交易</a>
+                    <a href="">域名中介</a>
+                    <a href="">域名代购</a>
+                    <a href="">米表</a>
+                    <a href="">域名查询</a>
+                    <a href="">域名交易论坛</a>
+                    <a href="">云主机</a>
+                    <a href="">云虚拟机</a>
+                    <a href="">云服务器</a>
+                    <a href="">链接交换</a>
+                    <a href="">SSL证书</a>
+                    <a href="">22商标宝</a>
+                    <a href="">商标注册</a>
+                    <a href="">商标交易</a>
+                    <a href="">商标查询</a>
+                </div>
+            </div>
+            <div class="col-yd-12">
+                <div class="col-yd-2">
+                    <span>友情链接:</span>
+                </div>
+                <div class="col-yd-10">
+                    <a href="">杭州域名注册</a>
+                    <a href="">杭州商标注册</a>
+                    <a href="">杭州云服务器</a>
+                    <a href="">杭州虚拟主机</a>
+                    <a href="">杭州SSL证书</a>
+                    <a href="">宁波域名注册</a>
+                    <a href="">宁波商标注册</a>
+                    <a href="">宁波云服务器</a>
+                    <a href="">宁波虚拟主机</a>
+                    <a href="">宁波SSL证书</a>
+                    <a href="">更多</a>
                 </div>
             </div>
         </div>
 
-        <div class="pageBottom row">
+        <!-- <div class="pageBottom row">
             <div class="bottomBar col-yd-12">
                 <div class="col-bpc-1"></div>
                 <div class="bottomBarItem col-yd-12 col-pb-6 col-pc-4 col-bpc-2">
@@ -1039,11 +2373,8 @@
             <footer class="footer col-yd-12">
                 <div class="footerText">2014-2019中宝真(北京)科技有限公司ALLRights Reserved. 电信业务经营许可证: 京ICP证160114号 京ICP备15017352号</div>
             </footer>
-        </div>
-    </div>
-
-        
-
+        </div> -->
+    <!-- </div>
         <div class="rightToolBar">
             <div class="toolLeft">
                 <div class="QRCode">
@@ -1068,6 +2399,6 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </body>
 </html>
