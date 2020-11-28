@@ -13,43 +13,80 @@
        -moz-box-sizing: border-box;
             box-sizing: border-box;
 }
-body {
+/* 浮动修复(可使子元素撑起宽高,清除浮动) */
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+/* body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
-}
+} */
 .wrapper {
   width: 100%;
+}
+.wrapper:before,
+.wrapper:after {
+  content: '';
+  display: table;
+}
+.wrapper:after {
+  clear: both;
 }
 .container {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  /* padding-left: 15px;
+  padding-right: 15px; */
 }
 
 /* Layout */
 /* 移动端优先适配 */
 /* @media (min-width: 768px) {
-    .module {
+    .container {
         width: 750px;
     }
-}
-@media (min-width: 992px) {
-    .module {
+} */
+/* @media (min-width: 992px) {
+    .container {
         width: 970px;
     }
 } */
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
     .container {
         width: 1170px;
     }
+} */
+/* @media (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+} */
+.container {
+  /* width: 990px; */
+}
+@media (min-width: 768px) {
+  .container {
+      width: 990px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+      width: 1200px;
+  }
 }
 
 .row {
     /* 中和了wrapper的两个内边距，使得row与wrapper一样宽，移动端两边不留空隙 */
-    margin-right: -15px;
-    margin-left: -15px;
+    /* margin-right: -15px;
+    margin-left: -15px; */
 }
 /* 使之子元素为浮动元素也可以撑起宽高 */
 /* （类似 <table>）此元素会作为块级表格来显示，表格前后带有换行符。 */
@@ -251,4 +288,18 @@ body {
 }
 .top-bar {
   min-height: 20px;
+}
+
+/* 个别样式 */
+ul, ol {
+  list-style: none;
+}
+.display-block {
+  display: block!important;
+}
+.display-none {
+  display: none!important;
+}
+.display-inline-block {
+  display: inline-block!important
 }

@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>拍爱拍</title>
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../top-nav-content.css">
+    <link rel="stylesheet" href="../../icon.css">
+    <link rel="stylesheet" href="../../menu.css">
+    <link rel="stylesheet" href="../../wei-layout.css">
+    <link rel="stylesheet" href="../../swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../../node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="./font-awesome.min.css">
+    <link rel="stylesheet" href="./onlineTopUp.css">
+    <link rel="stylesheet" href="../dnRegister/dnRegister.css">
+</head>
+<body>
+    <!-- top-bar (logo + search-box + hotLine) -->
+    <div class=" menu1">
+        <div class="logo">
+            <a href="/" target="_parent">
+                <img src="../../img/logo.png" class="hidden-xs" />
+                <img src="../../img/small_logo.png" class="hidden-lg hidden-sm hidden-md" />
+            </a>
+        </div>
+        <div class="hot-iphone">
+            <ul>
+                <li>
+                    <a href="" target="_blank">
+                        <img src="../../img/phone_icon.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <!-- left -->
+    <aside class="main-sidebar manage-sidebar col-pc-2 no-lr-padding">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar" style="height: auto;">
+            <!-- sidebar menu: : style can be found in sidebar.less -->
+            <ul class="sidebar-menu">
+                <li class="treeview-home">
+                    <a href="https://i.22.cn/" target="_parent"><span class="sidebar-menu-icon"><i class="fa fa-home"></i></span><span class="text">会员首页</span></a>
+                </li>
+                <li class="treeview" data-f="domain">
+                    <a href="javascript:void(0)">
+                        <span class="sidebar-menu-icon"><i class="fa fa-globe"></i></span> <span class="text">域名管理</span> <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu treeview-menu-list display-none animate__animated animate__fadeIn">
+                        <li><a href="https://www.22.cn/ym" target="_blank"><i class="fa fa-caret-right"></i>注册域名</a></li>
+                        <li data-s="my"><a href="/Domain/My/"><i class="fa fa-caret-right"></i>我的域名</a></li>
+                        <li data-s="template"><a href="/Domain/Template"><i class="fa fa-caret-right"></i>模板管理</a></li>
+                        <li data-s="transferin"><a href="/Domain/TransferIn"><i class="fa fa-caret-right"></i>域名转入</a></li>
+                        <li data-s="push"><a href="/Domain/Push"><i class="fa fa-caret-right"></i>PUSH域名</a></li>
+                        <li data-s="transferout"><a href="/Domain/TransferOut"><i class="fa fa-caret-right"></i>域名转出</a></li>
+                        <li data-s="batch"><a href="/Domain/BulkOperation"><i class="fa fa-caret-right"></i>批量操作</a></li>
+                        <li data-s="group"><a href="/Domain/Group"><i class="fa fa-caret-right"></i>分组管理</a></li>
+                        <li data-s="task"><a href="/Domain/Task"><i class="fa fa-caret-right"></i>任务列表</a></li>
+                        <li data-s="dairenew"><a href="/Domain/Plus/Renew"><i class="fa fa-caret-right"></i>域名代续费</a></li>
+                        <li data-s="newdelete"><a href="/Domain/Delete"><i class="fa fa-caret-right"></i>新注册删除</a></li>
+                        <li data-s="nameserver"><a href="/Domain/NameServer"><i class="fa fa-caret-right"></i>DNS服务器</a></li>
+                        <li data-s="log"><a href="/Domain/Log/"><i class="fa fa-caret-right"></i>域名日志</a></li>
+                        <li data-s="price"><a target="_blank" href="https://www.22.cn/RegPrice.html"><i class="fa fa-caret-right"></i>域名价格</a></li>
+                        <li data-s="cloudhostrecord"><a href="/Domain/DnsService/"><i class="fa fa-caret-right"></i>云解析列表</a></li>
+                    </ul>
+                </li>
+                <li class="treeview" data-f="bid">
+                    <a href="javascript:void(0)">
+                        <span class="sidebar-menu-icon"><i class="fa fa-legal"></i></span>
+                        <span class="text">预订竞价</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu treeview-menu-list  display-none  animate__animated animate__fadeIn">
+                        <li><a href="https://www.22.cn/yuding/guonei/" target="_blank"><i class="fa fa-caret-right"></i> 国内过期域名</a></li>
+                        <li><a href="https://www.22.cn/yuding/guoji/" target="_blank"><i class="fa fa-caret-right"></i> 国际过期域名</a></li>
+                        <li data-s="batch"><a href="/Bid/BackOrder/"><i class="fa fa-caret-right"></i> 长期/批量预订域名</a></li>
+                        <li data-s="backorder"><a href="/Bid/My/BackOrder/"><i class="fa fa-caret-right"></i> 我预订的域名</a></li>
+                        <li data-s="backorderlong"><a href="/Bid/My/BackOrder/?islong=1"><i class="fa fa-caret-right"></i> 长期预订的域名</a></li>
+                        <li data-s="focused"><a href="/Bid/My/Focused/"><i class="fa fa-caret-right"></i> 我关注的竞价</a></li>
+                        <li><a href="https://www.22.cn/jingjia/" target="_blank"><i class="fa fa-caret-right"></i> 所有竞价中的域名</a></li>
+                        <li data-s="my"><a href="/Bid/My/"><i class="fa fa-caret-right"></i> 我参与的竞价</a></li>
+                        <li data-s="history"><a href="/Bid/My/History/"><i class="fa fa-caret-right"></i> 我参与的历史竞价</a></li>
+                        <li data-s="end"><a href="/Bid/My/End/"><i class="fa fa-caret-right"></i> 竞价结束的域名</a></li>
+                        <li data-s="biaoqian"><a href="/Bid/Biaoqian/"><i class="fa fa-caret-right"></i> 竞价标签</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="javascript:void(0)" id="naemDeal">
+                        <span class="sidebar-menu-icon"><i class="fa fa-suitcase"></i></span><span class="text">域名买卖</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu jiaoyi-treeview-menu display-none  animate__animated animate__fadeIn">
+                        <li>
+                            <a href="javascript:void(0)"><i class="fa fa-caret-right"></i> <span>我是卖家</span><i class="fa fa-angle-left pull-right"></i></a>
+                            <ul class="treeview-menu treeview-menu-list display-none  animate__animated animate__fadeIn">
+                                <li><a href="https://am.22.cn/member/seller/sell.aspx"><i class="fa fa-caret-right"></i> 我要卖域名</a></li>
+                                <li><a href="https://am.22.cn/member/seller/mydomains.aspx"><i class="fa fa-caret-right"></i> 正在出售的域名</a></li>
+                                <li><a href="https://am.22.cn/member/seller/myoffers.aspx"><i class="fa fa-caret-right"></i> 我收到的报价</a></li>
+                                <li><a href="https://am.22.cn/member/escrow/add.aspx?type=2"><i class="fa fa-caret-right"></i> 发起中介出售</a></li>
+                                <li><a href="https://am.22.cn/member/escrow/list.aspx?salebuy=2"><i class="fa fa-caret-right"></i> 我中介出售的域名</a></li>
+                                <li><a href="https://am.22.cn/member/seller/mysellpages.aspx"><i class="fa fa-caret-right"></i> 我的出售页</a></li>
+                                <li><a href="https://am.22.cn/member/seller/mydomainshop.aspx"><i class="fa fa-caret-right"></i> 我的米店</a></li>
+                                <li>
+                                    <a href="https://am.22.cn/member/seller/domaintop.aspx"><i class="fa fa-caret-right"></i> 高端域名</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="fa fa-caret-right"></i>
+                                <span>我是买家</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu treeview-menu-list display-none  animate__animated animate__fadeIn">
+                                <li><a href="https://am.22.cn/member/buyer/myoffers.aspx"><i class="fa fa-caret-right"></i> 我报价的域名</a></li>
+                                <li><a href="https://am.22.cn/member/buyer/biddings.aspx"><i class="fa fa-caret-right"></i> 我参与的拍卖</a></li>
+                                <li><a href="https://am.22.cn/member/buyer/watchlist.aspx"><i class="fa fa-caret-right"></i> 我关注的域名</a></li>
+                                <li><a href="https://am.22.cn/member/buyer/adddelegate.aspx"><i class="fa fa-caret-right"></i> 申请委托购买域名</a></li>
+                                <li><a href="https://am.22.cn/member/buyer/delegates.aspx"><i class="fa fa-caret-right"></i> 我委托购买的域名</a></li>
+                                <li><a href="https://am.22.cn/member/escrow/add.aspx?type=1"><i class="fa fa-caret-right"></i> 发起中介购买</a></li>
+                                <li><a href="https://am.22.cn/member/escrow/list.aspx?type=1"><i class="fa fa-caret-right"></i> 我中介购买的域名</a></li>
+                                <li><a href="https://am.22.cn/AutoBuy/mylist.aspx"><i class="fa fa-caret-right"></i> 委托买入列表</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="fa fa-caret-right"></i>
+                                <span>交易管理</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu treeview-menu-list  display-none  animate__animated animate__fadeIn">
+                                <li><a href="https://am.22.cn/member/deal/tradingdomains.aspx"><i class="fa fa-caret-right"></i> 正在交割的域名</a></li>
+                                <li><a href="https://am.22.cn/member/deal/tradingdomains.aspx?act=endlist"><i class="fa fa-caret-right"></i> 交易结束的域名</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="treeview" data-f="ssl">
+                    <a href="javascript:void(0)">
+                        <span class="sidebar-menu-icon"><i class="fa fa-lock"></i></span><span class="text">SSL证书</span>
+                        <small class="label bg-green">Https服务</small>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu treeview-menu-list display-none  animate__animated animate__fadeIn">
+                        <li><a href="https://ssl.22.cn/myssl" target="_blank"><i class="fa fa-caret-right"></i> 我的证书</a></li>
+                        <li><a href="https://ssl.22.cn/Servers" target="_blank"><i class="fa fa-caret-right"></i> 增值服务 </a></li>
+                    </ul>
+                </li>
+                <li class="treeview" data-f="cloud">
+                    <a href="javascript:void(0)">
+                        <span class="sidebar-menu-icon"><i class="fa fa-tasks"></i></span><span class="text">22云管理</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu treeview-menu-list display-none  animate__animated animate__fadeIn">
+                        <li data-s="host"><a href="/Cloud/Host"><i class="fa fa-caret-right"></i> 我的云虚机</a></li>
+                        <!--<li><a href="http://host2.22.cn/" target="_blank"><i class="fa fa-caret-right"></i> 国内云虚机面板</a></li>-->
+                        <li data-s="server"><a href="/Cloud/Server/"><i class="fa fa-caret-right"></i> 我的云服务器</a></li>
+                        <!--<li data-s="push"><a href="/Cloud/Host/Push/List/"><i class="fa fa-caret-right"></i> PUSH云虚拟主机</a></li>-->
+                        <!--<li data-s="trade"><a href="/Cloud/Host/Trade/List/"><i class="fa fa-caret-right"></i> 云虚拟主机交易</a></li>-->
+                    </ul>
+                </li>
+                <li class="treeview" data-f="beian">
+                    <a href="javascript:void(0)">
+                        <span class="sidebar-menu-icon"><i class="fa fa-clipboard"></i></span><span class="text">网站备案</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu treeview-menu-list display-none  animate__animated animate__fadeIn">
+                        <li data-s="icp-start"><a href="/icp/"><i class="fa fa-caret-right"></i> 开始备案</a></li>
+                        <li data-s="icp-progress"><a href="/icp/progress"><i class="fa fa-caret-right"></i> 备案进度</a></li>
+                        <li data-s="icp-record"><a href="/icp/record"><i class="fa fa-caret-right"></i> 已备案列表</a></li>                    
+                        <li data-s="icp-whitelist"><a href="/icp/whitelist/list"><i class="fa fa-caret-right"></i> 白名单列表</a></li>
+                        <li data-s="icp-screen"><a href="/icp/screen/list"><i class="fa fa-caret-right"></i> 备案幕布</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="javascript:void(0)">
+                        <span class="sidebar-menu-icon"><i class="fa fa-registered"></i></span><span class="text">商标知产</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu  treeview-menu-list display-none  animate__animated animate__fadeIn">
+                        <li><a href="https://t.22.cn/form.html display-none" target="_blank"><i class="fa fa-caret-right"></i> 我要注册商标</a></li>
+                        <li><a href="https://t.22.cn/user/my/" target="_blank"><i class="fa fa-caret-right"></i> 我的商标列表</a></li>
+                        <li><a href="https://t.22.cn/user/Agent" target="_blank"><i class="fa fa-caret-right"></i> 知产服务列表</a></li>
+                        <li><a href="https://t.22.cn/user/applyer" target="_blank"><i class="fa fa-caret-right"></i> 申请人模板</a></li>
+                        <li><a href="https://t.22.cn/user/Fapiao" target="_blank"><i class="fa fa-caret-right"></i> 商标发票列表</a></li>
+                        <li><a href="https://t.22.cn/user/code" target="_blank"><i class="fa fa-caret-right"></i> 商标优惠券</a></li>
+                    </ul>
+                </li>
+    
+                <li class="treeview" data-f="guanwang">
+                    <a href="javascript:void(0)">
+                        <span class="sidebar-menu-icon"><i class="fa fa-laptop"></i></span><span class="text">网站建设</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu  treeview-menu-list display-none  animate__animated animate__fadeIn">
+                        <li data-s="mall_order"><a href="/mall/order"><i class="fa fa-caret-right"></i>企业市场订单</a></li>
+                        <li data-s="index"><a href="/url/ltd" target="_blank"><i class="fa fa-caret-right"></i>建站服务</a></li>
+                        <li data-s="market"><a href="https://gw.22.cn/yxfw" target="_blank"><i class="fa fa-caret-right"></i>营销服务</a></li>
+                    </ul>
+                </li>
+                <li class="treeview" data-f="agent">
+                    <a href="javascript:void(0)">
+                        <span class="sidebar-menu-icon"><i class="fa fa-user-plus"></i></span><span class="text">开放合作</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu  treeview-menu-list display-none  animate__animated animate__fadeIn">
+                        <li data-s="promotion"><a href="/Agent/Promotion/"><i class="fa fa-caret-right"></i> 下线推广</a></li>
+                        <li data-s="api"><a href="/Agent/Api/"><i class="fa fa-caret-right"></i> 分销API </a></li>
+                    </ul>
+                </li>
+                <li class="treeview active" data-f="financial">
+                    <a href="javascript:void(0)">
+                        <span class="sidebar-menu-icon"><i class="fa fa-money"></i></span><span class="text">财务管理</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu  treeview-menu-list display-none  animate__animated animate__fadeIn">
+                        <li data-s="online" class="chose"><a href="/Financial/Online/"><i class="fa fa-caret-right"></i> 在线充值</a></li>
+                        <li data-s="history"><a href="/Financial/History/"><i class="fa fa-caret-right"></i> 财务记录</a></li>
+                        <li data-s="withdraw"><a href="/Financial/Withdraw/"><i class="fa fa-caret-right"></i> 我要提现</a></li>
+                        <li data-s="invoice"><a href="/Financial/Invoice/Apply/"><i class="fa fa-caret-right"></i> 申请发票</a></li>
+                        <li data-s="counpons"><a href="/Financial/Counpons/"><i class="fa fa-caret-right"></i> 我的代金券</a></li>
+                    </ul>
+                </li>
+                <li class="treeview" data-f="account">
+                    <a href="javascript:void(0)">
+                        <span class="sidebar-menu-icon"><i class="fa fa-book"></i></span><span class="text">账户管理</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu treeview-menu-list display-none  animate__animated animate__fadeIn">
+                        <li data-s="security"><a href="/Account/Security"><i class="fa fa-caret-right"></i> 安全中心</a></li>
+                        <li data-s="setting"><a href="/Account/Setting"><i class="fa fa-caret-right"></i> 设置中心</a></li>
+                        <li data-s="info"><a href="/Account/Info/"><i class="fa fa-caret-right"></i> 账户资料</a></li>
+                        <li data-s="password"><a href="/Account/Info/Password"><i class="fa fa-caret-right"></i> 修改密码</a></li>
+                        <li data-s="certificate"><a href="/Account/Certificate"><i class="fa fa-caret-right"></i> 证件管理</a></li>
+                        <li data-s="message"><a href="/Account/Message/"><i class="fa fa-caret-right"></i> 站内短信</a></li>
+                    </ul>
+                </li>
+                <li class="treeview" data-f="question">
+                    <a href="javascript:void(0)">
+                        <span class="sidebar-menu-icon"><i class="fa fa-pencil-square-o"></i></span><span class="text">有问必答</span><img src="" alt="" class="label-img">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu treeview-menu-list display-none  animate__animated animate__fadeIn">
+                        <li data-s="ask"><a href="/Question/Ask/"><i class="fa fa-caret-right"></i> 我要提问</a></li>
+                        <li data-s="list"><a href="/Question/"><i class="fa fa-caret-right"></i> 问题列表</a></li>
+                        <li data-s="club"><a href="http://club.22.cn/thread-180770-1-1.html" target="_blank"><i class="fa fa-caret-right"></i> 论坛社区</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+    </aside>    
+    <!-- right -->
+    <div class="content-wrapper col-pc-10 no-lr-padding" style="min-height: 825px;">
+        <section class="content-header">
+            <h1>
+                在线充值
+                <small>Topup Online</small>
+            </h1>
+            <div class="breadcrumb manage-breadcrumb">
+        <a href="/"><i class="icon iconfont icon-home"></i>会员首页</a>
+        <span class="arrow">&gt;</span>
+        <a>财务管理</a>
+                <span class="arrow">&gt;</span>
+                    <span class="text">在线充值</span>
+    </div>
+    
+        </section>
+        <!-- Main content -->
+        <section class="content">
+            <div class="nav-tabs-custom manage-nav-tabs">
+                <ul class="nav nav-tabs clearfix">
+                    <li class="active"><a>在线充值</a></li>
+                    <li><a href="/Financial/Online/List/">充值订单</a></li>
+                    <li><a href="https://mall.22.cn/details/17" target="_blank">购买金币</a></li>
+                </ul>
+                <div class="box box-default">
+                        <div id="first-step" class="manage-box-body form-horizontal">
+                                <div class="form-group clearfix">
+                                    <label class="col-pc-2 col-md-2 control-label">
+                                        银行汇款：
+                                    </label>
+                                    <div class="col-pc-2 col-md-2">
+                                        <p>招商银行</p>
+                                        <span class="cmb out-right-bank"></span>
+                                        <p class="hui9 f12">(汇款人承担手续费)</p>
+                                        <p class="hui9 f12">更多汇款银行 <a href="https://www.22.cn/fukuan.html" target="_blank" class="manage-text-blue">点此查看</a></p>
+                                    </div>
+                                    <div class="col-pc-8 col-md-8 bp-form-text">
+                                        <div class="chongzhi-list">
+                                            <h3>用户预充值专用账户(域名及服务费)</h3>
+                                            <p>账户：杭州爱名网络有限公司</p>
+                                            <p>银行：招商银行杭州城西支行</p>
+                                            <p>帐号：5719 0659 2510 402</p>
+                                        </div>
+                                        <div class="chongzhi-list chongzhi-list-border" style="display:none;">
+                                            <h3>商标相关业务汇款专户</h3>
+                                            <p>账户：杭州爱名网络有限公司</p>
+                                            <p>银行：招商银行城西支行</p>
+                                            <p>账号：5719 0659 2510 402</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group clearfix">
+                                    <label class="col-pc-2 col-md-2 control-label">
+                                        注：
+                                    </label>
+                                    <div class="col-pc-10 col-md-9">
+                                        <p class="hui9 f12">
+                                            1、如有特殊原因汇款人姓名和充值的账户姓名(或公司名)不一致的，需要您在银行转账汇款的附言一栏写上：自愿为姓名ID****充值。<br>
+                                            举例：<br>
+                                            账户姓名：张三<br>
+                                            爱名网ID：123456<br>
+                                            则汇款附言填写：自愿为张三ID123456充值
+                                        </p>
+                                        <p class="hui9 f12">2、汇款后请传真汇款底单发送至企业QQ：<a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&amp;key=XzkzODA0NDA0N180NzU4OTZfNDAwNjYwMjUyMl8" class="blue" target="_blank">4006602522</a>，并注明您注册的ID号和真实姓名及联系方式；</p>
+                                        <p class="hui9 f12">3、“杭州爱名网络有限公司”为“浙江贰贰网络有限公司”子公司，请放心汇款。</p>
+                                        <p class="hui9 f12">4、“杭州爱名网络有限公司”，“浙江贰贰网络有限公司”不接受商标汇款。</p>
+                                    </div>
+                                </div>
+                            <div class="form-group clearfix">
+                                <label class="col-pc-2 col-md-2 control-label">充值金额：</label>
+                                <div class="col-pc-2 col-md-4">
+                                    <input type="text" id="o-money" value="25018" class="form-control" placeholder="充值金额">
+                                </div>
+                                <div class="col-pc-5 col-md-4">
+                                    <div class="iCheckbox">
+                                        <label class="hui9">(提醒：最低充值10元，"信"表示同时支持信用卡支付，具体额度 <a href="https://www.22.cn/ipay/CreditPay/alipay.htm" class="manage-text-blue" target="_blank">点此查看</a>)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group clearfix">
+                                <label class="col-pc-2 control-label">
+                                    <!--<div class="out-right-alipay"></div>-->
+                                    <p>支付宝网银支付：</p>
+                                </label>
+                                <div class="col-pc-10">
+                                    <div class="out-right">
+                                        <ul class="banks">
+                                            <li>
+                                                <input id="ICBC" name="bank" type="radio" value="工商银行">
+                                                <label for="ICBC" title="中国工商银行储蓄卡/信用卡">
+                                                    <span class="icbc out-right-bank"></span>
+                                                    <a href="https://www.22.cn/ipay/CreditPay/alipay.htm" target="_blank" title="同时支持信用卡支付，点击查看信用卡限额"><span class="credit-icon"></span></a>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input id="CMB" name="bank" type="radio" value="招商银行">
+                                                <label for="CMB" title="招商银行储蓄卡/信用卡">
+                                                    <span class="cmb out-right-bank"></span>
+                                                    <a href="https://www.22.cn/ipay/CreditPay/alipay.htm" target="_blank" title="同时支持信用卡支付，点击查看信用卡限额"><span class="credit-icon"></span></a>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input id="CCB" name="bank" type="radio" value="建设银行">
+                                                <label for="CCB" title="中国建设银行储蓄卡/信用卡">
+                                                    <span class="ccb out-right-bank"></span>
+                                                    <a href="https://www.22.cn/ipay/CreditPay/alipay.htm" target="_blank" title="同时支持信用卡支付，点击查看信用卡限额"><span class="credit-icon"></span></a>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input id="BOC" name="bank" type="radio" value="中国银行">
+                                                <label for="BOC" title="中国银行">
+                                                    <span class="boc out-right-bank"></span>
+                                                    <a href="https://www.22.cn/ipay/CreditPay/alipay.htm" target="_blank" title="同时支持信用卡支付，点击查看信用卡限额"><span class="credit-icon"></span></a>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input id="ABC" name="bank" type="radio" value="中国农业银行">
+                                                <label for="ABC" title="中国银行">
+                                                    <span class="abc out-right-bank"></span>
+                                                    <a href="https://www.22.cn/ipay/CreditPay/alipay.htm" target="_blank" title="同时支持信用卡支付，点击查看信用卡限额"><span class="credit-icon"></span></a>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input id="COMM" name="bank" type="radio" value="交通银行">
+                                                <label for="COMM" title="交通银行">
+                                                    <span class="comm out-right-bank"></span>
+    
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input id="PSBC" name="bank" type="radio" value="中国邮政储蓄银行">
+                                                <label for="PSBC" title="中国邮政储蓄银行">
+                                                    <span class="psbc out-right-bank"></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input id="CEB" name="bank" type="radio" value="中国光大银行">
+                                                <label for="CEB" title="中国光大银行">
+                                                    <span class="ceb out-right-bank"></span>
+    
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input id="SPDB" name="bank" type="radio" value="上海浦东发展银行">
+                                                <label for="SPDB" title="上海浦东发展银行">
+                                                    <span class="spdb out-right-bank"></span>
+                                                    <a href="https://www.22.cn/ipay/CreditPay/alipay.htm" target="_blank" title="同时支持信用卡支付，点击查看信用卡限额"><span class="credit-icon"></span></a>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input id="GDB" name="bank" type="radio" value="广东发展银行">
+                                                <label for="GDB" title="广东发展银行">
+                                                    <span class="gdb out-right-bank"></span>
+    
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input id="CITIC" name="bank" type="radio" value="中信银行">
+                                                <label for="CITIC" title="中信银行">
+                                                    <span class="citic out-right-bank"></span>
+    
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input id="CIB" name="bank" type="radio" value="兴业银行">
+                                                <label for="CIB" title="兴业银行">
+                                                    <span class="cib out-right-bank"></span>
+                                                    <a href="https://www.22.cn/ipay/CreditPay/alipay.htm" target="_blank" title="同时支持信用卡支付，点击查看信用卡限额"><span class="credit-icon"></span></a>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input id="SDB" name="bank" type="radio" value="深圳发展银行">
+                                                <label for="SDB" title="深圳发展银行">
+                                                    <span class="sdb out-right-bank"></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input id="CMBC" name="bank" type="radio" value="中国民生银行">
+                                                <label for="CMBC" title="中国民生银行">
+                                                    <span class="cmbc out-right-bank"></span>
+    
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input id="BJBANK" name="bank" type="radio" value="北京银行">
+                                                <label for="BJBANK" title="北京银行">
+                                                    <span class="bjbank out-right-bank"></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input id="HZCB" name="bank" type="radio" value="杭州银行">
+                                                <label for="HZCB" title="杭州银行">
+                                                    <span class="hzcb out-right-bank"></span>
+                                                    <a href="https://www.22.cn/ipay/CreditPay/alipay.htm" target="_blank" title="同时支持信用卡支付，点击查看信用卡限额"><span class="credit-icon"></span></a>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input id="SHBANK" name="bank" type="radio" value="上海银行">
+                                                <label for="SHBANK" title="上海银行">
+                                                    <span class="shbank out-right-bank"></span>
+                                                    <a href="https://www.22.cn/ipay/CreditPay/alipay.htm" target="_blank" title="同时支持信用卡支付，点击查看信用卡限额"><span class="credit-icon"></span></a>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input id="BJRCB" name="bank" type="radio" value="北京农村商业银行">
+                                                <label for="BJRCB" title="北京农村商业银行">
+                                                    <span class="bjrcb out-right-bank"></span>
+                                                </label>
+                                            </li>
+    
+                                            <li>
+                                                <input id="FDB" name="bank" type="radio" value="富滇银行">
+                                                <label for="FDB" title="富滇银行">
+                                                    <span class="fdb out-right-bank"></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input id="NBBANK" name="bank" type="radio" value="宁波银行">
+                                                <label for="NBBANK" title="宁波银行">
+                                                    <span class="nbbank out-right-bank"></span>
+                                                    <a href="https://www.22.cn/ipay/CreditPay/alipay.htm" target="_blank" title="同时支持信用卡支付，点击查看信用卡限额"><span class="credit-icon"></span></a>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input id="ICBCb" name="bank" type="radio" value="工商银行B2B">
+                                                <label for="ICBCb" title="工商">
+                                                    <span class="icbc out-right-bank"></span><em class="icon_info">企业</em>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input id="SPDBb" name="bank" type="radio" value="上海浦东发展银行B2B">
+                                                <label for="SPDBb" title="上海浦东发展银行">
+                                                    <span class="spdb out-right-bank"></span><em class="icon_info">企业</em>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input id="CCBb" name="bank" type="radio" value="建设银行B2B">
+                                                <label for="CCBb" title="建设">
+                                                    <span class="ccb out-right-bank"></span><em class="icon_info">企业</em>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input id="ACBb" name="bank" type="radio" value="农业银行B2B">
+                                                <label for="ACBb" title="中国银行">
+                                                    <span class="abc out-right-bank"></span><em class="icon_info">企业</em>
+                                                </label>
+                                            </li>
+    
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group clearfix">
+                                <label class="col-pc-2 control-label">其他支付方式：</label>
+                                <div class="col-pc-8">
+                                    <div class="out-right">
+                                        <ul class="banks">
+                                            <li>
+                                                <input id="alipay" name="bank" type="radio" value="支付宝余额支付">
+                                                <label for="alipay" title="支付宝余额支付">
+                                                    <span class="out-right-alipaycn out-right-bank"></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input id="weixinalipay" name="bank" type="radio" value="weixinqr">
+                                                <label for="weixinalipay" title="微信扫码支付">
+                                                    <span class="out-right-weixinalipay out-right-bank"></span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-footer">
+                                <div class="form-group clearfix">
+                                    <div class="col-pc-2"></div>
+                                    <div class="col-pc-2">
+                                        <button type="button" class="btn bg-orange o-next-btn">下一步</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <form style="display:none;" id="paysubmit" action="/Financial/Online/Pay/" method="post" class="manage-box-body form-horizontal">
+                        <div class="form-group clearfix">
+                            <label class="col-pc-2 col-md-3 control-label">
+                                商品名称：
+                            </label>
+                            <div class="col-pc-4 col-md-4">
+                                <div class="iCheckbox">
+                                    <label>
+                                        爱名网预付款
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <label class="col-pc-2 col-md-3 control-label">
+                                商品介绍：
+                            </label>
+                            <div class="col-pc-4 col-md-4">
+                                <div class="iCheckbox">
+                                    <label>
+                                        预付款，充值到账户，可以享受购买域名和续费等服务
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <label class="col-pc-2 col-md-3 control-label">
+                                应付金额：
+                            </label>
+                            <div class="col-pc-4 col-md-4">
+                                <div class="iCheckbox">
+                                    <label id="o-l-money" class="red" style="font-size: 26px;font-weight: bold;">
+                                        25018 元
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group clearfix" id="div_wxqr" style="display:none;">
+                            <label class="col-pc-2 col-md-3 control-label">
+                                微信支付码：
+                            </label>
+                            <div class="col-pc-4 col-md-4">
+                                <div class="iCheckbox">
+                                    <img id="img_wxqr" title="使用微信扫一扫">
+                                </div>
+                            </div>
+                        </div>
+                        <input type="hidden" name="proname" value="爱名网预付款">
+                        <input type="hidden" name="orderid">
+                        <input type="hidden" name="amount" value="25018">
+                        <input type="hidden" name="coin" value="false">
+                        <input type="hidden" name="bank" value="">
+                        <div class="box-footer">
+                            <div class="form-group clearfix">
+                                <div class="col-pc-2 col-md-3"></div>
+                                <div class="col-pc-2 col-md-4">
+                                    <button type="submit" id="btn_sure" class="btn bg-orange o-submit-btn">确认支付</button>
+                                    <button type="button" id="btn_done" class="btn bg-orange o-submit-btn" style="display:none;">已完成支付</button>
+                                        <a class="btn btn-default o-back-btn">返回</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-pc-12 col-xs-12">
+                    <div class="info-box">
+                        <div class="box-header with-border">
+                            <i class="fa fa-warning"></i><h3 class="box-title">注意事项</h3>
+                        </div>
+                        <div class="manage-box-body manage-tip-box zhuyiinfo">
+                            <p>1、预付款属用户自愿存入，只能用于爱名网平台内消费，不能退回；</p>
+                            <p>2、请关闭拦截弹窗控件，以免交易失败；</p>
+                            <p>3、5万以上充值，建议直接银行转账；</p>
+                            <p>4、商标注册预付款提现费率1%。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="../../wei.js"></script>
+    <!-- <script src="../../public.js"></script> -->
+    <script src="./onlineTopUp.js"></script>
+</body>
+</html>

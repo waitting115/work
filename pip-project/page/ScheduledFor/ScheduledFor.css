@@ -1,0 +1,680 @@
+.main-container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main-container:before, .main-container:after {
+    display: table;
+    content: "";
+}
+.small-screen-pd {
+    padding: 0 0 80px 0;
+}
+.main-title {
+    padding: 14px 0 9px 0;
+    line-height: 24px;
+    font-size: 12px;
+}   
+.bluet {
+    color: #0066cc;
+}
+.huit {
+    color: #999;
+}
+.yuding-tab {
+    padding-bottom: 51px;
+    margin-bottom: 0;
+    border-bottom: 2px solid #fe8431;
+}
+.yuding-tab .sales-activity {
+    line-height: 44px;
+}
+.pull-right {
+    float: right!important;
+}
+.yuding-link a:first-child {
+    margin-left: 0;
+}
+.yuding-link a {
+    margin-left: 24px;
+}
+.yuding-tab>ul>li.active a {
+    background: #fe8431;
+    color: #fff;
+    border: 1px solid #fe8431;
+    border-bottom: none;
+    border-left: none;
+}
+.yuding-tab>ul>li:first-child a {
+    border-left: 1px solid #e4e4e4;
+}
+.yuding-tab>ul>li a {
+    line-height: 30px;
+    padding: 10px 30px;
+    min-height: 50px;
+    height: auto;
+    margin-right: 0;
+    background: #f9f9f9;
+    float: left;
+    display: inline-block;
+    border: 1px solid #e4e4e4;
+    border-bottom: none;
+    border-left: none;
+    font-size: 16px;
+}
+.yuding-tab>ul>li.active a {
+    background: #fe8431;
+    color: #fff;
+    border: 1px solid #fe8431;
+    border-bottom: none;
+    border-left: none;
+}
+.yuding-tab>ul>li a {
+    line-height: 30px;
+    padding: 10px 30px;
+    min-height: 50px;
+    height: auto;
+    margin-right: 0;
+    background: #f9f9f9;
+    float: left;
+    display: inline-block;
+    border: 1px solid #e4e4e4;
+    border-bottom: none;
+    border-left: none;
+    font-size: 16px;
+}
+.yuding-search-model {
+    border: 1px solid #e4e4e4;
+    border-top: none;
+    padding: 14px 0 0 0;
+}
+
+.yuding-search-model {
+    border: 1px solid #e4e4e4;
+    border-top: none;
+    padding: 14px 0 0 0;
+  }
+  
+  .yuding-search-model .ysm-list {
+    display: table;
+  }
+  
+  .yuding-search-model .ysm-list .ysm-row {
+    padding: 0 20px;
+    display: table-cell;
+    padding-bottom: 15px;
+  }
+  
+  .yuding-search-model .ysm-list .ysm-row label {
+    display: table-cell;
+    padding-right: 4px;
+    font-weight: normal;
+  }
+  
+  .yuding-search-model .ysm-list .ysm-row .text {
+    display: table-cell;
+  }
+  
+  .yuding-search-model .ysm-list .ysm-row .text input[type="checkbox"] {
+    margin-left: 13px;
+    height: 14px;
+  }
+  
+  .yuding-search-model .ysm-list .ysm-row .text span input {
+    vertical-align: middle;
+    display: inline-block;
+  }
+  
+  .yuding-search-model .ysm-list .ysm-row .text span.cb-mgr input[type="checkbox"]:first-child {
+    margin-left: 0;
+  }
+  
+  .yuding-search-model .ysm-list .ysm-row .text span.line {
+    margin: 0 7px;
+  }
+  
+  .yuding-search-model .y-model-w1 label {
+    width: 100px;
+    text-align: right;
+  }
+  
+  .yuding-search-model .y-model-w2 {
+    width: 497px;
+  }
+  
+  .yuding-search-model .y-model-w3 {
+    width: 380px;
+  }
+  
+  .yuding-link a {
+    margin-left: 24px;
+  }
+  
+  .yuding-link a:first-child {
+    margin-left: 0;
+  }
+  
+  .fast-index {
+    border-top: 1px solid #e4e4e4;
+    line-height: 30px;
+    padding: 10px 44px;
+  }
+  
+  .fast-index a {
+    margin-right: 32px;
+    display: inline-block;
+  }
+  
+  .ysm-bnt {
+    text-align: center;
+    /*IE*/
+    text-align: -moz-center;
+    /*Firefox*/
+    text-align: -webkit-center;
+    /*Chrome*/
+    padding: 10px 0 32px 0;
+  }
+  
+  .ysm-bnt button {
+    width: 120px;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 13px;
+  }
+  
+  .yuding-list {
+    margin-top: 10px;
+  }
+  
+  .yuding-list h3.yuding-list-title {
+    border: 1px solid #e4e4e4;
+    padding: 10px 20px;
+    border-bottom: none;
+    line-height: 30px;
+  }
+  
+  .yuding-list h3.yuding-list-title span.title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .yuding-list h3.yuding-list-title span.text {
+    font-size: 14px;
+  }
+  
+  .yuding-list h3.yuding-list-title span.text span {
+    padding-left: 34px;
+  }
+  
+  .yuding-list h3.yuding-list-title span.text span i {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 12px;
+  }
+  
+  .yd-check-w {
+    width: 3.6%;
+    padding-left: 7px;
+  }
+  
+  .yd-domain-w {
+    width: 17.4%;
+  }
+  
+  .yd-type-w {
+    width: 6.1%;
+  }
+  
+  .yd-length-w {
+    width: 4.1%;
+  }
+  
+  .yd-search-w {
+    width: 5.8%;
+  }
+  
+  .yd-record-number-w {
+    width: 12.5%;
+  }
+  
+  .yd-include-w {
+    width: 5.5%;
+  }
+  
+  .yd-weight-w {
+    width: 6.1%;
+  }
+  
+  .yd-pr-w {
+    width: 5.1%;
+  }
+  
+  .yd-alexa-w {
+    width: 7.8%;
+  }
+  
+  .yd-register-w {
+    width: 9%;
+  }
+  
+  .yd-delete-w {
+    width: 9%;
+  }
+  
+  .yd-operate-w {
+    width: 8%;
+  }
+  
+  .yuding-tb-s span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .yuding-tb {
+    border: 1px solid #e4e4e4;
+  }
+  
+  .yuding-tb button.yuding-bnt {
+    width: 60px;
+    height: 28px;
+    line-height: 28px;
+  }
+  
+  .yuding-tb input[type="checkbox"] {
+    height: 14px;
+    vertical-align: middle;
+  }
+  
+  .yuding-tb span {
+    display: table-cell;
+    text-align: center;
+    /*IE*/
+    text-align: -moz-center;
+    /*Firefox*/
+    text-align: -webkit-center;
+    /*Chrome*/
+    font-size: 14px;
+    vertical-align: middle;
+  }
+  
+  .yuding-tb span img {
+    display: inline-block;
+  }
+  
+  .yuding-tb span.yd-domain-w {
+    text-align: left;
+  }
+  
+  .yuding-tb h3.yuding-tb-title {
+    width: 100%;
+    display: table;
+    padding: 10px 0;
+    font-weight: bold;
+    background: #f9f9f9;
+    line-height: 30px;
+    border-bottom: 1px solid #e4e4e4;
+    height: 50px;
+  }
+  
+  .yuding-tb h3.yuding-tb-title span {
+    background: #f9f9f9;
+  }
+  
+  .yuding-tb>ul>li {
+    border-bottom: 1px dashed #e4e4e4;
+    padding: 10px 0;
+    line-height: 30px;
+    height: 50px;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  .ftoot-tb-more {
+    line-height: 30px;
+    padding: 10px 0;
+    text-align: center;
+    /*IE*/
+    text-align: -moz-center;
+    /*Firefox*/
+    text-align: -webkit-center;
+    /*Chrome*/
+    border-bottom: 1px dashed #e4e4e4;
+    cursor: pointer;
+  }
+  
+  .ftoot-tb-more:hover {
+    background: #f9f9f9;
+  }
+  
+  .ftoot-tb-more:hover a {
+    color: #ff7200;
+  }
+  
+  .ftoot-tb-bnt {
+    padding: 10px 0 10px 20px;
+  }
+  
+  .ftoot-tb-bnt input[type="checkbox"] {
+    margin-right: 3px;
+  }
+  
+  .ftoot-tb-bnt input[type="submit"] {
+    margin-top: -2px;
+    font-size: 14px;
+    font-family: "微软雅黑";
+  }
+  
+  .ftoot-tb-bnt .ftoot-tb-bnt-w {
+    width: 80px;
+    height: 28px;
+    line-height: 28px;
+    margin-left: 5px;
+  }
+  
+  .sortclick {
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 1199px) {
+    .yuding-tab>ul>li a {
+      padding: 10px 20px;
+    }
+    .fast-index {
+      padding: 10px 30px;
+    }
+    .yuding-search-model .y-model-w3 {
+      width: 340px;
+    }
+    .yuding-search-model .y-model-w2 {
+      width: 330px;
+    }
+    .yuding-search-model .text-input-w {
+      width: 200px;
+    }
+    .yuding-search-model .ysm-list .ysm-row {
+      padding: 0 15px 15px 15px;
+    }
+    .yuding-search-model .ysm-list .ysm-row .text input[type="checkbox"]:first-child {
+      margin-left: 0;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .yuding-tab {
+      padding-bottom: 0;
+    }
+    .yuding-tab ul {
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: row;
+    }
+    .yuding-tab ul li {
+      -moz-box-flex: 1.0;
+      -webkit-box-flex: 1.0;
+      box-flex: 1;
+    }
+    .yuding-tab ul li a {
+      width: 100%;
+      padding: 0 5px;
+      min-height: 30px;
+      font-size: 12px;
+      text-align: center;
+      /*IE*/
+      text-align: -moz-center;
+      /*Firefox*/
+      text-align: -webkit-center;
+      /*Chrome*/
+    }
+    .yuding-search-model .text-input-w,
+    .yuding-search-model .ysm-list {
+      width: 100%;
+    }
+    .yuding-search-model .y-model-w2 {
+      width: 100%;
+    }
+    .yuding-search-model .ysm-list {
+      display: block;
+    }
+    .yuding-search-model .ysm-list .ysm-row {
+      display: block;
+      padding: 0 10px 15px 10px;
+      -webkit-box-pack: center;
+      -moz-box-pack: center;
+      -ms-box-pack: center;
+      -o-box-pack: center;
+      box-pack: center;
+      /* .box-align(center);*/
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-box;
+      display: -o-box;
+      display: box;
+    }
+    .yuding-search-model .ysm-list .ysm-row label {
+      font-size: 12px;
+      width: 80px;
+      text-align: right;
+    }
+    .yuding-search-model .ysm-list .ysm-row .text {
+      display: block;
+      -webkit-box-flex: 1;
+      -moz-box-flex: 1;
+      -ms-box-flex: 1;
+      -o-box-flex: 1;
+      box-flex: 1;
+    }
+    .yuding-search-model .ysm-list .ysm-row .text input[type="checkbox"]:first-child {
+      margin-left: 0;
+    }
+    .yuding-search-model .ysm-list .ysm-row .text span.line {
+      margin: 0;
+    }
+    .yuding-search-model .ysm-list .ysm-row .text .w200,
+    .yuding-search-model .ysm-list .ysm-row .text .yuding-input {
+      width: 100%;
+    }
+    .yuding-search-model .ysm-list .ysm-row .text .w200 {
+      display: block;
+    }
+    .ysm-bnt button {
+      margin: 0;
+    }
+    .remind-tip a.link {
+      margin: 0;
+      display: block;
+    }
+    .yd-domain-w {
+      width: 40%;
+      text-indent: 10px;
+    }
+    .yd-delete-w {
+      width: 30%;
+    }
+    .yd-operate-w {
+      width: 30%;
+    }
+    .ftoot-tb-bnt {
+      padding: 10px 0 10px 3px;
+    }
+    .list-pager li {
+      margin-bottom: 10px;
+    }
+    .fast-index {
+      padding: 10px;
+    }
+    .fast-index a {
+      margin-right: 10px;
+    }
+    .yuding-list h3.yuding-list-title {
+      padding: 10px;
+    }
+    .ftoot-tb-more {
+      border-bottom: none;
+    }
+  }
+  .top-about-con {
+    padding: 0;
+  }
+  
+  .register-box-bottom .icon-checkbox-pl {
+    margin: 0 8px 0 60px;
+  }
+  
+  .yuding-tab>ul>li.beian a {
+    width: auto;
+    max-width: 580px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .yuding-tab>ul>li.beian a {
+      padding: 0 15px;
+    }
+  } 
+
+.list-pager-pt {
+    padding-top: 20px;
+}
+.list-pager:before, .list-pager:after {
+    display: table;
+    content: "";
+}
+.list-pager-pt {
+    padding-top: 20px;
+  }
+  
+  .list-pager {
+    *zoom: 1;
+  }
+  
+  .list-pager:before,
+  .list-pager:after {
+    display: table;
+    content: "";
+  }
+  
+  .list-pager:after {
+    clear: both;
+  }
+  
+  .list-pager .pager-l {
+    float: left;
+    display: inline;
+  }
+  
+  .list-pager .pager-r {
+    float: right;
+    display: inline;
+  }
+  
+  .list-pager ul {
+    font-size: 0;
+  }
+  
+  .list-pager li {
+    font-size: 14px;
+    margin: 0 2px;
+    display: inline-block;
+  }
+  
+  .list-pager li.text {
+    height: 28px;
+    line-height: 28px;
+  }
+  
+  .list-pager b {
+    color: #666;
+    padding: 0 5px;
+    height: 28px;
+    line-height: 28px;
+    display: inline-block;
+  }
+  
+  .list-pager span,
+  .list-pager a {
+    border: 1px solid #e4e4e4;
+    padding: 0 5px;
+    height: 28px;
+    line-height: 28px;
+    vertical-align: middle;
+    margin-left: 3px;
+    min-width: 28px;
+    text-align: center;
+    /*IE*/
+    text-align: -moz-center;
+    /*Firefox*/
+    text-align: -webkit-center;
+    /*Chrome*/
+    display: inline-block;
+  }
+  
+  .list-pager a:hover {
+    text-decoration: none;
+  }
+  
+  .list-pager span {
+    color: #333;
+  }
+  
+  .list-pager .current {
+    background-color: #fe8431;
+    border: 1px solid #fe8431;
+    color: #fff;
+  }
+  
+  .list-pager .bnt-pager-confirm {
+    width: 60px;
+  }
+  
+  .list-pager .page-jump-input {
+    width: 62px;
+    border: 1px solid #aaa;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 5px;
+  }
+  .yuding-input {
+    border: 1px solid #ccc;
+    color: #c8c8c8;
+    line-height: 20px;
+    padding: 5px 8px;
+    overflow: hidden;
+    width: 200px;
+}
+input, textarea {
+    background: none;
+    border: none;
+    outline: none;
+}
+.w200 {
+    width: 200px;
+}
+.yuding-select {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 4px 5px 4px 5px;
+}
+select, input, textarea {
+    font-size: 14px;
+    margin: 0;
+}
+select, input {
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1128 @@
+@charset "UTF-8";
+.mr-pl10{
+    padding-left:0
+}
+.logo-menu-search {
+  padding: 12px 0 25px 15%;
+  *zoom: 1;
+  float: left;
+}
+.logo-menu-search:before,
+.logo-menu-search:after {
+  display: table;
+  content: "";
+}
+.logo-menu-search:after {
+  clear: both;
+}
+.login-menu {
+  height: auto;
+  *zoom: 1;
+}
+.login-menu:before,
+.login-menu:after {
+  display: table;
+  content: "";
+}
+.login-menu:after {
+  clear: both;
+}
+.login-menu .logo {
+  padding-top: 10px;
+}
+.login-menu .logo-text {
+  float: left;
+  padding: 35px 0 0 10px;
+  font-size: 12px;
+  line-height: 14px;
+}
+.login-menu .logo-text a {
+  display: block;
+}
+.nav-check {
+  line-height: 30px;
+  *zoom: 1;
+  height: 30px;
+}
+.nav-check:before,
+.nav-check:after {
+  display: table;
+  content: "";
+}
+.nav-check:after {
+  clear: both;
+}
+.nav-check li.on {
+  color: #fe8432;
+}
+.nav-check li {
+  float: left;
+  width: auto;
+  padding: 0 20px 0 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+.mainnav_m {
+  margin: 0px 0 10px 80px;
+  height: 35px;
+  display: inline;
+}
+#mainnav_m_search {
+  width: 316px;
+  background: url(../../img/searcha.png) no-repeat 2px 2px;
+  padding: 6px 0 6px 30px;
+  border: 2px solid #F28625;
+  line-height: 18px;
+  float: left;
+  color: #C8C8C8;
+  cursor: auto;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+#mainnav_m_go {
+  background: #F28625;
+  width: 78px;
+  line-height: 34px;
+  text-align: center;
+  float: left;
+  color: #fff;
+}
+#mainnav_r {
+  float: right;
+  background: url(../../img/phoneNumb.png) no-repeat -4px 19px;
+  width: 250px;
+  height: 100px;
+}
+.pi_b,
+.pi_c,
+.pi_d {
+  height: 16px;
+  width: 124px;
+  background: url(../../img/innera.png) no-repeat;
+  display: inline-block;
+  margin-top: 2px;
+}
+.pi_b {
+  background-position: 0 0;
+}
+.pi_c {
+  background-position: 0 -39px;
+}
+.pi_d {
+  background-position: 0 -78px;
+}
+.icon-register-email,
+.member-register-tab li.active .icon-register-iphone,
+.icon-register-iphone {
+  width: 13px;
+  height: 18px;
+}
+.member-register-tab li.active .icon-register-email,
+.icon-register-email,
+.icon-register-email,
+.member-register-tab li.active .icon-register-iphone,
+.icon-register-iphone {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.icon-bind-email,
+.icon-register-qq,
+.icon-register-sina,
+.icon-register-alipay,
+.icon-register-baidu,
+.icon-register-360,
+.member-register-tab li.active .icon-register-email,
+.icon-register-email,
+.member-register-tab li.active .icon-register-iphone,
+.icon-register-iphone {
+  background: url("../../img/icon_register.png") no-repeat;
+}
+.icon-register-iphone {
+  background-position: -2px -209px;
+}
+.member-register-tab li.active .icon-register-email,
+.icon-register-email {
+  width: 22px;
+  height: 18px;
+}
+.icon-register-email {
+  background-position: -5px -118px;
+}
+.member-register-tab {
+  *zoom: 1;
+  position: relative;
+  z-index: 2;
+}
+.member-register-tab:before,
+.member-register-tab:after {
+  display: table;
+  content: "";
+}
+.member-register-tab:after {
+  clear: both;
+}
+.member-register-tab ul {
+  float: left;
+  margin-bottom: 0;
+}
+.member-register-tab ul li {
+  display: inline-block;
+  padding: 0 40px 0 17px;
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  line-height: 30px;
+}
+.member-register-tab ul li.active {
+  background: #fff;
+  border-bottom-color: #fff;
+}
+.member-register-tab ul li.active .icon-register-iphone {
+  background-position: -2px -179px;
+}
+.member-register-tab ul li.active .icon-register-email {
+  background-position: -7px -158px;
+}
+.member-register-box {
+  border: 1px solid #ddd;
+  margin-top: -1px;
+  position: relative;
+  padding: 25px 40px;
+  width: 100%;
+  *zoom: 1;
+}
+.member-register-box:before,
+.member-register-box:after {
+  display: table;
+  content: "";
+}
+.member-register-box:after {
+  clear: both;
+}
+.member-register-box .star-bar-steps .wrap > div {
+  width: 340px;
+  height: 32px;
+  line-height: 32px;
+}
+.member-register-box .star-bar-steps .wrap > div.todo {
+  width: 358px;
+}
+.member-register-box .register-email-box .star-bar-steps .wrap > div {
+  width: 200px;
+}
+.member-register-box .register-email-box .star-bar-steps .wrap > div.todo {
+  width: 250px;
+}
+.member-register-box .star-bar-steps .finished {
+  background: #ffe6bc;
+  color: #f60;
+}
+.member-register-box .star-bar-steps .finished .triangle-right {
+  border-color: transparent transparent transparent #ffe6bc;
+}
+.member-register-box .star-bar-steps .triangle-right {
+  border-width: 16px;
+  right: -28px;
+}
+.member-register-box .star-bar-steps .triangle-right-bg {
+  border-width: 20px;
+  right: -36px;
+}
+.member-register-box .box-footer {
+  padding-top: 15px;
+}
+.member-register-box .box-footer p {
+  line-height: 40px;
+}
+.member-register-box .box-footer p label {
+  font-weight: normal;
+}
+.member-register-box .box-footer p input[type="checkbox"] {
+  margin-right: 5px;
+}
+.member-register-wrap {
+  position: relative;
+}
+.member-register-box-left {
+  margin-right: 285px;
+  padding-right: 10.2%;
+}
+.member-register-box-right {
+  width: 285px;
+  border-left: 1px solid #ddd;
+  padding-left: 37px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.member-register-box-right .line-or {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  top: 50%;
+  margin-top: -12px;
+  left: -12px;
+  z-index: 2;
+  text-align: center;
+  font-weight: 700;
+}
+.member-register-box-right .other-way {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 14px 26px;
+}
+.member-register-box-right .other-way h3 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.member-register-box-right .other-way img {
+  display: inline-block;
+}
+.member-register-box-right .other-way p {
+  color: #999;
+  font-size: 12px;
+}
+.member-register-box-right .other-way a {
+  margin: 0 6px;
+}
+.other-way-line {
+  padding: 0 5px;
+  margin: 20px 0;
+  line-height: 1px;
+  border-left: 35px solid #ddd;
+  border-right: 35px solid #ddd;
+  text-align: center;
+}
+.icon-register-qq {
+  width: 15px;
+  height: 16px;
+  background-position: -1px -231px;
+}
+.icon-register-sina {
+  width: 16px;
+  height: 16px;
+  background-position: -1px -257px;
+}
+.icon-register-alipay {
+  width: 15px;
+  height: 16px;
+  background-position: -2px -283px;
+}
+.icon-register-baidu {
+  width: 16px;
+  height: 16px;
+  background-position: -1px -334px;
+}
+.icon-register-360 {
+  width: 16px;
+  height: 16px;
+  background-position: -1px -309px;
+}
+.form-control:not(select) {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.form-control {
+  border-radius: 0;
+  box-shadow: none;
+  border-color: #d2d6de;
+  height: 38px;
+}
+.form-control:focus {
+  border-color: #7abd54;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.member-register-list {
+  display: table;
+  width: 100%;
+}
+.member-register-list .password-title {
+  display: table-cell;
+  width: 80px;
+  vertical-align: top;
+}
+.member-register-list .member-list-bnt-box {
+  display: table-cell;
+  width: 134px;
+  height: 38px;
+  padding-right: 24px;
+  vertical-align: top;
+}
+.member-register-list .register-code {
+  display: table-cell;
+  width: 72px;
+}
+.member-register-list input.require-iphonemode {
+  display: inline-block;
+  width: 100%;
+  height: 38px;
+  background: #ededed;
+  text-align: center;
+}
+.member-register-submit {
+  background-color: #FD5C52;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 0;
+  height: 40px;
+}
+.member-register-submit:hover {
+  background-color: #e74c3c;
+  color: #fff;
+}
+.register-tips-border {
+  border: 1px solid #ffbdbe;
+  background-color: #ffebeb;
+}
+.register-tips-box-color {
+  color: #F00;
+}
+.has-error .form-control {
+  border-color: #e22;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.has-error .form-control:focus {
+  border-color: #e22;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.has-error .help-block {
+  color: #e22;
+  display: inline-block;
+}
+.has-error .control-label {
+  color: #666;
+}
+@media (max-width: 1199px) {
+  .wrapper_main {
+    width: 860px;
+  }
+  .logo-menu-search {
+    padding-left: 10%;
+  }
+}
+.showMessage {
+  /* border: 1px solid #ddd; */
+  height: 38px;
+  line-height: 38px;
+  padding: 0 10px;
+  color: #666;
+  /* background: #f9f9f9; */
+}
+.showMessage-red {
+  border: 1px solid #ffbdbe;
+  background-color: #ffebeb;
+  color: #F00;
+}
+.showMessage-green {
+  color: #093;
+}
+/*bind-email*/
+.bind-email-box {
+  text-align: center;
+  padding: 10px 0 40px 0;
+}
+.bind-email-box h3 {
+  line-height: 40px;
+  font-size: 22px;
+  color: #333;
+}
+.bind-email-box h3 span {
+  margin-right: 12px;
+}
+.bind-email-box p {
+  line-height: 30px;
+}
+.bind-email-box p.text-img {
+  padding: 30px 0 0 0;
+}
+.bind-email-box p.text-img img {
+  display: inline-block;
+}
+.bind-email-form-box {
+  padding-left: 27%;
+  padding-top: 26px;
+}
+.bind-email-form-footer {
+  text-align: left;
+}
+.bind-email-form-footer button.bind-email-submit-btn {
+  width: 106px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 3px;
+}
+.icon-bind-email {
+  width: 30px;
+  height: 30px;
+  background-position: 0 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+.email-result-box {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+.email-result-bnt {
+  padding: 0 20px;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 3px;
+  margin: 0 15px 20px 15px;
+}
+.register-hui-button {
+  background: #eee;
+}
+.register-hui-button:hover {
+  background: #ddd;
+}
+.email-register-success-text {
+  padding: 0 10% 30px 10%;
+}
+.progress-bar-danger {
+  background: #ff3300;
+}
+@media screen and (max-width: 1199px) {
+  .member-register-box-left {
+    padding-right: 2.2%;
+  }
+  .member-register-box .star-bar-steps .wrap > div {
+    width: 301px;
+  }
+  .member-register-box .star-bar-steps .wrap > div.todo {
+    width: 301px;
+  }
+  .member-register-box .register-email-box .star-bar-steps .wrap > div.todo {
+    width: 200px;
+  }
+  .label-text {
+    font-size: 12px;
+  }
+}
+/*导航*/
+.login-menu {
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #e4e4e4;
+}
+.login-menu-logo {
+  padding: 15px 0 10px 0;
+}
+.login-menu-logo a {
+  display: inline-block;
+}
+.login-menu-logo span {
+  vertical-align: top;
+  font-size: 24px;
+  color: #666;
+  line-height: 40px;
+  border-left: 1px solid #d2d2d2;
+  padding-left: 20px;
+  display: inline-block;
+  margin: 7px 0 0 20px;
+}
+.login-menu-r {
+  float: right;
+  line-height: 80px;
+}
+/*注册体系*/
+.register-system-box {
+  border: 1px solid #ddd;
+  margin-top: 20px;
+  display: flex;
+}
+.register-system-box .rsb-title {
+  display: inline-block;
+}
+.register-system-box .text {
+  padding-left: 25px;
+  color: #666;
+  background: #f7f7f7;
+  line-height: 78px;
+  display: inline-block;
+}
+.register-system-box .register-right-arrow {
+  width: 28px;
+  height: 78px;
+  background: url("../images/register_right_arrow.png");
+  display: inline-block;
+  vertical-align: top;
+}
+.register-system-box .rsb-logo {
+  display: inline-block;
+  padding-top: 10px;
+}
+.register-system-box .rsb-logo img {
+  display: inline-block;
+  margin: 0 20px;
+}
+.register-pager .footer {
+  border-top: none;
+}
+.register-pager .small-screen-pd {
+  padding-bottom: 0;
+}
+
+
+
+/*2018-1-4调整***********************************/
+.member-register-box{
+  padding:20px 40px 45px 40px;
+}
+.member-register-box-left{
+  padding:0 0 0 10.2%;
+  margin:0 0 0 325px;
+}
+.member-register-box-right{
+  left: 0;
+  border:0;
+}
+.member-register-box-right .other-way{
+  border:0;
+}
+
+.icon-register-app{
+  width: 16px;
+  height: 18px;
+  background:url("../images/app.png") no-repeat;
+}
+.gray-line{
+  height: 200px;
+  border-left: 1px solid #ddd;
+  position: absolute;
+  right:-50px;
+  bottom:78px;
+}
+#weixinimg{
+  margin-bottom: 10px;
+}
+.member-register-box  h3{
+  color: #666 !important;
+  font-size: 16px;
+  margin:0 0 20px 0;
+  padding-top: 20px;
+  display: block !important;
+}
+.member-register-box-left h3.register-h3{
+  padding-top: 33px;
+}
+.member-register-box h3.register-h3 span{
+  font-size: 14px;
+}
+.member-register-box h3.register-h3 span a{
+  color:#0066cc;
+}
+.star-bar-steps .wrap > .todo > label,.star-bar-steps .wrap > .current > label{
+  color: #999;
+}
+.form-horizontal .control-label{
+  font-weight: normal;
+  color: #666;
+  /* width: 70px; */
+  padding:7px 0 0 0;
+}
+#registerIphoneForm .control-label{
+  margin-right: 5px;
+}
+.star-bar-steps{
+  margin:35px 0 40px 0;
+}
+.other-way-line{
+  margin:25px 0;
+}
+.star-bar-steps .wrap{
+  width: auto;
+}
+.member-register-box .star-bar-steps .wrap > div{
+  width: 300px;
+}
+.member-register-box .star-bar-steps .wrap > div.todo{
+  width: 330px;
+}
+.member-register-list input.require-iphonemode{
+  color: #666;
+}
+.form-horizontal .form-group{
+  margin-left: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.VSH{
+  visibility: hidden;
+}
+.pdl15{
+  padding-left: 15px;
+}
+.label-text{
+  font-size: 12px;
+  margin-top: 10px;
+}
+.member-register-box .box-footer p label{
+  color: #666;
+}
+.icon-register-people{
+  background: url(../../img/icon-register-people.png) no-repeat;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.member-register-tab ul li.li-a{
+  padding:0;
+}
+.member-register-tab ul li.li-a a{
+  display: block;
+  padding: 0 40px 0 17px;
+  color: #333;
+}
+#hyzc{
+  height: auto;
+}
+.login-footer{
+  margin-top: 20px;
+}
+.mgt40{
+  margin-top: 40px;
+}
+.pdb0{
+  padding-bottom:0;
+}
+
+
+
+
+#hyzc .member-register-box-left h3.register-h3,#hyzc .member-register-box-right h3.register-h3{
+  padding-top: 0;
+}
+#hyzc .member-register-box-right .other-way{
+  padding-top:0;
+}
+#hyzc .member-register-box{
+  padding:40px 40px 20px 40px;
+  width: 790px;
+  height: 420px;
+}
+#hyzc .member-register-box-right{
+  padding:0;
+  width: 235px;
+}
+#hyzc .member-register-box-right .other-way{
+  padding:0;
+}
+#hyzc .gray-line{
+  right: -40px;
+}
+#hyzc .member-register-box-left{
+  margin-left: 340px;
+  padding:0;
+}
+.login-box{
+  padding:0;
+}
+.login-box-r{
+  width: 100%;
+  padding:0;
+}
+#input_register, #input_registera, #input_registerb{
+  width: 305px;
+  margin:0 0 20px 0;
+}
+#input_registerb{
+  width: 90px;
+  padding-right: 10px;
+}
+#hyzc .member-register-box h3{
+  margin-bottom: 30px;
+}
+.inner_rgist{
+  margin-left: 0;
+}
+#rememberme, .rememberme{
+  margin-left: 0;
+}
+.more_way{
+  margin-left: 0;
+}
+.more_way a {
+  color: #666;
+}
+.member-register-box .register-email-box .star-bar-steps .wrap > div.todo{
+  width: 235px;
+}
+.login-box-l{
+  width: 380px;
+  height: 420px;
+  padding:0;
+  float: right;
+  margin-top: 40px;
+}
+.login-box-l img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* @media only screen and (min-width: 769px){
+    .main-container,.menu-content{
+        width: 1200px !important;
+    }
+} */
+
+
+
+
+@media only screen and (min-width:320px) and (max-width: 768px){
+  .main-container{
+    width: 100%;
+  }
+  .login-box-l{
+    display: none;
+  }
+  .login-box{
+    display: block;
+  }
+  .login-box-r{
+    display: block;
+  }
+  .yzm{
+    width: 100%;
+  }
+  .yzm_img{
+    width: 70px;
+    margin:5px 5px 0 5px;
+  }
+  #hyzc .member-register-box{
+    width: 100%;
+    padding:20px;
+  }
+  .member-register-box-right{
+    display: none;
+  }
+  #hyzc .member-register-box-left{
+    margin:0;
+  }
+  #input_register, #input_registera{
+    width: 100%;
+  }
+  .inner_rgist{
+    width: 100%;
+    background:#FF9B00;
+  }
+  .remenberI{
+    width: 100%;
+  }
+  .ui-dialog{
+    width: 272px;
+  }
+  .qrcodeimg{
+    max-width: 100%;
+  }
+  .register-system-box .rsb-title{
+    display: block;
+  }
+  .register-system-box .text{
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    padding-left: 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  .register-system-box{
+    margin-bottom: 20px;
+  }
+  .register-system-box .rsb-logo{
+    display: block;
+  }
+  .rsb-logo a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin:20px 0;
+  }
+  .more_way a{
+    display: inline-block;
+  }
+  .more_way a span{
+    display: inline-block;
+  }
+  #hyzc .member-register-box{
+    height: auto;
+  }
+  .member-register-box{
+    padding:20px 10px;
+    margin-top:20px;
+  }
+  .member-register-box-left{
+    margin:0;
+    padding:0;
+  }
+  .member-register-box-left h3.register-h3{
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+  .star-bar-steps{
+    margin:20px 0;
+  }
+  .star-bar-steps .wrap{
+    width: 50%;
+  }
+  .member-register-box .star-bar-steps .wrap > div{
+    width: 100% !important;
+  }
+  /* #registerIphoneForm .control-label{
+    width: 100%;
+    margin-right: 0;
+  } */
+  /* .form-horizontal .form-group{
+    margin: 0;
+  } */
+  /* .form-group>div{
+    padding:0;
+    width: 100%;
+    margin:10px 0;
+    min-height: 0;
+  } */
+  .box-footer{
+    padding:0 !important;
+  }
+  .btnandtk{
+    padding:0;
+  }
+  .login-footer{
+    display: none;
+  }
+  .sm-foot{
+    text-align: center;
+    margin: 0px 0 20px 0;
+    padding:0 10px;
+  }
+
+}
+
+.qrcode_invalid {
+    position: absolute;
+    width: 148px;
+    height: 148px;
+    margin: 0 auto;
+    top: 64px;
+    text-align: center;
+    box-sizing: border-box;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    left: 44px;
+}
+
+.nav_btn_orange {
+    cursor: pointer;
+    background: #ff7200;
+    color: #fff;
+}
+
+    .nav_btn_orange:hover {
+        background: #ff801a;
+        color: #fff;
+    }
+
+.qrcode_refresh_text {
+    margin: 15px 0 14px;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.color_white {
+    color: #fff;
+}
+
+.login_btn {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 3px;
+    text-align: center;
+    margin: 19px 0 13px 0;
+}
+
+#hyzc .member-register-box-right .other-way {
+    position: relative;
+}
+
+.member-register-box-right .other-way a.login_btn {
+    margin: 0
+}
+
+.entry-load {
+    display: flex;
+    background-color: #e7f1f7;
+    border: 1px solid #c6e5ec;
+    padding: 30px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+    .entry-load .loadpic {
+        margin-right: 20px;
+        margin-top: 5px;
+    }
+
+    .entry-load .loading {
+        margin-top: 5px;
+        color: #999;
+        font-size: 14px;
+    }
+
+.entry-check {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .entry-check .mode {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .entry-check ul li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+        .entry-check ul li input {
+            margin-right: 5px;
+            margin-bottom: 3px;
+        }
+
+        .entry-check ul li label {
+            font-weight: initial;
+        }
+
+.entry-check-content {
+    margin-bottom: 30px;
+}
+    .entry-check-content .tips {
+        border: 1px solid #9dd284;
+        background: #fbfdf3;
+        padding: 10px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .huit {
+        color: #999;
+    }
+    .main-title {
+        padding: 14px 0 9px 0;
+        line-height: 24px;
+        font-size: 12px;
+    }
+    .bluet {
+        color: #0066cc;
+    }
+    .star-bar-steps .wrap {
+        width: 25%;
+        display: inline-block;
+    }
+    .star-bar-steps .triangle-right-bg {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        position: absolute;
+        z-index: 1;
+        border-width: 22px;
+        right: -40px;
+        border-color: transparent transparent transparent #FFF;
+        top: -4px;
+    }
+    .member-register-box .star-bar-steps .finished .triangle-right {
+        border-color: transparent transparent transparent #ffe6bc;
+    }
+    .star-bar-steps .wrap {
+        width: 25%;
+        display: inline-block;
+    }
+    .star-bar-steps .wrap {
+        width: auto;
+    }
+
+    .member-register-box .star-bar-steps .triangle-right-bg {
+        border-width: 20px;
+        right: -36px;
+    }
+    .member-register-box .star-bar-steps .triangle-right {
+        border-width: 16px;
+        right: -28px;
+    }
+    .form-control {
+        border-radius: 0;
+        box-shadow: none;
+        border-color: #d2d6de;
+        height: 38px;
+    }
+    .form-control {
+        display: block;
+        width: 100%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+    @media (min-width: 1200px)
+    {.col-lg-5 {
+        width: 41.66666667%;
+    }}
+    .form-group {
+        margin-bottom: 15px;
+    }
+    button, html input[type=button], input[type=reset], input[type=submit] {
+        -webkit-appearance: button;
+        cursor: pointer;
+    }
+    .blue {
+        color: #0066cc;
+    }
+    .register-system-box .register-right-arrow {
+        width: 28px;
+        height: 78px;
+        background: url(../../img/register_right_arrow.png);
+        display: inline-block;
+        vertical-align: top;
+    }
+    a:hover, a:focus {
+        color: #2a6496;
+        text-decoration: underline;
+    }
+    
+    .register-system-box .rsb-logo a {
+        display: inline-block;
+    }
+#form1 {
+    margin-bottom: 20px;
+}
+
