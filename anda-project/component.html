@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们</title>
+    <link rel="stylesheet" href="/${res}/public_paging/layout.css">
+    <link rel="stylesheet" href="/${res}/css_paging/anda_concat_us.css">  
+</head>
+<body>
+    <!-- 头部 -->
+   [#include "../include/paging_top_bar.html"/]
+    
+    <!-- 轮播图 -->
+   [#include "../include/paging_ppt.html"/]
+
+    <!-- 主体 -->
+    <div class="wrapper">
+        <div class="container middle-container">
+            <div class="location">
+                <span class="icon">
+                    <img src="/${res}/img_paging/icons/home.png" alt="">
+                </span>
+                <span>位置</span>
+                <span>></span>
+                <a href='${base}/'>首页</a>
+                <span>></span>
+                [#list channel.nodeList as n]
+                [#if n.name="走进安达"]
+                <a class="location-active" href='/zjad/index.jhtml'>${n.name}</a>
+                [#elseif n.name="新闻中心"]
+                <a class="location-active" href='/xwzx/index.jhtml'>${n.name}</a>
+                [#elseif n.name="安达产品"]
+                <a class="location-active" href='/adcp/index.jhtml'>${n.name}</a>
+                [#elseif n.name="研发与创新"]
+                <a class="location-active" href='/yfycx/index.jhtml'>${n.name}</a>
+                [#elseif n.name="社会责任"]
+                <a class="location-active" href='/shzr/index.jhtml'>${n.name}</a>
+                [#elseif n.name="党建与人才招聘"]
+                <a class="location-active" href='/djyrczp/index.jhtml'>${n.name}</a>
+                [#elseif n.name="联系我们"]
+                <a class="location-active" href='/lxwm/index.jhtml'>${n.name}</a>
+                <h3>
+                [#else]
+                <a class="location-active" href='${n.url}'>${n.name}</a>
+                [/#if]
+                [#if n_has_next]
+                &gt;
+                [/#if]
+                [/#list]
+            </div>
+            <div class="middle-content">
+                <!-- 左侧栏 start -->
+                <div class="middle-content-left">
+                    <ul class="middle-left-ul">
+                        <li>
+                            <a href="">${channel.topChannel.name!}</a>
+                            <img src="/${res}/img_paging/icons/into_anda.png" alt="">
+                        </li>
+                        [@cms_channel_list parentId=channel.topChannel.id]
+						[#list tag_list as a]
+                        [#if a.name="公司概况"]
+                        <li>
+                            <a class="li-active" href="/gsgk/index.jhtml">${a.name}</a>
+                            <span class="arrow-right"></span>
+                        </li>
+                        [#elseif a.name="发展历程"]
+                        <li>
+                            <a href="/fzlc/index.jhtml">${a.name}</a>
+                        </li>
+                        [#elseif a.name="安达文化"]
+                        <li>
+                            <a href="/adwh/index.jhtml">${a.name}</a>
+                        </li>
+                        [#elseif a.name="荣誉资质"]
+                        <li>
+                            <a href="/ryzz/index.jhtml">${a.name}</a>
+                        </li>
+                        [#else]
+                        <li>
+                            <a href="${a.url}">${a.name}</a>
+                        </li>
+                        [/#if]
+                        [/#list]
+                        [/@cms_channel_list]
+                    </ul>
+                </div>
+                <!-- 左侧栏 end -->
+
+                <div class="middle-content-right">
+                    <div class="middle-right-title">
+                        走进安达
+                    </div>
+                    <div class="middle-right-content">
+                         <div class="middle-textarea">
+                            湖北中牧安达药业有限公司注册资金6200万元，年生产各类兽药原料药及制剂5000余吨。加快发展，加强管理，加大科技含量，建成中牧股份有限公司的化学合成类兽药的重要生产基地，成为国内一流、国际上有影响的高效益兽药大型高新技术企业，是中牧安达的追求。公司地处长江之滨、鄂东门户的武穴市，毗邻京九铁路、沪蓉高速，水陆交通便利。
+                         </div>
+                         <img class="middle-intoanda-img" src="/${res}/img_paging/into_anda.png" alt="" class="middle-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 尾部 -->
+    [#include "../include/paging_footer.html"/]
+
+    <!-- 右边栏 -->
+    [#include "../include/paging_right_bar.html"/]
+</body>
+</html>
+
+
+
+<ul class="middle-left-ul">
+    <li>
+        <a href="/zjad/index.jhtml">走进安达</a>
+        <img src="/${res}/img_paging/icons/into_anda.png" alt="">
+    </li>
+    <li>
+        <a class="li-active" href="/zjad/index.jhtml">公司概况</a>
+        <span class="arrow-right"></span>
+    </li>
+    <li>
+        <a href="/fzlc/index.jhtml">发展历程</a>
+    </li>
+    <li>
+        <a href="/adwh/index.jhtml">安达文化</a>
+    </li>
+    <li>
+        <a href="/ryzz/index.jhtml">荣誉资质</a>
+    </li>
+</ul>

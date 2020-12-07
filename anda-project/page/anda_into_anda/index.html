@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${channel.name} - ${site.name}</title>
+    <link rel="stylesheet" href="/${res}/public_paging/layout.css">
+    <link rel="stylesheet" href="/${res}/css_paging/anda_into_anda.css">  
+    <link rel="stylesheet" href="/${res}/css_paging/anda_development.css">
+    <link rel="stylesheet" href="/${res}/css_paging/anda_culture.css">
+    <link rel="stylesheet" href="/${res}/css_paging/anda_honor.css">
+    <link rel="stylesheet" href="/${res}/css_paging/anda_news_center.css">
+</head>
+<body>
+    <!-- 头部 -->
+   [#include "../include/paging_top_bar.html"/]
+    
+    <!-- 轮播图 -->
+   [#include "../include/paging_ppt.html"/]
+
+    <!-- 主体 -->
+    <div class="wrapper">
+        <div class="container middle-container">
+            <!-- 位置 -->
+            [#include "../include/paging_address.html"/]
+            <div class="middle-content">
+                <!-- 左侧栏 start -->
+                <div class="middle-content-left">
+                    [#include "../include/paging_left_nav.html"/]
+                </div>
+                <!-- 左侧栏 end -->
+                <div class="middle-content-right">
+                    <div class="middle-right-title">
+                      ${channel.name!}
+                    </div>
+                    <div class="middle-right-content">
+                        <!-- 走进安达 start -->
+                        [@cms_content_list channelId=channel.id count='1' orderBy='4' dateFormat='yyyy-MM-dd' channelOption='2' descLen="210" titLen="65" append="..."]
+                        [#if channel.name="公司概况"]
+                        <div class="middle-textarea">
+                            [#list tag_list as a]
+                                [#if a.txt??]
+                                    ${a.txt}
+                                [/#if]
+                            [/#list]
+                        </div>
+                        <img class="middle-intoanda-img" src="/${res}/img_paging/into_anda.png" alt="" class="middle-img">
+                        [/#if]
+                        [/@cms_content_list]
+
+                        [@cms_content_list channelId=channel.id count='1' orderBy='4' dateFormat='yyyy-MM-dd' channelOption='2' descLen="210" titLen="65" append="..."]
+                        [#if channel.name="发展历程"]
+                        [@cms_content_page channelId=channel.id count='6' orderBy='4']
+                        [#list tag_pagination.list as a]
+                        <a class="course-item" href="${a.url}">
+                            <div class="slash"></div>
+                            <div class="middle-item-right">
+                                <div class="month-day">${a.date?string("MM月dd日")}</div>
+                                <div class="year-and-content">
+                                    <div class="year">${a.date?string("YYYY")}</div>
+                                    <div class="round"></div>
+                                    <div class="content-text overflow-point">[@text_cut s=a.description len=titLen append=append/]</div>
+                                </div>
+                            </div>
+                        </a>
+                        [/#list]
+                        [/@cms_content_page]
+                        [/#if]
+                        [/@cms_content_list]
+
+                        [@cms_content_list channelId=channel.id count='1' orderBy='4' dateFormat='yyyy-MM-dd' channelOption='2' descLen="210" titLen="65" append="..."]
+                        [#if channel.name="安达文化"]
+                        [@cms_content_page channelId=channel.id count='6' orderBy='4']
+                        [#list tag_pagination.list as a]
+                        <div class="good-faith-item">
+                        <a href="${a.url}">
+                        [#if a.txt??]
+                            ${a.txt}
+                        [/#if]
+                        </a>
+                        </div>
+                        [/#list]
+                        [/@cms_content_page]
+                        [/#if]
+                        [/@cms_content_list]
+
+                        [@cms_content_list channelId=channel.id count='1' orderBy='4' dateFormat='yyyy-MM-dd' channelOption='2' descLen="210" titLen="65" append="..."]
+                        [#if channel.name="荣誉资质"]
+                        [@cms_content_page channelId=channel.id count='6' orderBy='4']
+                        [#list tag_pagination.list as a]
+                        <div class="middle-right-item">
+                        <a href="${a.url}">
+                        [#if a.txt??]
+                            ${a.txt}
+                        [/#if]
+                        <div class="middle-item-title">
+                            <span>${a.title!}</span>
+                        </div>
+                        </a>
+                        </div>
+                        [/#list]
+                        [/@cms_content_page]
+                        [/#if]
+                        [/@cms_content_list]
+                        <!-- 走进安达 end -->
+
+                        <!-- 新闻中心 start -->
+                        [@cms_content_list channelId=channel.id count='1' orderBy='4' dateFormat='yyyy-MM-dd' channelOption='2' descLen="210" titLen="65" append="..."]
+                        [#if channel.name="公司新闻"]
+                        [@cms_content_page channelId=channel.id count='6' orderBy='4']
+                        [#list tag_pagination.list as a]
+                        <div class="news-item">
+                            <div class="news-item-top">
+                                <div class="news-item-data">
+                                    <div class="news-data-year">${a.date?string("YYYY.MM")}</div>
+                                    <div class="news-data-day">${a.date?string("dd")}</div>
+                                </div>
+                                <div class="news-item-content">
+                                    <div class="news-item-title">
+                                        <img src="/${res}/img_paging/icons/news_icon.png" alt="">
+                                        <div class="news-item-title-text">${a.title!}</div>
+                                    </div>
+                                    <div class="news-item-content-text">
+                                    ${a.description}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-item-bottom">
+                                <div class="check-the-details">
+                                    <a href="${a.url}">查看详情→</a>
+                                </div>
+                            </div>
+                        </div>
+                        [/#list]
+                        [/@cms_content_page]
+                        [/#if]
+                        [/@cms_content_list]
+
+                        [@cms_content_list channelId=channel.id count='1' orderBy='4' dateFormat='yyyy-MM-dd' channelOption='2' descLen="210" titLen="65" append="..."]
+                        [#if channel.name="公司公告"]
+                        [@cms_content_page channelId=channel.id count='6' orderBy='4']
+                        [#list tag_pagination.list as a]
+                        <div class="news-item">
+                            <div class="news-item-top">
+                                <div class="news-item-data">
+                                    <div class="news-data-year">${a.date?string("YYYY.MM")}</div>
+                                    <div class="news-data-day">${a.date?string("dd")}</div>
+                                </div>
+                                <div class="news-item-content">
+                                    <div class="news-item-title2">
+                                        <img src="/${res}/img_paging/icons/notice.png" alt="">
+                                        <div class="news-item-title-text">${a.title!}</div>
+                                    </div>
+                                    <div class="news-item-content-text">
+                                    ${a.description}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-item-bottom">
+                                <div class="check-the-details">
+                                    <a href="${a.url}">查看详情→</a>
+                                </div>
+                            </div>
+                        </div>
+                        [/#list]
+                        [/@cms_content_page]
+                        [/#if]
+                        [/@cms_content_list]
+
+                        [@cms_content_list channelId=channel.id count='1' orderBy='4' dateFormat='yyyy-MM-dd' channelOption='2' descLen="210" titLen="65" append="..."]
+                        [#if channel.name="安达影像"]
+                        [@cms_content_page channelId=channel.id count='6' orderBy='4']
+                        [#list tag_pagination.list as a]
+                        <div class="middle-right-item">
+                            <div class="middle-item-video">
+                                ${a.txt}
+                            </div>
+                            <div class="middle-item-title">
+                                <img src="/${res}/img_paging/icons/video1.png" alt="">
+                                <span>${a.title!}</span>
+                            </div>
+                        </div>
+                        [/#list]
+                        [/@cms_content_page]
+                        [/#if]
+                        [/@cms_content_list]
+
+                        [@cms_content_list channelId=channel.id count='1' orderBy='4' dateFormat='yyyy-MM-dd' channelOption='2' descLen="210" titLen="65" append="..."]
+                        [#if channel.name="行业动态"]
+                        [@cms_content_page channelId=channel.id count='6' orderBy='4']
+                        [#list tag_pagination.list as a]
+                        <div class="news-item">
+                            <div class="news-item-top">
+                                <div class="news-item-data">
+                                    <div class="news-data-year">${a.date?string("YYYY.MM")}</div>
+                                    <div class="news-data-day">${a.date?string("dd")}</div>
+                                </div>
+                                <div class="news-item-content">
+                                    <div class="news-item-title2">
+                                        <img src="/${res}/img_paging/icons/windmill.png" alt="">
+                                        <div class="news-item-title-text">${a.title!}</div>
+                                    </div>
+                                    <div class="news-item-content-text">
+                                    ${a.description}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-item-bottom">
+                                <div class="check-the-details">
+                                    <a href="${a.url}">查看详情→</a>
+                                </div>
+                            </div>
+                        </div>
+                        [/#list]
+                        [/@cms_content_page]
+                        [/#if]
+                        [/@cms_content_list]
+                        <!-- 新闻中心 end -->
+                        
+                        <!-- 安达产品 start -->
+
+                        <!-- 安达产品 end -->
+
+                        <!-- 研发与创新 start -->
+
+                        <!-- 研发与创新 end -->
+                        
+                        <!-- 社会责任 start -->
+
+                        <!-- 社会责任 end -->
+
+                        <!-- 党建与人才招聘 start -->
+
+                        <!-- 党建与人才招聘 end -->
+
+                        <!-- 联系我们 start -->
+
+                        <!-- 联系我们 end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 尾部 -->
+    [#include "../include/paging_footer.html"/]
+
+    <!-- 右边栏 -->
+    [#include "../include/paging_right_bar.html"/]
+</body>
+</html>
