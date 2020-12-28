@@ -1,0 +1,951 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./static/css/commit.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="./static/css/liMarquee.css"/> -->
+    <link rel="stylesheet" type="text/css" href="./static/css/bjgx.css" />
+    <script src="./static/js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./static/js/jquery.liMarquee.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./static/js/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./static/js/world_new.js" type="text/javascript" charset="utf-8"></script>
+    <title></title>
+</head>
+<body>
+<div id="app" class="bj bj6">
+    <div class="nati">
+        <div class="logo">
+            <img src="./static/images/logo.png">
+        </div>
+        <ul class="tile">
+            <li class="active">
+                <a href="#">
+                    <div>网站概述</div>
+                    <p>Website overview</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div>基础资源</div>
+                    <p>Basic resources</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div>发展研究</div>
+                    <p>Development research</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div>平台研究</div>
+                    <p>Platform research</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="taren">
+        <div class="taren1">
+            <div class="cxrl">
+                <div class="cxrbt">
+                    <p>储蓄容量概括</p>
+                    <!-- <p>Summary of savings capacity</p> -->
+                </div>
+                <div class="cxrl_l">
+                    <div class="gqewvsd">
+                        <img src="./static/images/dt.png" class="Dt">
+                        <img src="./static/images/xq.png" class="Xq">
+                        <span>{{use}}</span>
+                    </div>
+                </div>
+                <div class="cxrl_r">
+                    <p class="cbfb casc">0.62947852</p>
+                    <div class="cbfb"><span>{{cap}}</span>已使用储存占比</div>
+                    <div class="cbfb"><span>11</span>数据节点数量</div>
+                </div>
+            </div>
+            <div class="szjd">
+                <div class="szjdle">
+                    标题标题标题标题
+                </div>
+                <div class="szbfb">
+                    <div class="vadx">{{data_node_1}}</div>
+                    <div class="vqadc">北京国旭网络科技有限公司</div>
+                    <!-- <ul>
+                        <li v-for="index of node_1"><p>p</p></li>
+                    </ul> -->
+                    <!-- <p>{{data_node_1}}</p> -->
+                </div>
+                <div class="szbfb">
+                    <div class="vadx">{{data_node_2}}</div>
+                    <div class="vqadc">北京国旭网络科技有限公司</div>
+                    <!-- <ul>
+                        <li v-for="index of node_2"><p></p></li>
+                    </ul> -->
+                    <!-- <p>{{data_node_2}}</p> -->
+                </div>
+                <div class="szbfb">
+                    <div class="vadx">{{data_node_3}}</div>
+                    <div class="vqadc">北京国旭网络科技有限公司</div>
+                    <!-- <ul>
+                        <li v-for="index of node_3"><p></p></li>
+                    </ul> -->
+                    <!-- <p>{{data_node_3}}</p> -->
+                </div>
+                <div class="szbfb">
+                    <div class="vadx">{{data_node_4}}</div>
+                    <div class="vqadc">北京国旭网络科技有限公司</div>
+                    <!-- <ul>
+                        <li v-for="index of node_4"><p></p></li>
+                    </ul> -->
+                    <!-- <p>{{data_node_4}}</p> -->
+                </div>
+                <div class="szbfb">
+                    <div class="vadx">{{data_node_5}}</div>
+                    <div class="vqadc">北京国旭网络科技有限公司</div>
+                    <!-- <ul>
+                        <li v-for="index of node_5"><p></p></li>
+                    </ul> -->
+                    <!-- <p>{{data_node_4}}</p> -->
+                </div>
+                <div class="szbfb">
+                    <div class="vadx">{{data_node_5}}</div>
+                    <div class="vqadc">北京国旭网络科技有限公司</div>
+                    <!-- <ul>
+                        <li v-for="index of node_5"><p></p></li>
+                    </ul> -->
+                    <!-- <p>{{data_node_4}}</p> -->
+                </div>
+                <div class="szbfb">
+                    <div class="vadx">{{data_node_5}}</div>
+                    <div class="vqadc">北京国旭网络科技有限公司</div>
+                    <!-- <ul>
+                        <li v-for="index of node_5"><p></p></li>
+                    </ul> -->
+                    <!-- <p>{{data_node_4}}</p> -->
+                </div>
+                <div class="szbfb">
+                    <div class="vadx">{{data_node_5}}</div>
+                    <div class="vqadc">北京国旭网络科技有限公司</div>
+                    <!-- <ul>
+                        <li v-for="index of node_5"><p></p></li>
+                    </ul> -->
+                    <!-- <p>{{data_node_4}}</p> -->
+                </div>
+                <div class="szbfb">
+                    <div class="vadx">{{data_node_5}}</div>
+                    <div class="vqadc">北京国旭网络科技有限公司</div>
+                    <!-- <ul>
+                        <li v-for="index of node_5"><p></p></li>
+                    </ul> -->
+                    <!-- <p>{{data_node_4}}</p> -->
+                </div>
+            </div>
+        </div>
+        <div class="taren2">
+            <div class="taren2-top">
+                <div><a href="#">数据应用与消费</a></div>
+                <div><a href="#">数据加工、储存与管理</a></div>
+                <div><a href="#">数据采集与整合</a></div>
+            </div>
+            <div class="taren2-center">
+                <div class="taren2-left">
+                    <div class="taren2-left-local">
+                        <div class="traen2-left-title">本地业务系统</div>
+                        <ul class="taren2-left-local-ul">
+                            <li>
+                                <span>IP数据</span>
+                                <img src="./static/images/red_arrow.png" alt="">
+                            </li>
+                            <li>
+                                <span>DNS解析数据</span>
+                                <img src="./static/images/red_arrow.png" alt="">
+                            </li>
+                            <li>
+                                <span>域名注册数据</span>
+                                <img src="./static/images/red_arrow.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="taren2-left-cloud">
+                        <div class="traen2-left-title">云端探测系统</div>
+                        <ul class="taren2-left-cloud-ul">
+                            <li>
+                                <span>DNS/网站/IP探测数据</span>
+                                <img src="./static/images/red_arrow.png" alt="">
+                            </li>
+                            <li>
+                                <span>不良检测数据</span>
+                                <img src="./static/images/red_arrow.png" alt="">
+                            </li>
+                            <li>
+                                <span>搜索引擎</span>
+                                <img src="./static/images/red_arrow.png" alt="">
+                            </li>
+                            <li>
+                                <span>网站来源</span>
+                                <img src="./static/images/red_arrow.png" alt="">
+                            </li>
+                            <li>
+                                <span>按链接数据</span>
+                                <img src="./static/images/red_arrow.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="taren2-right">
+                    <div class="taren2-right-left">
+                        <div>
+                            <img src="./static/images/red_arrow.png" alt="">
+                            <span>数据同步</span>
+                        </div>
+                    </div>
+                    <div class="taren2-right-right">
+                        <div>
+                            <img src="./static/images/red_arrow.png" alt="">
+                            <span>应用系统</span>
+                        </div>
+                        <div>
+                            <img src="./static/images/red_arrow.png" alt="">
+                            <span>数据展示</span>
+                        </div>
+                        <div>
+                            <img src="./static/images/red_arrow.png" alt="">
+                            <span>数据分析</span>
+                        </div>
+                        <div>
+                            <img src="./static/images/red_arrow.png" alt="">
+                            <span>挖掘预测</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="tkcsa"><img src="./static/images/tkcsa.gif" ></div> -->
+        </div>
+        <div class="taren3">
+            <div class="tabea">
+                <div class="tabtile"><span>分钟级探测能力</span><i>Minute detection capability</i></div>
+                <table class="table1" border="0" cellspacing="0" cellpadding="0">
+                    <thead>
+                    <tr>
+                        <th>时间</th>
+                        <th>内容</th>
+                        <th>开始时间</th>
+                        <th>结束时间</th>
+                        <th>数据量</th>
+                    </tr>
+                    </thead>
+                    <tr v-for="person in minute_amount">
+                        <td>{{person.createTime}}</td>
+                        <td>{{person.content}}</td>
+                        <td>{{person.startTime}}</td>
+                        <td>{{person.createTime}}</td>
+                        <td>{{person.amountGrowth}}</td>
+                    </tr>
+                    <tr>
+                        <td>时间</td>
+                        <td>时间</td>
+                        <td>时间</td>
+                        <td>时间</td>
+                        <td>时间</td>
+                    </tr>
+                    <tr>
+                        <td>时间</td>
+                        <td>时间</td>
+                        <td>时间</td>
+                        <td>时间</td>
+                        <td>时间</td>
+                    </tr>
+                    <tr>
+                        <td>时间</td>
+                        <td>时间</td>
+                        <td>时间</td>
+                        <td>时间</td>
+                        <td>时间</td>
+                    </tr>
+                    <tr>
+                        <td>时间</td>
+                        <td>时间</td>
+                        <td>时间</td>
+                        <td>时间</td>
+                        <td>时间</td>
+                    </tr>
+                    <tr>
+                        <td>时间</td>
+                        <td>时间</td>
+                        <td>时间</td>
+                        <td>时间</td>
+                        <td>时间</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="zxtb">
+                <div class="tabtile"><span>分钟级探测能力</span><i>Minute detection capability</i></div>
+                <div id="zxtb-chart"></div>
+                <!-- <div id="main"></div> -->
+                <!-- <div class="dtxg"><img src="./static/images/dtxg.gif" ></div> -->
+            </div>
+        </div>
+    </div>
+    <div class="data">
+        <div class="szjd data_l">
+            <div class="szjdle">
+                标题标题标题标题
+            </div>
+            <div class="szbfb">
+                <div class="vadx">备案信息</div>
+                <div class="vqadc">备案信息备案信息备案信息</div>
+                <!-- <ul>
+                    <li v-for="index of node_1"><p>p</p></li>
+                </ul> -->
+                <!-- <p>{{data_node_1}}</p> -->
+            </div>
+            <div class="szbfb">
+                <div class="vadx">备案信息</div>
+                <div class="vqadc">备案信息备案信息备案信息</div>
+                <!-- <ul>
+                    <li v-for="index of node_2"><p></p></li>
+                </ul> -->
+                <!-- <p>{{data_node_2}}</p> -->
+            </div>
+            <div class="szbfb">
+                <div class="vadx">备案信息</div>
+                <div class="vqadc">备案信息备案信息备案信息</div>
+                <!-- <ul>
+                    <li v-for="index of node_3"><p></p></li>
+                </ul> -->
+                <!-- <p>{{data_node_3}}</p> -->
+            </div>
+            <div class="szbfb">
+                <div class="vadx">备案信息</div>
+                <div class="vqadc">备案信息备案信息备案信息</div>
+                <!-- <ul>
+                    <li v-for="index of node_4"><p></p></li>
+                </ul> -->
+                <!-- <p>{{data_node_4}}</p> -->
+            </div>
+            <div class="szbfb">
+                <div class="vadx">备案信息</div>
+                <div class="vqadc">备案信息备案信息备案信息</div>
+                <!-- <ul>
+                    <li v-for="index of node_5"><p></p></li>
+                </ul> -->
+                <!-- <p>{{data_node_4}}</p> -->
+            </div>
+            <div class="szbfb">
+                <div class="vadx">备案信息</div>
+                <div class="vqadc">备案信息备案信息备案信息</div>
+                <!-- <ul>
+                    <li v-for="index of node_5"><p></p></li>
+                </ul> -->
+                <!-- <p>{{data_node_4}}</p> -->
+            </div>
+            <div class="szbfb">
+                <div class="vadx">备案信息</div>
+                <div class="vqadc">备案信息备案信息备案信息</div>
+                <!-- <ul>
+                    <li v-for="index of node_5"><p></p></li>
+                </ul> -->
+                <!-- <p>{{data_node_4}}</p> -->
+            </div>
+            <div class="szbfb">
+                <div class="vadx">备案信息</div>
+                <div class="vqadc">备案信息备案信息备案信息</div>
+                <!-- <ul>
+                    <li v-for="index of node_5"><p></p></li>
+                </ul> -->
+                <!-- <p>{{data_node_4}}</p> -->
+            </div>
+            <div class="szbfb">
+                <div class="vadx">备案信息</div>
+                <div class="vqadc">备案信息备案信息备案信息</div>
+                <!-- <ul>
+                    <li v-for="index of node_5"><p></p></li>
+                </ul> -->
+                <!-- <p>{{data_node_4}}</p> -->
+            </div>
+        </div>
+        <div class="data_c">
+            <div class="data_tile">
+                <p>数据大类</p>
+                <p>数据类别</p>
+                <p>数据子项</p>
+                <p>数据量</p>
+                <p>数据大类</p>
+                <p>数据类别</p>
+                <p>数据子项</p>
+                <p>数据量</p>
+            </div>
+            <div class="dowebok">
+                <ul class="data_ul data_ul_l">
+                    <li v-for="person in one_date">
+                        <div>{{person.dataTypes}}</div>
+                        <div>{{person.dataCategory}}</div>
+                        <div>{{person.dataItem}}</div>
+                        <div>{{person.dataSize}}</div>
+                    </li>
+                </ul>
+                <ul class="data_ul data_ul_r">
+                    <li v-for="person in two_date">
+                        <div>{{person.dataTypes}}</div>
+                        <div>{{person.dataCategory}}</div>
+                        <div>{{person.dataItem}}</div>
+                        <div>{{person.dataSize}}</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="data_wz">数据汇聚子项</div>
+        </div>
+        <div class="data_r">
+            <img class="img1" src="./static/images/special/1.png" alt="">
+            <img class="img3" src="./static/images/special/3.png" alt="">
+            <img class="img4" src="./static/images/special/4.png" alt="">
+            <img class="img5" src="./static/images/special/5.png" alt="">
+            <img class="img9" src="./static/images/special/9.png" alt="">
+            <img class="img11" src="./static/images/special/11.png" alt="">
+            <img class="img12" src="./static/images/special/12.png" alt="">
+            <img class="img13" src="./static/images/special/13.png" alt="">
+            <img class="img14" src="./static/images/special/14.png" alt="">
+            <img class="img15" src="./static/images/special/14.png" alt="">
+            <img class="img16" src="./static/images/special/14.png" alt="">
+
+            <img class="img6" src="./static/images/special/6.png" alt="">
+            <img class="img7" src="./static/images/special/7.png" alt="">
+
+            <img class="img8" src="./static/images/special/8.png" alt="">
+            <img class="img17" src="./static/images/special/17.png" alt="">
+
+        </div>
+    </div>
+</div>
+</body>
+<script src="./static/js/vue.js"></script>
+<!-- vue start -->
+<script>
+    const app = new Vue({
+        el: "#app",
+        data: {
+            timer: '',
+            one_date:[],
+            two_date:[],
+            minute_amount:[],
+            data_node_1:"公司名称",
+            data_node_2:"公司名称",
+            data_node_3:"公司名称",
+            data_node_4:"公司名称",
+            data_node_5:"公司名称",
+            node_1:0,
+            node_2:0,
+            node_3:0,
+            node_4:0,
+            node_5:0,
+            cap:"66.7%",
+            use:"251T",
+            value:"",
+            one_date: [
+                {
+                    dataTypes: '数据类型',
+                    dataCategory: '数据类别',
+                    dataItem: '数据项',
+                    dataSize: '数据大小'
+                },
+                {
+                    dataTypes: '数据类型',
+                    dataCategory: '数据类别',
+                    dataItem: '数据项',
+                    dataSize: '数据大小'
+                },
+                {
+                    dataTypes: '数据类型',
+                    dataCategory: '数据类别',
+                    dataItem: '数据项',
+                    dataSize: '数据大小'
+                },
+                {
+                    dataTypes: '数据类型',
+                    dataCategory: '数据类别',
+                    dataItem: '数据项',
+                    dataSize: '数据大小'
+                },
+                {
+                    dataTypes: '数据类型',
+                    dataCategory: '数据类别',
+                    dataItem: '数据项',
+                    dataSize: '数据大小'
+                },
+                {
+                    dataTypes: '数据类型',
+                    dataCategory: '数据类别',
+                    dataItem: '数据项',
+                    dataSize: '数据大小'
+                }
+            ],
+            two_date: [
+                {
+                    dataTypes: '数据类型',
+                    dataCategory: '数据类别',
+                    dataItem: '数据项',
+                    dataSize: '数据大小'
+                },
+                {
+                    dataTypes: '数据类型',
+                    dataCategory: '数据类别',
+                    dataItem: '数据项',
+                    dataSize: '数据大小'
+                },
+                {
+                    dataTypes: '数据类型',
+                    dataCategory: '数据类别',
+                    dataItem: '数据项',
+                    dataSize: '数据大小'
+                },
+                {
+                    dataTypes: '数据类型',
+                    dataCategory: '数据类别',
+                    dataItem: '数据项',
+                    dataSize: '数据大小'
+                },
+                {
+                    dataTypes: '数据类型',
+                    dataCategory: '数据类别',
+                    dataItem: '数据项',
+                    dataSize: '数据大小'
+                },
+                {
+                    dataTypes: '数据类型',
+                    dataCategory: '数据类别',
+                    dataItem: '数据项',
+                    dataSize: '数据大小'
+                }
+            ]
+        },
+        methods: {
+            listNodeStatus() {
+                $.ajax({
+                    url: "/hdfs/listNodeStatus",
+                    type: "get",
+                    dataType:"json",
+                    success: function(data) {
+                        app.cap = data.cap;
+                        app.use = data.use;
+
+                        var dataInfos = data.dataInfos;
+                        app.data_node_1 = dataInfos["dataNode-1"];
+                        app.data_node_2 = dataInfos["dataNode-2"];
+                        app.data_node_3 = dataInfos["dataNode-3"];
+                        app.data_node_4 = dataInfos["dataNode-4"];
+                        app.data_node_5 = dataInfos["dataNode-5"];
+                        app.node_1 = Number(app.data_node_1.substr(0,app.data_node_1.indexOf(".")-1));
+                        app.node_2 = Number(app.data_node_2.substr(0,app.data_node_2.indexOf(".")-1));
+                        app.node_3 = Number(app.data_node_3.substr(0,app.data_node_3.indexOf(".")-1));
+                        app.node_4 = Number(app.data_node_1.substr(0,app.data_node_4.indexOf(".")-1));
+                        app.node_5 = Number(app.data_node_1.substr(0,app.data_node_5.indexOf(".")-1));
+                    }
+                });
+                $.ajax({
+                    url: "/dataServer/dataAggregations",
+                    type: "get",
+                    dataType:"json",
+                    success: function(data) {
+                        app.one_date = data.slice(0,5);
+                        app.two_date = data.slice(5);
+                    }
+                });
+
+                $.ajax({
+                    url: "/dataServer/dataMinuteAmount",
+                    type: "get",
+                    dataType:"json",
+                    success: function(data) {
+                        app.minute_amount = data;
+                    }
+                });
+
+                let date_time =[];
+                let date_growth = [];
+                let date_total = [];
+                $.ajax({
+                    url: "/dataServer/dataAmountGrowth",
+                    type: "get",
+                    dataType:"json",
+                    success: function(data) {
+                        $.each(data.reverse(), function (i, value) {
+                            date_time.push(value.createTime.substr(11,5));
+                            date_growth.push(value.amountGrowth);
+                            date_total.push((value.volumeDose/100000000).toFixed(4));
+                        });
+
+                        var myChart = echarts.init(document.getElementById('main'));
+                        var option = {
+                            tooltip: {
+                                trigger: 'axis',
+                                axisPointer: {
+                                    type: 'cross',
+                                    crossStyle: {
+                                        color: '#ffffff'
+                                    }
+                                }
+                            },
+                            xAxis: [{
+                                type: 'category',
+                                data: date_time,
+                                axisPointer: {
+                                    type: 'shadow'
+                                },
+                                axisLabel: {
+                                    show: true,
+                                    textStyle: {
+                                        color: '#ffffff'
+                                    }
+                                }
+                            }],
+                            yAxis: [{
+                                type: 'value',
+                                axisLabel: {
+                                    formatter: '{value}'
+                                },
+                                axisLabel: {
+                                    show: true,
+                                    textStyle: {
+                                        color: '#ffffff'
+                                    }
+                                }
+                            },
+                                {
+                                    type: 'value',
+                                    axisLabel: {
+                                        formatter: '{value}'
+                                    },
+                                    axisLabel: {
+                                        show: true,
+                                        textStyle: {
+                                            color: '#ffffff'
+                                        }
+                                    }
+                                },
+                            ],
+                            series: [{
+                                name: '总量(千万)',
+                                type: 'bar',
+                                data: date_total,
+                                itemStyle:{
+                                    normal: {
+                                        color: new echarts.graphic.LinearGradient(
+                                                0, 0, 0, 1,
+                                                [
+                                                    {offset: 0, color: '#94E7FE'},                   //柱图渐变色
+                                                    {offset: 0.5, color: '#4EB9FD'},                 //柱图渐变色
+                                                    {offset: 1, color: '#1189FD'},                   //柱图渐变色
+                                                ]
+                                        )
+                                    },
+                                },
+                            },
+                                {
+                                    name: '增长量',
+                                    type: 'line',
+                                    yAxisIndex: 1,
+                                    data: date_growth
+                                }
+                            ]
+                        };
+                        myChart.setOption(option);
+                    }
+                });
+            }
+        },created:function () {
+            this.listNodeStatus();
+        },mounted() {
+            this.timer = setInterval(this.listNodeStatus, 60000*15);
+        },
+        beforeDestroy() {
+            clearInterval(this.timer);
+        }
+    })
+</script>
+<script>
+    // 获取echarts的容器
+    var globalchar = echarts.init(document.getElementById("globalmain"));
+    var geoCoordMap = {
+        北京: [116.28, 39.54],
+        上海: [121.4648, 31.2891],
+        美国: [-95.712891,37.09024],
+        香港: [114.195466, 22.282751],
+        英国: [-3.435973,55.378051],
+        日本: [138.252924,36.204824],
+        澳大利亚: [133.775136,-25.274398],
+        南非: [22.937506,-30.559482]
+    };
+    var BJData = [[{
+        name: "北京",
+        value: 2
+    }],[{
+        name: "上海",
+        value: 1
+    }], [{
+        name: "美国",
+        value: 3
+    }], [{
+        name: "香港",
+        value: 1
+    }],[{
+        name: "英国",
+        value: 1
+    }], [{
+        name: "日本",
+        value: 1
+    }], [{
+        name: "澳大利亚",
+        value: 1
+    }], [{
+        name: "南非",
+        value: 1
+    }]];
+
+    var series = [];
+    [[, BJData]].forEach(function (item, i) {
+        series.push({
+            type: "effectScatter",
+            coordinateSystem: "geo",
+            zlevel: 2,
+            rippleEffect: {
+                //涟漪特效
+                period: 4, //动画时间，值越小速度越快
+                brushType: "stroke", //波纹绘制方式 stroke, fill
+                scale: 4
+                //波纹圆环最大限制，值越大波纹越大
+            },
+            label: {
+                normal: {
+                    show: true,
+                    position: "right", //显示位置
+                    offset: [5, 0], //偏移设置
+                    // formatter: "{b}" //圆环显示文字
+                    formatter: "" //圆环显示文字
+                },
+                emphasis: {
+                    show: true
+                }
+            },
+            symbol: "circle",
+            symbolSize: function (val) {
+                var  level = 0 ;
+                var state= Math.floor(val[2]/5000) ;
+                switch (state)
+                {
+                    case 0: level=0; break;
+                    case 1: level=1; break;
+                    case 2: level=2; break;
+                    case 3: level=3; break;
+                    case 4: level=4; break;
+                    case 5: level=5; break;
+                    case 6: level=6; break;
+                    case 7: level=7; break;
+                    case 8: level=8; break;
+                    case 9: level=9; break;
+                    default: level=10;
+                }
+                return 5 + level; //圆环大小
+            },
+            data: item[1].map(function (dataItem) {
+                return {
+                    name: dataItem[0].name/*+"\n"+dataItem[0].value*/,
+                    value: geoCoordMap[dataItem[0].name]
+                            .concat([dataItem[0].value])
+                };
+            })
+        });
+    });
+
+    globaloption = {
+        backgroundColor: '#000',
+        //悬浮提示
+        tooltip: {
+            trigger: "item",
+            backgroundColor: "#1540a1",
+            borderColor: "#FFFFCC",
+            showDelay: 0,
+            hideDelay: 0,
+            // enterable: true,
+            transitionDuration: 0,
+            // extraCssText: "z-index:100",formatter
+            formatter: function (params, ticket, callback) {
+                //根据业务自己拓展要显示的内容
+                var res = "";
+                var name = params.name;
+                var value = params.value[params.seriesIndex + 1];
+                res = "<span style='color:#fff;'>" + name.toString().split(' ')[0]
+                        +"</span><br/>" + params.value[2];
+                return res;
+            }
+        },
+        visualMap: {
+            //图例值控制
+            min: 0,
+            max: 10000,
+            text:['High','Low'],
+            show: false,
+            calculable: true,
+            //color: ["#0bc7f3"],
+            color: ['orangered','yellow','lightskyblue']
+        },
+        geo: {
+            map: "world",
+            label: {
+                emphasis: {
+                    show: false
+                }
+            },
+            roam: true, //是否允许缩放
+            layoutCenter: ["50%", "50%"], //地图位置
+            layoutSize: "180%",
+            itemStyle: {
+                normal: {
+                    color: ["#04284e"], //地图背景色
+                    //color: ['orangered','yellow','lightskyblue']
+                    borderColor: "#5bc1c9" //省市边界线
+                },
+                emphasis: {
+                    color: "rgba(37, 43, 61, .5)" //悬浮背景
+                }
+            }
+        },
+        series: series
+    };
+    globalchar.setOption(globaloption);
+</script>
+<script type="text/javascript">
+    // $(function(){
+    //     $('.dowebok').liMarquee({
+    //         direction: 'up',
+    //         scrollamount: 30
+    //     });
+    //     $(".tile li").on("mouseover",function(){
+    //         $(this).addClass("active").siblings().removeClass("active");
+    //     })
+    // });
+</script>
+<script>
+    // 页面右边图表
+    const  zxtbChart = echarts.init(document.getElementById("zxtb-chart"));
+    const zxtbChartOptions = {
+        grid:{
+      	 top:"10px",
+         left:"40px",
+         right:"10px",
+         bottom:"20px"
+	  },
+        xAxis: {
+            type: 'category',
+            data: ['11:30','11:31','11.32','11.33','11.34','11.35','11.36','11.37','11.38','11.39','11.40'],
+            axisLabel:{
+           		//x轴刻度标签字体颜色大小
+	           	textStyle:{
+	           		fontSize: 8,
+	           		color:'#F0F0F0'
+                },
+            },
+            // splitLine: {show: false},
+            // axisLine:{
+            //     show:true,
+	        //     lineStyle:{
+	        //         //轴线颜色
+	        //         color: '#6A7594',
+	        //         //线型
+	        //         type:'dashed'
+            //     }
+            // }
+            
+        },
+        yAxis: {
+            type: 'value',
+            axisLabel:{
+           		//x轴刻度标签字体颜色大小
+	           	textStyle:{
+	           		fontSize: 10,
+	           		color:'#F0F0F0'
+                },
+            },
+            splitLine: {show: false},
+
+        },
+        series: [
+            {
+                data: [600,1400,800,1000,1500,1900,1400,1600,1500,2000,1000],
+                type: 'line',
+                itemStyle: {
+                    color: '#6A5ACD', 
+                    normal: {  
+                        lineStyle: {        // 系列级个性化折线样式 
+                            width: 2, 
+                            type: 'solid', 
+                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{ 
+                                offset: 0, 
+                                color: '#f00' 
+                            }, { 
+                                offset: 1, 
+                                color: '#079ce1' 
+                            }]),//线条渐变色 
+                        } 
+                    }, 
+                    // emphasis: {
+                    //     color: '#6A5ACD',   
+                    //     lineStyle: {        // 系列级个性化折线样式 
+                    //         width: 2, 
+                    //         type: 'dotted', 
+                    //         color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{ 
+                    //             offset: 0, 
+                    //             color: '#1E90FF' 
+                    //         }, { 
+                    //             offset: 1, 
+                    //             color: '#0000FF' 
+                    //         }]) 
+                    //     } 
+                    // } 
+                },//线条样式
+            },
+            {
+                data: [50,400,600,100,400,800,500,800,600,700,1000],
+                type: 'bar',
+                itemStyle: {
+                    normal: {
+                        color: new echarts.graphic.LinearGradient(
+                            0, 0, 0, 1,
+                            [
+                                {offset: 0, color: '#0489ff'},                   //柱图渐变色
+                                {offset: 1, color: '#95e9ff'},                   //柱图渐变色
+                            ]
+                        )
+                    },
+                    emphasis: {
+                        color: new echarts.graphic.LinearGradient(
+                            0, 0, 0, 1,
+                            [
+                                {offset: 0, color: '#95e9ff'},                  //柱图高亮渐变色
+                                {offset: 1, color: '#0489ff'}                   //柱图高亮渐变色
+                            ]
+                        )
+                    }
+                },
+            }
+        ]
+    }
+    zxtbChart.setOption(zxtbChartOptions);
+</script>
+<script>
+    window.onload = function () {
+        let bj = document.querySelector('.bj');
+        let img1 = new Image();
+        img1.src = './static/images/bj7.png';
+        img1.onload = function () {
+            let timer1 = setInterval(function () {
+                if(bj.classList.contains('bj6')) {
+                    bj.classList.replace('bj6', 'bj7');
+                } else {
+                    bj.classList.replace('bj7', 'bj6');
+                }
+            }, 500);
+        }
+    }
+</script>
+</html>

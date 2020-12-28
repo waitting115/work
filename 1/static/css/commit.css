@@ -1,0 +1,32 @@
+html,body,div,p,span,i,ul,ol,li,h1,h2,h3,h4,h5,h6,input,textarea,a,dl,dt,dd,form,th,td{
+	margin: 0;
+	padding: 0;
+}
+html{
+	width: 100%;
+	min-height: 100%;
+	overflow-x: hidden;
+	font-family: "microsoft yahei";
+	font-size: 62.5%; /*100 ÷ 16 × 100% = 625%*/
+}
+a {
+	color: #282828;
+	text-decoration: none;
+	outline: none;
+}
+i,em{
+	font-style: normal;
+}
+img {
+	border: none;
+}
+ul,
+li {
+	list-style: none;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
